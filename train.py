@@ -1,9 +1,10 @@
 import re
+import multiprocessing
 from datasets import load_dataset
 from gensim.models import Word2Vec
 
-ds = load_dataset('wikimedia/wikipedia', '20231101.en')['train']
-corpus = [re.sub(r"[^A-Za-z'\d\-]+", " ", doc['text']).lower().split() for doc in ds]
+ds = load_dataset('wikimedia/wikipedia', '20231101.en')['train'][:100]['text']
+corpus = [re.sub(r"[^A-Za-z'\d\-]+", " ", doc).lower().split() for doc in ds]
 vocab = sorted(list({word for doc in corpus for word in doc}))
 # word_to_index = {}
 # for index, word in enumerate(vocab):
@@ -19,7 +20,7 @@ model = Word2Vec(
 )
 
 print('before build_vocab')
-model.build_vocab(sentences=corpus, progress_per=10000)
+model.build_vocab(corpus_iterable=corpus, progress_per=10000)
 
 print('before train')
 model.train(
