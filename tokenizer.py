@@ -30,13 +30,11 @@ class Tokenizer():
                             word_frequency[word] = 0
                         word_frequency[word] += freq
         
-        print("Building word index")
         self._vocab = list(word_frequency.keys())
         self._word_index = {}
         for i, word in enumerate(self._vocab):
             self._word_index[word] = i
         
-        print("Building word sampling rates")
         self._sampling_rate = [None] * len(self._vocab)
         for word, freq in word_frequency.items():
             self._sampling_rate[self._word_index[word]] = freq ** 0.75

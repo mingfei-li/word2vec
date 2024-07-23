@@ -4,13 +4,11 @@ from tokenizer import Tokenizer
 from dataset import SkipGramDataset
 from torch import nn
 from torch.utils.data import DataLoader
+from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 import multiprocessing
 import re
 import torch
-
-def train():
-    pass
 
 if __name__ == "__main__":
     corpus = load_dataset(
@@ -18,12 +16,17 @@ if __name__ == "__main__":
         '20231101.en',
     )['train']
 
+    logger = SummaryWriter(log_dir='logs')
+
+    print('Buliding tokenizer')
     tokenizer = Tokenizer(
         corpus=corpus,
         num_workers=multiprocessing.cpu_count() - 1,
         chunk_size=7,
         limit=20,
     )
+
+    print('Buliding dataset')
     dataset = SkipGramDataset(corpus, tokenizer, limit=20)
 
     print('Buliding dataloader')
@@ -38,22 +41,20 @@ if __name__ == "__main__":
     model = SkipGramModel(tokenizer.get_vocab_size(), 100)
     mini_batch_size=128
     optimizer = torch.optim.Adam(model.parameters())
-    for batch in tqdm(dataloader, desc="Training model"):
+    global_step = 0
+    for i, batch in enumerate(tqdm(dataloader, desc="Training model")):
         samples = batch.squeeze(dim=0)
-        for i in tqdm(range(0, len(samples), mini_batch_size), desc="Mini batch"):
-            if i + mini_batch_size < len(samples):
-                word_pairs = samples[i:i+mini_batch_size,:2]
-                targets = samples[i:i+mini_batch_size,2].float()
-            else:
-                word_pairs = samples[i:,:2]
-                targets = samples[i:,2].float()
+        word_pairs = samples[:,:2]
 
-            probs = model(word_pairs)
+        probs = model(word_pairs)
+        targets = samples[:,2].float()
 
-            criterion = nn.BCELoss()
-            loss = criterion(probs, targets)
-            print(f'Loss={loss.item()}')
+        loss = nn.BCELoss()(probs, targets)
+        logger.add_scalar("training.loss", loss.item(), i)
+        logger.flush()
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+    logger.close()

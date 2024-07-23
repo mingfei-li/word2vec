@@ -17,7 +17,6 @@ class SkipGramDataset():
         return len(self._corpus)
 
     def __getitem__(self, idx):
-        print(f"calling get item at {idx}")
         doc = self._corpus[idx]["text"]
         words = re.sub(r"[^A-Za-z'\d\-]+", " ", doc).lower().split()
         samples = []
