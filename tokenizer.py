@@ -14,7 +14,7 @@ class Tokenizer():
             freq[word] += 1
         return freq
 
-    def __init__(self, corpus, num_workers, chunk_size=128, limit=None):
+    def __init__(self, corpus, num_workers, min_freq=5, chunk_size=128, limit=None):
         if limit is None:
             limit = len(corpus)
         word_frequency = {}
@@ -30,24 +30,28 @@ class Tokenizer():
                             word_frequency[word] = 0
                         word_frequency[word] += freq
         
-        self._vocab = list(word_frequency.keys())
+        self._vocab = [word for word in word_frequency.keys() if word_frequency[word] >= min_freq]
         self._word_index = {}
         for i, word in enumerate(self._vocab):
             self._word_index[word] = i
         
         self._sampling_rate = [None] * len(self._vocab)
         for word, freq in word_frequency.items():
-            self._sampling_rate[self._word_index[word]] = freq ** 0.75
+            if word in self._word_index:
+                self._sampling_rate[self._word_index[word]] = freq ** 0.75
         total_freq = sum(self._sampling_rate)
         for i in range(len(self._sampling_rate)):
             self._sampling_rate[i] /= total_freq
         
     def get_index(self, word):
-        return self._word_index[word]
+        if word in self._word_index:
+            return self._word_index[word]
+        else:
+            return None
 
     def get_word(self, index):
         return self._vocab[index]
-
+    
     def get_vocab_size(self):
         return len(self._vocab)
     

@@ -22,11 +22,14 @@ class SkipGramDataset():
         samples = []
         for i, word in enumerate(words):
             index_i = self._tokenizer.get_index(word)
+            if index_i is None:
+                continue
             for j in range(i-self._window_size, i+self._window_size+1):
                 if j>=0 and j<len(words) and j!=i:
                     index_j = self._tokenizer.get_index(words[j])
+                    if index_j is None:
+                        continue
                     samples.append([index_i, index_j, 1])
-
                     negatives = self._tokenizer.sample(3)
                     for negative in negatives:
                         samples.append([index_i, negative, 0])
