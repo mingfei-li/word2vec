@@ -11,50 +11,55 @@ import re
 import torch
 
 if __name__ == "__main__":
-    corpus = load_dataset(
-        'wikimedia/wikipedia',
-        '20231101.en',
-    )['train']
+    limit = None
+    # hf_dataset = 'wikimedia/wikipedia'
+    # subset = '20231101.en'
+    hf_dataset = 'Salesforce/wikitext'
+    subset = 'wikitext-2-v1'
+    version = 2
+    logger = SummaryWriter(log_dir=f'logs/{subset}/{version}')
 
-    logger = SummaryWriter(log_dir='logs')
-
-    print('Buliding tokenizer')
+    corpus = load_dataset(hf_dataset, subset)['train']
     tokenizer = Tokenizer(
         corpus=corpus,
-        num_workers=multiprocessing.cpu_count() - 1,
-        chunk_size=7,
-        limit=20,
+        num_workers=multiprocessing.cpu_count()-1,
+        limit=limit,
     )
-
-    print('Buliding dataset')
-    dataset = SkipGramDataset(corpus, tokenizer, limit=20)
-
-    print('Buliding dataloader')
+    dataset = SkipGramDataset(corpus, tokenizer, limit=limit)
     dataloader = DataLoader(
         dataset=dataset,
         batch_size=1,
-        # num_workers=multiprocessing.cpu_count()-1,
+        num_workers=multiprocessing.cpu_count()-1,
         shuffle=True,
         drop_last=True,
     )
 
+    print(f"vocab size = {tokenizer.get_vocab_size()}")
     model = SkipGramModel(tokenizer.get_vocab_size(), 100)
-    mini_batch_size=128
     optimizer = torch.optim.Adam(model.parameters())
-    global_step = 0
-    for i, batch in enumerate(tqdm(dataloader, desc="Training model")):
-        samples = batch.squeeze(dim=0)
-        word_pairs = samples[:,:2]
+    step = 0
+    for epoch in tqdm(range(3), desc="Model training epoch: "):
+        for batch in tqdm(dataloader, desc="Batch"):
+            if batch.nelement() == 0:
+                continue
 
-        probs = model(word_pairs)
-        targets = samples[:,2].float()
+            samples = batch.squeeze(dim=0)
+            word_pairs = samples[:,:2]
 
-        loss = nn.BCELoss()(probs, targets)
-        logger.add_scalar("training.loss", loss.item(), i)
-        logger.flush()
+            model.train()
+            probs = model(word_pairs)
+            targets = samples[:,2].float()
 
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+            loss = nn.BCELoss()(probs, targets)
+
+            step += 1
+            logger.add_scalar("training.loss", loss.item(), step)
+            logger.flush()
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+        torch.save(model.state_dict(), f"models/model-{subset}-{version}-{epoch}.pt")
 
     logger.close()
