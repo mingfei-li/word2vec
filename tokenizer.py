@@ -49,6 +49,9 @@ class Tokenizer():
 
     def get_word(self, index):
         return self._vocab[index]
+
+    def get_vocab_size(self):
+        return len(self._vocab)
     
     def sample(self, k):
         return random.choices(

@@ -2,9 +2,12 @@ from datasets import load_dataset
 from model import SkipGramModel
 from tokenizer import Tokenizer
 from dataset import SkipGramDataset
+from torch import nn
 from torch.utils.data import DataLoader
+from tqdm import tqdm
 import multiprocessing
 import re
+import torch
 
 def train():
     pass
@@ -31,9 +34,26 @@ if __name__ == "__main__":
         shuffle=True,
         drop_last=True,
     )
-    print('Getting next batch')
-    word_pairs, labels = next(iter(dataloader))
-    print(word_pairs)
-    print(labels)
-    print(f"word_pairs: {word_pairs.shape}")
-    print(f"labels.shape {labels.shape}")
+
+    model = SkipGramModel(tokenizer.get_vocab_size(), 100)
+    mini_batch_size=128
+    optimizer = torch.optim.Adam(model.parameters())
+    for batch in tqdm(dataloader, desc="Training model"):
+        samples = batch.squeeze(dim=0)
+        for i in tqdm(range(0, len(samples), mini_batch_size), desc="Mini batch"):
+            if i + mini_batch_size < len(samples):
+                word_pairs = samples[i:i+mini_batch_size,:2]
+                targets = samples[i:i+mini_batch_size,2].float()
+            else:
+                word_pairs = samples[i:,:2]
+                targets = samples[i:,2].float()
+
+            probs = model(word_pairs)
+
+            criterion = nn.BCELoss()
+            loss = criterion(probs, targets)
+            print(f'Loss={loss.item()}')
+
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()

@@ -10,7 +10,7 @@ class SkipGramModel(nn.Module):
 
     def forward(self, x):
         logits = torch.sum(
-            self.context_embedding[x[:,0]] * self.target_embedding[x[:,1]],
+            self.context_embedding(x[:,0]) * self.target_embedding(x[:,1]),
             dim=1,
         )
         return torch.sigmoid(logits)

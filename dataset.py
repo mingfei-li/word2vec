@@ -1,3 +1,4 @@
+import random
 import re
 import torch
 
@@ -19,19 +20,17 @@ class SkipGramDataset():
         print(f"calling get item at {idx}")
         doc = self._corpus[idx]["text"]
         words = re.sub(r"[^A-Za-z'\d\-]+", " ", doc).lower().split()
-        word_pairs = []
-        labels = []
+        samples = []
         for i, word in enumerate(words):
             index_i = self._tokenizer.get_index(word)
             for j in range(i-self._window_size, i+self._window_size+1):
                 if j>=0 and j<len(words) and j!=i:
                     index_j = self._tokenizer.get_index(words[j])
-                    word_pairs.append([index_i, index_j])
-                    labels.append(1)
+                    samples.append([index_i, index_j, 1])
 
                     negatives = self._tokenizer.sample(3)
                     for negative in negatives:
-                        word_pairs.append([index_i, negative])
-                        labels.append(0)
+                        samples.append([index_i, negative, 0])
 
-        return torch.tensor(word_pairs), torch.tensor(labels)
+        random.shuffle(samples)
+        return torch.tensor(samples)
