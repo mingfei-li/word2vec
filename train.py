@@ -1,7 +1,8 @@
+from dataset import SkipGramDataset
 from datasets import load_dataset
+from evals import AnalogyEval
 from model import SkipGramModel
 from tokenizer import Tokenizer
-from dataset import SkipGramDataset
 from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
@@ -14,8 +15,8 @@ import torch
 
 if __name__ == "__main__":
     dataset = "Salesforce/wikitext"
-    subset = "wikitext-2-v1"
-    run_id = 2
+    subset = "wikitext-103-v1"
+    run_id = 1
     base_dir = f"results/{subset}/{run_id}"
     if not os.path.exists(base_dir):
         os.makedirs(base_dir)
@@ -49,6 +50,7 @@ if __name__ == "__main__":
         shuffle=True,
         drop_last=True,
     )
+    analogy_eval = AnalogyEval(tokenizer)
 
     logger = SummaryWriter(log_dir=f"{base_dir}/logs")
     model = SkipGramModel(tokenizer.get_vocab_size(), embedding_dim)
@@ -98,6 +100,8 @@ if __name__ == "__main__":
                         global_step,
                     )
                     logger.flush()
+                
+                analogy_eval.evaluate(model, logger, global_step)
         
     torch.save(model.state_dict(), f"{base_dir}/model.pt")
     logger.close()
