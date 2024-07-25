@@ -44,6 +44,7 @@ class Tokenizer():
             self._sampling_rate[i] /= total_freq
         
     def get_index(self, word):
+        word = word.lower()
         if word in self._word_index:
             return self._word_index[word]
         else:
