@@ -59,26 +59,32 @@ if __name__ == "__main__":
     optimizer = torch.optim.Adam(model.parameters())
     global_step = 0
     for epoch in range(config.num_epochs):
-        for batch in tqdm(dataloader_train, desc="Train batch"):
+        for i, batch in enumerate(tqdm(dataloader_train, desc="Train batch")):
             if batch.nelement() == 0:
                 continue
-
             model.train()
             samples = batch.squeeze(dim=0).to(config.device)
-            word_pairs = samples[:,:2]
-            probs = model(word_pairs)
-            targets = samples[:,2].float()
-            loss = nn.BCELoss()(probs, targets)
 
-            global_step += 1
-            logger.add_scalar(f"train_loss", loss.item(), global_step)
-            logger.flush()
+            for mb_start in range(0, len(samples), config.minibatch_size):
+                mb_end = mb_start + config.minibatch_size
+                if mb_end > len(batch):
+                    break
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+                word_pairs = samples[mb_start:mb_end,:2]
+                targets = samples[mb_start:mb_end,2].float()
 
-            if global_step % len(dataloader_val) == 0:
+                probs = model(word_pairs)
+                loss = nn.BCELoss()(probs, targets)
+
+                global_step += 1
+                logger.add_scalar(f"train_loss", loss.item(), global_step)
+                logger.flush()
+
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+
+            if i > 0 and i % (10 * len(dataloader_val)) == 0:
                 val_loss = 0
                 loss_count = 0
                 model.eval()

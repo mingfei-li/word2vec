@@ -3,10 +3,11 @@ import torch
 
 class Config():
     def __init__(self):
-        self.run_id = 1
+        self.run_id = 2
         self.dataset = "Salesforce/wikitext"
         self.subset = "wikitext-103-v1"
         self.num_epochs = 10
+        self.minibatch_size = 32
         self.embedding_dim = 100
         self.window_size = 5
         self.limit = None
