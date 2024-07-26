@@ -67,8 +67,6 @@ if __name__ == "__main__":
 
             for mb_start in range(0, len(samples), config.minibatch_size):
                 mb_end = mb_start + config.minibatch_size
-                if mb_end > len(batch):
-                    break
 
                 word_pairs = samples[mb_start:mb_end,:2]
                 targets = samples[mb_start:mb_end,2].float()
@@ -84,7 +82,7 @@ if __name__ == "__main__":
                 loss.backward()
                 optimizer.step()
 
-            if i > 0 and i % (10 * len(dataloader_val)) == 0:
+            if i > 0 and i % len(dataloader_val) == 0:
                 val_loss = 0
                 loss_count = 0
                 model.eval()
