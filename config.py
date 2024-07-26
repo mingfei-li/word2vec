@@ -3,7 +3,7 @@ import torch
 
 class Config():
     def __init__(self):
-        self.run_id = 2
+        self.run_id = 1
         self.dataset = "Salesforce/wikitext"
         self.subset = "wikitext-103-v1"
         self.num_epochs = 10
