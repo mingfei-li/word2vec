@@ -104,6 +104,13 @@ if __name__ == "__main__":
                     logger.flush()
                 
                 analogy_eval.evaluate(model, logger, global_step)
+
+        model.eval()
+        torch.save(
+            model.state_dict(),
+            f"{config.base_dir}/model-checkpoint-{epoch}.pt",
+        )
         
+    model.eval()
     torch.save(model.state_dict(), f"{config.base_dir}/model.pt")
     logger.close()
