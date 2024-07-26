@@ -1,3 +1,4 @@
+from config import Config
 from dataset import SkipGramDataset
 from datasets import load_dataset
 from evals import AnalogyEval
@@ -14,55 +15,56 @@ import re
 import torch
 
 if __name__ == "__main__":
-    dataset = "Salesforce/wikitext"
-    subset = "wikitext-103-v1"
-    run_id = 1
-    base_dir = f"results/{subset}/{run_id}"
-    if not os.path.exists(base_dir):
-        os.makedirs(base_dir)
-
-    num_epochs = 5
-    embedding_dim = 100
-    limit = None
-
-    corpus = load_dataset(dataset, subset)
-    tokenizer = Tokenizer(
+    config = Config()
+    with open(f"{config.base_dir}/tokenizer.bin", "rb") as f:
+        tokenizer = pickle.load(f)
+    corpus = load_dataset(config.dataset, config.subset)
+    dataset_train = SkipGramDataset(
         corpus=corpus["train"],
-        num_workers=multiprocessing.cpu_count()-1,
-        limit=limit,
+        tokenizer=tokenizer,
+        device=config.device,
+        window_size=config.window_size,
+        limit=config.limit,
     )
-    with open(f"{base_dir}/tokenizer.bin", "wb") as f:
-        pickle.dump(tokenizer, f)
-
-    dataset_train = SkipGramDataset(corpus["train"], tokenizer, limit=limit)
     dataloader_train = DataLoader(
         dataset=dataset_train,
         batch_size=1,
         num_workers=multiprocessing.cpu_count()-1,
         shuffle=True,
         drop_last=True,
+        pin_memory=True,
     )
-    dataset_val = SkipGramDataset(corpus["validation"], tokenizer, limit=limit)
+    dataset_val = SkipGramDataset(
+        corpus=corpus["validation"],
+        tokenizer=tokenizer,
+        device=config.device,
+        window_size=config.window_size,
+        limit=config.limit,
+    )
     dataloader_val = DataLoader(
         dataset=dataset_val,
         batch_size=1,
         num_workers=multiprocessing.cpu_count()-1,
         shuffle=True,
         drop_last=True,
+        pin_memory=True,
     )
     analogy_eval = AnalogyEval(tokenizer)
 
-    logger = SummaryWriter(log_dir=f"{base_dir}/logs")
-    model = SkipGramModel(tokenizer.get_vocab_size(), embedding_dim)
+    logger = SummaryWriter(log_dir=f"{config.base_dir}/logs")
+    model = SkipGramModel(
+        tokenizer.get_vocab_size(),
+        config.embedding_dim,
+    ).to(config.device)
     optimizer = torch.optim.Adam(model.parameters())
     global_step = 0
-    for epoch in range(num_epochs):
+    for epoch in range(config.num_epochs):
         for batch in tqdm(dataloader_train, desc="Train batch"):
             if batch.nelement() == 0:
                 continue
 
             model.train()
-            samples = batch.squeeze(dim=0)
+            samples = batch.squeeze(dim=0).to(config.device)
             word_pairs = samples[:,:2]
             probs = model(word_pairs)
             targets = samples[:,2].float()
@@ -83,8 +85,8 @@ if __name__ == "__main__":
                 for batch in tqdm(dataloader_val, desc="Val batch"):
                     if batch.nelement() == 0:
                         continue
-
-                    samples = batch.squeeze(dim=0)
+                    
+                    samples = batch.squeeze(dim=0).to(config.device)
                     word_pairs = samples[:,:2]
                     with torch.no_grad():
                         probs = model(word_pairs)
@@ -103,5 +105,5 @@ if __name__ == "__main__":
                 
                 analogy_eval.evaluate(model, logger, global_step)
         
-    torch.save(model.state_dict(), f"{base_dir}/model.pt")
+    torch.save(model.state_dict(), f"{config.base_dir}/model.pt")
     logger.close()

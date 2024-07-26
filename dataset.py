@@ -3,7 +3,7 @@ import re
 import torch
 
 class SkipGramDataset():
-    def __init__(self, corpus, tokenizer, window_size=3, limit=None):
+    def __init__(self, corpus, tokenizer, device, window_size, limit=None):
         if limit is not None:
             self._corpus = []
             for i in range(limit):
@@ -12,6 +12,7 @@ class SkipGramDataset():
             self._corpus = corpus
         self._tokenizer = tokenizer
         self._window_size = window_size
+        self._device = device
     
     def __len__(self):
         return len(self._corpus)
@@ -24,11 +25,17 @@ class SkipGramDataset():
             index_i = self._tokenizer.get_index(word)
             if index_i is None:
                 continue
+            if random.random() < self._tokenizer.get_subsampling_prob(index_i):
+                continue
+
             for j in range(i-self._window_size, i+self._window_size+1):
                 if j>=0 and j<len(words) and j!=i:
                     index_j = self._tokenizer.get_index(words[j])
                     if index_j is None:
                         continue
+                    if random.random() < self._tokenizer.get_subsampling_prob(index_j):
+                        continue
+
                     samples.append([index_i, index_j, 1])
                     negatives = self._tokenizer.sample(3)
                     for negative in negatives:

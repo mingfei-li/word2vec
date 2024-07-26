@@ -32,6 +32,7 @@ class AnalogyEval():
             similarities = torch.matmul(embeddings, emb_target)
             sims, words = torch.topk(similarities, 1)
 
+            # print(f"evaluating analogy task: {a}-{b}::{c}-{d}. Pred={words[0]}")
             if words[0] == d:
                 passed += 1
             test_count += 1
