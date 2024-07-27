@@ -32,7 +32,7 @@ class AnalogyEval():
             emb_c = embeddings[c]
             emb_target = emb_b - emb_a + emb_c
 
-            similarities = torch.matmul(embeddings, emb_target)
+            similarities = torch.matmul(embeddings, emb_target) / torch.norm(emb_target, p=2)
             sims, words = torch.topk(similarities, 10)
             # print(f"evaluating analogy task: {a}-{b}::{c}-{d}. Pred={words[0]}")
 

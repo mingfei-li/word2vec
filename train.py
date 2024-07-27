@@ -22,6 +22,7 @@ if __name__ == "__main__":
     dataset_train = SkipGramDataset(
         corpus=corpus["train"],
         tokenizer=tokenizer,
+        neg_k=config.neg_k,
         device=config.device,
         window_size=config.window_size,
         limit=config.limit,
@@ -37,6 +38,7 @@ if __name__ == "__main__":
     dataset_val = SkipGramDataset(
         corpus=corpus["validation"],
         tokenizer=tokenizer,
+        neg_k=config.neg_k,
         device=config.device,
         window_size=config.window_size,
         limit=config.limit,
