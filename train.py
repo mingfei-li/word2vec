@@ -53,6 +53,8 @@ if __name__ == '__main__':
     )
     dataloader_val = DataLoader(
         dataset=dataset['validation'],
+        batch_size=config.batch_size,
+        num_workers=multiprocessing.cpu_count()-1,
         pin_memory=True,
         collate_fn=helper.collate,
     )
