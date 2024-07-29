@@ -15,10 +15,11 @@ class Vocab():
         words = re.sub(r"[^A-Za-z'\d\-]+", ' ', doc).lower().split()
         return Counter(words)
 
-    def __init__(self, corpus, num_workers, chunk_size=128, min_freq=50, limit=None):
+    def __init__(self, corpus, num_workers, min_freq=50, limit=None):
         if limit is None:
             limit = len(corpus)
         word_counter = Counter()
+        chunk_size = num_workers * 500
         for i in tqdm(range(0, limit, chunk_size), 'Building vocab'):
             with Pool(num_workers) as p:
                 chunk_counters = p.map(

@@ -53,9 +53,6 @@ if __name__ == '__main__':
     )
     dataloader_val = DataLoader(
         dataset=dataset['validation'],
-        #batch_size=config.batch_size,
-        #num_workers=multiprocessing.cpu_count()-1,
-        #shuffle=True,
         pin_memory=True,
         collate_fn=helper.collate,
     )
@@ -88,32 +85,32 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
 
-        #if i > 0 and i % config.eval_freq == 0:
-        val_loss = 0
-        loss_count = 0
-        model.eval()
+            if i > 0 and i % config.eval_freq == 0:
+                val_loss = 0
+                loss_count = 0
+                model.eval()
 
-        for word_pairs, labels in tqdm(dataloader_val, desc='Val batch'):
-            if labels.nelement() == 0:
-                continue
-            
-            word_pairs = word_pairs.to(config.device)
-            labels = labels.to(config.device)
-            with torch.no_grad():
-                probs = model(word_pairs)
-            loss = nn.BCELoss()(probs, labels)
-            val_loss += loss.item()
-            loss_count += 1
+                for word_pairs, labels in tqdm(dataloader_val, desc='Val batch'):
+                    if labels.nelement() == 0:
+                        continue
+                    
+                    word_pairs = word_pairs.to(config.device)
+                    labels = labels.to(config.device)
+                    with torch.no_grad():
+                        probs = model(word_pairs)
+                    loss = nn.BCELoss()(probs, labels)
+                    val_loss += loss.item()
+                    loss_count += 1
 
-        if loss_count > 0:
-            logger.add_scalar(
-                'val_loss',
-                val_loss / loss_count,
-                global_step,
-            )
-            logger.flush()
-        
-        analogy_eval.evaluate(model, logger, global_step)
+                if loss_count > 0:
+                    logger.add_scalar(
+                        'val_loss',
+                        val_loss / loss_count,
+                        global_step,
+                    )
+                    logger.flush()
+                
+                analogy_eval.evaluate(model, logger, global_step)
 
         model.eval()
         torch.save(
