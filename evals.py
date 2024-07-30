@@ -5,10 +5,9 @@ import random
 import torch
 
 class AnalogyEval():
-    def __init__(self, vocab, config):
+    def __init__(self, vocab):
         self._dataset = load_dataset('tomasmcz/word2vec_analogy')['train']
         self._vocab = vocab
-        self._config = config
         
     def evaluate(self, model, logger, global_step):
         model.eval()
@@ -22,6 +21,7 @@ class AnalogyEval():
         top1_sim = 0
         top10_hit = 0
         top10_sim = 0
+        target_sim = 0
         for row in tqdm(self._dataset, 'Analogy eval batch'):
             wa = row['word_a']
             wb = row['word_b']
@@ -40,6 +40,7 @@ class AnalogyEval():
             emb_d = embeddings[d]
             emb_target = emb_b - emb_a + emb_c
             emb_target /= torch.norm(emb_target, p=2)
+            target_sim += torch.dot(emb_d, emb_target)
 
             similarities = torch.matmul(embeddings, emb_target) 
             sims, words = torch.topk(similarities, 10)
@@ -81,6 +82,11 @@ class AnalogyEval():
             logger.add_scalar(
                 'analogy_top10_avg_sim',
                 float(top10_sim) / test_count,
+                global_step,
+            )
+            logger.add_scalar(
+                'target_sim',
+                float(target_sim) / test_count,
                 global_step,
             )
 

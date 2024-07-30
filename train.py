@@ -40,7 +40,7 @@ class SkipGramDataHelper():
 
 if __name__ == '__main__':
     config = Config()
-    with open(f'{config.base_dir}/../vocab.bin', 'rb') as f:
+    with open(f'{config.vocab_path}', 'rb') as f:
         vocab = pickle.load(f)
     helper = SkipGramDataHelper(vocab, config)
     dataset = load_dataset(config.dataset, config.subset)
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         pin_memory=True,
         collate_fn=helper.collate,
     )
-    analogy_eval = AnalogyEval(vocab, config)
+    analogy_eval = AnalogyEval(vocab)
 
     logger = SummaryWriter(log_dir=f'{config.base_dir}/logs')
     logging.basicConfig(filename=f'{config.base_dir}/logs/debug.log', level=logging.DEBUG)

@@ -2,6 +2,7 @@ from collections import Counter
 from config import Config
 from datasets import load_dataset
 from multiprocessing import Pool
+from transformers import AutoTokenizer
 from tqdm import tqdm
 import math
 import multiprocessing
@@ -12,12 +13,16 @@ import re
 
 class Vocab():
     def preprocess_doc(self, doc):
-        words = re.sub(r"[^A-Za-z'\d\-]+", ' ', doc).lower().split()
+        words = self._tokenizer.tokenize(doc)
+        words = [word for word in words if self._pattern.match(word)]
         return Counter(words)
 
     def __init__(self, corpus, num_workers, min_freq=50, limit=None):
         if limit is None:
             limit = len(corpus)
+        
+        self._tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
+        self._pattern = re.compile(r'^[a-z]*$')
         word_counter = Counter()
         chunk_size = num_workers * 500
         for i in tqdm(range(0, limit, chunk_size), 'Building vocab'):
@@ -94,6 +99,6 @@ if __name__ == '__main__':
     print(f'Sample words: {words}')
     print(f'Sample dropping_probs: {dropping_probs}')
 
-    with open(f'{config.base_dir}/vocab.bin', 'wb') as f:
+    with open(f'{config.vocab_path}', 'wb') as f:
         pickle.dump(vocab, f)
-    print(f'Vocab saved to {config.base_dir}/vocab.bin')
+    print(f'Vocab saved to {config.vocab_path}')

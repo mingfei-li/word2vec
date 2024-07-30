@@ -6,6 +6,7 @@ class Config():
         self.run_id = 7
         self.dataset = 'Salesforce/wikitext'
         self.subset = 'wikitext-103-raw-v1'
+        self.vocab = 'vocab-bert-1'
         self.num_epochs = 3
         self.embedding_dim = 300
         self.batch_size = 10
@@ -17,6 +18,7 @@ class Config():
         self.lr_decay = 0.99999
         self.limit = None
 
+        self.vocab_path = f'results/{self.subset}/{self.vocab}'
         self.base_dir = f'results/{self.subset}/{self.run_id}'
         if not os.path.exists(self.base_dir):
             os.makedirs(self.base_dir)
