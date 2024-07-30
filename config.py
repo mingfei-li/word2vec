@@ -3,16 +3,16 @@ import torch
 
 class Config():
     def __init__(self):
-        self.run_id = 4
+        self.run_id = 5
         self.dataset = 'Salesforce/wikitext'
         self.subset = 'wikitext-103-raw-v1'
         self.num_epochs = 3
         self.embedding_dim = 300
         self.batch_size = 10
-        self.window_size = 5
-        self.neg_k = 5
+        self.window_size = 10
+        self.neg_k = 15
         self.min_freq = 50
-        self.eval_freq = 5000
+        self.eval_freq = 10000
         self.lr = 2.5e-2
         self.lr_decay = 0.9999
         self.limit = None
