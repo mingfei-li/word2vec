@@ -3,7 +3,7 @@ import torch
 
 class Config():
     def __init__(self):
-        self.run_id = 6
+        self.run_id = 7
         self.dataset = 'Salesforce/wikitext'
         self.subset = 'wikitext-103-raw-v1'
         self.num_epochs = 3
@@ -13,7 +13,7 @@ class Config():
         self.neg_k = 15
         self.min_freq = 50
         self.eval_freq = 10000
-        self.lr = 2.5e-2
+        self.lr = 5e-3
         self.lr_decay = 0.99999
         self.limit = None
 

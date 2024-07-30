@@ -40,7 +40,7 @@ class SkipGramDataHelper():
 
 if __name__ == '__main__':
     config = Config()
-    with open(f'{config.base_dir}/vocab.bin', 'rb') as f:
+    with open(f'{config.base_dir}/../vocab.bin', 'rb') as f:
         vocab = pickle.load(f)
     helper = SkipGramDataHelper(vocab, config)
     dataset = load_dataset(config.dataset, config.subset)
