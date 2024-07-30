@@ -8,7 +8,7 @@ class Config():
         self.subset = 'wikitext-103-raw-v1'
         self.num_epochs = 3
         self.embedding_dim = 300
-        self.batch_size = 10
+        self.batch_size = 5
         self.window_size = 10
         self.neg_k = 15
         self.min_freq = 50
