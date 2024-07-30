@@ -86,7 +86,7 @@ if __name__ == '__main__':
             probs = model(word_pairs)
             loss = nn.BCELoss()(probs, labels)
 
-            global_step += 1
+            global_step += config.batch_size
             logger.add_scalar(f'train_loss', loss.item(), global_step)
             logger.add_scalar(f'lr', lr_scheduler.get_last_lr()[0], global_step)
             logger.flush()
