@@ -69,6 +69,10 @@ if __name__ == '__main__':
         config.embedding_dim,
     ).to(config.device)
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
+    lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
+        optimizer=optimizer,
+        gamma=0.9999,
+    )
     global_step = 0
     for epoch in range(config.num_epochs):
         for i, (word_pairs, labels) in enumerate(tqdm(dataloader_train, desc='Train batch')):
@@ -93,11 +97,13 @@ if __name__ == '__main__':
 
             global_step += 1
             logger.add_scalar(f'train_loss', loss.item(), global_step)
+            logger.add_scalar(f'lr', lr_scheduler.get_last_lr()[0], global_step)
             logger.flush()
 
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+            lr_scheduler.step()
 
             if i > 0 and i % config.eval_freq == 0:
                 val_loss = 0
