@@ -5,15 +5,16 @@ class Config():
     def __init__(self):
         self.run_id = 2
         self.dataset = 'Salesforce/wikitext'
-        self.subset = 'wikitext-2-raw-v1'
+        self.subset = 'wikitext-103-raw-v1'
         self.num_epochs = 3
         self.embedding_dim = 300
-        self.batch_size = 32
+        self.batch_size = 10
         self.window_size = 10
         self.neg_k = 15
         self.min_freq = 50
-        self.eval_freq = 100
+        self.eval_freq = 10000
         self.lr = 2.5e-2
+        self.lr_decay = 0.9999
         self.limit = None
 
         self.base_dir = f'results/{self.subset}/{self.run_id}'

@@ -71,7 +71,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
     lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
         optimizer=optimizer,
-        gamma=0.9999,
+        gamma=config.lr_decay,
     )
     global_step = 0
     for epoch in range(config.num_epochs):
@@ -86,15 +86,6 @@ if __name__ == '__main__':
             probs = model(word_pairs)
             loss = nn.BCELoss()(probs, labels)
 
-            if random.random() < 1e-2:
-                debug_logger = logging.getLogger('debug')
-                logging.basicConfig(filename=f'{config.base_dir}/logs/debug.log', level=logging.DEBUG)
-                for j in range(len(word_pairs)):
-                    debug_logger.debug(f'[{global_step}] Batch {i}, sample {j}')
-                    debug_logger.debug(f'word_pairs={vocab.get_word(word_pairs[j][0])}, {vocab.get_word(word_pairs[j][1])}')
-                    debug_logger.debug(f'probs={probs[j]:.5f}')
-                    debug_logger.debug(f'labels={labels[j]:.5f}')
-
             global_step += 1
             logger.add_scalar(f'train_loss', loss.item(), global_step)
             logger.add_scalar(f'lr', lr_scheduler.get_last_lr()[0], global_step)
@@ -106,6 +97,14 @@ if __name__ == '__main__':
             lr_scheduler.step()
 
             if i > 0 and i % config.eval_freq == 0:
+                debug_logger = logging.getLogger()
+                logging.basicConfig(filename=f'{config.base_dir}/logs/debug.log', level=logging.DEBUG)
+                for j in random.sample(range(len(word_pairs)), 20):
+                    debug_logger.debug(f'Batch {global_step}, sample {j}')
+                    debug_logger.debug(f'word_pairs={vocab.get_word(word_pairs[j][0])}, {vocab.get_word(word_pairs[j][1])}')
+                    debug_logger.debug(f'probs={probs[j]:.5f}')
+                    debug_logger.debug(f'labels={labels[j]:.5f}')
+
                 val_loss = 0
                 loss_count = 0
                 model.eval()

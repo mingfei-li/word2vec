@@ -56,8 +56,8 @@ class AnalogyEval():
                 top10_sim += sims[i].item() / 10
 
             if random.random() < 1e-3:
-                debug_logger = logging.getLogger('debug')
-                debug_logger.debug(f'[{global_step}] Evaluating analogy task: {wa}:{wb}::{wc}:{wd}')
+                debug_logger = logging.getLogger()
+                debug_logger.debug(f'Batch {global_step}: evaluating analogy task: {wa}:{wb}::{wc}:{wd}')
                 debug_logger.debug(f'torch.dot(emb_d, emb_target) = {torch.dot(emb_d, emb_target):.5f}')
                 for i in range(10):
                     debug_logger.debug(f'Similarity rank {i}: {self._vocab.get_word(words[i])} ({sims[i]:.5f})')
