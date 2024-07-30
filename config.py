@@ -3,17 +3,17 @@ import torch
 
 class Config():
     def __init__(self):
-        self.run_id = 1
+        self.run_id = 2
         self.dataset = 'Salesforce/wikitext'
-        self.subset = 'wikitext-103-raw-v1'
-        self.num_epochs = 5
+        self.subset = 'wikitext-2-raw-v1'
+        self.num_epochs = 3
         self.embedding_dim = 300
-        self.batch_size = 100
-        self.window_size = 5
-        self.neg_k = 5
+        self.batch_size = 32
+        self.window_size = 10
+        self.neg_k = 15
         self.min_freq = 50
-        self.eval_freq = 1000
-        self.lr = 1e-2
+        self.eval_freq = 100
+        self.lr = 2.5e-2
         self.limit = None
 
         self.base_dir = f'results/{self.subset}/{self.run_id}'

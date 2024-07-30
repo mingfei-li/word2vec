@@ -1,12 +1,14 @@
 from datasets import load_dataset
 from tqdm import tqdm
+import logging
 import random
 import torch
 
 class AnalogyEval():
-    def __init__(self, vocab):
+    def __init__(self, vocab, config):
         self._dataset = load_dataset('tomasmcz/word2vec_analogy')['train']
         self._vocab = vocab
+        self._config = config
         
     def evaluate(self, model, logger, global_step):
         model.eval()
@@ -21,21 +23,26 @@ class AnalogyEval():
         top10_hit = 0
         top10_sim = 0
         for row in tqdm(self._dataset, 'Analogy eval batch'):
-            a = self._vocab.get_id(row['word_a'])
-            b = self._vocab.get_id(row['word_b'])
-            c = self._vocab.get_id(row['word_c'])
-            d = self._vocab.get_id(row['word_d'])
+            wa = row['word_a']
+            wb = row['word_b']
+            wc = row['word_c']
+            wd = row['word_d']
+            a = self._vocab.get_id(wa)
+            b = self._vocab.get_id(wb)
+            c = self._vocab.get_id(wc)
+            d = self._vocab.get_id(wd)
             if a is None or b is None or c is None or d is None:
                 continue
 
             emb_a = embeddings[a]
             emb_b = embeddings[b]
             emb_c = embeddings[c]
+            emb_d = embeddings[d]
             emb_target = emb_b - emb_a + emb_c
+            emb_target /= torch.norm(emb_target, p=2)
 
-            similarities = torch.matmul(embeddings, emb_target) / torch.norm(emb_target, p=2)
+            similarities = torch.matmul(embeddings, emb_target) 
             sims, words = torch.topk(similarities, 10)
-            # print(f'evaluating analogy task: {a}-{b}::{c}-{d}. Pred={words[0]}')
 
             test_count += 1
             if words[0] == d:
@@ -47,6 +54,13 @@ class AnalogyEval():
                     break
             for i in range(10):
                 top10_sim += sims[i].item() / 10
+
+            if random.random() < 1e-3:
+                debug_logger = logging.getLogger('debug')
+                debug_logger.debug(f'[{global_step}] Evaluating analogy task: {wa}:{wb}::{wc}:{wd}')
+                debug_logger.debug(f'torch.dot(emb_d, emb_target) = {torch.dot(emb_d, emb_target):.5f}')
+                for i in range(10):
+                    debug_logger.debug(f'Similarity rank {i}: {self._vocab.get_word(words[i])} ({sims[i]:.5f})')
 
         if test_count > 0:
             logger.add_scalar(

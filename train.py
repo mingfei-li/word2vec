@@ -7,6 +7,7 @@ from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
+import logging
 import multiprocessing
 import os
 import pickle
@@ -58,9 +59,11 @@ if __name__ == '__main__':
         pin_memory=True,
         collate_fn=helper.collate,
     )
-    analogy_eval = AnalogyEval(vocab)
+    analogy_eval = AnalogyEval(vocab, config)
 
     logger = SummaryWriter(log_dir=f'{config.base_dir}/logs')
+    logging.basicConfig(filename=f'{config.base_dir}/logs/debug.log', level=logging.DEBUG)
+
     model = SkipGramModel(
         vocab.get_vocab_size(),
         config.embedding_dim,
@@ -78,6 +81,15 @@ if __name__ == '__main__':
 
             probs = model(word_pairs)
             loss = nn.BCELoss()(probs, labels)
+
+            if random.random() < 1e-2:
+                debug_logger = logging.getLogger('debug')
+                logging.basicConfig(filename=f'{config.base_dir}/logs/debug.log', level=logging.DEBUG)
+                for j in range(len(word_pairs)):
+                    debug_logger.debug(f'[{global_step}] Batch {i}, sample {j}')
+                    debug_logger.debug(f'word_pairs={vocab.get_word(word_pairs[j][0])}, {vocab.get_word(word_pairs[j][1])}')
+                    debug_logger.debug(f'probs={probs[j]:.5f}')
+                    debug_logger.debug(f'labels={labels[j]:.5f}')
 
             global_step += 1
             logger.add_scalar(f'train_loss', loss.item(), global_step)
