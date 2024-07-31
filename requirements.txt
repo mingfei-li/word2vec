@@ -1,5 +1,6 @@
 datasets
 gensim
+transformers
 torch
 torchtext
 tqdm
