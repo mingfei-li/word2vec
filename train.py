@@ -25,7 +25,7 @@ class SkipGramDataHelper():
         word_pairs = []
         labels = []
         for doc in batch:
-            word_ids = self._vocab.encode(doc['text'])
+            word_ids = self._vocab.encode(doc['text'][:self._config.max_len])
             for i, center in enumerate(word_ids):
                 ws = random.randint(1, self._config.window_size)
                 for j in range(max(0, i-ws), min(len(word_ids), i+ws+1)):
@@ -74,32 +74,31 @@ if __name__ == '__main__':
     lr_scheduler = torch.optim.lr_scheduler.LinearLR(
         optimizer=optimizer,
         start_factor=1,
-        end_factor=0.01,
-        total_iters=config.num_epochs,
+        end_factor=1e-3,
+        total_iters=config.num_epochs * len(dataloader_train),
     )
 
     global_step = 0
     for epoch in range(config.num_epochs):
         for i, (word_pairs, labels) in enumerate(tqdm(dataloader_train, desc='Train batch')):
-            if labels.nelement() == 0:
-                continue
+            if labels.nelement() != 0:
+                model.train()
+                word_pairs = word_pairs.to(config.device)
+                labels = labels.to(config.device)
 
-            model.train()
-            word_pairs = word_pairs.to(config.device)
-            labels = labels.to(config.device)
+                probs = model(word_pairs)
+                loss = nn.BCEWithLogitsLoss()(probs, labels)
 
-            probs = model(word_pairs)
-            loss = nn.BCEWithLogitsLoss()(probs, labels)
+                global_step += config.batch_size
+                logger.add_scalar(f'train_loss', loss.item(), global_step)
+                logger.add_scalar(f'lr', lr_scheduler.get_last_lr()[0], global_step)
+                logger.flush()
 
-            global_step += config.batch_size
-            logger.add_scalar(f'train_loss', loss.item(), global_step)
-            logger.add_scalar(f'lr', lr_scheduler.get_last_lr()[0], global_step)
-            logger.flush()
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-
+            lr_scheduler.step()
             if i > 0 and i % config.eval_freq == 0:
                 debug_logger = logging.getLogger()
                 logging.basicConfig(filename=f'{config.base_dir}/logs/debug.log', level=logging.DEBUG)
@@ -135,7 +134,6 @@ if __name__ == '__main__':
                 
                 analogy_eval.evaluate(model, logger, global_step)
 
-        lr_scheduler.step()
         model.eval()
         torch.save(
             model.state_dict(),

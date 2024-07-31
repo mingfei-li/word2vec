@@ -96,7 +96,7 @@ class Vocab():
 
     def encode(self, doc):
         words = self._tokenizer.tokenize(doc)
-        ids = [self.get_id(word) for word in words]
+        ids = [self.get_id(word) for word in words if self._pattern.match(word)]
         return [id for id in ids if id is not None and random.random() > self._dropping_prob[id]]
 
 def print_vocab(vocab):
