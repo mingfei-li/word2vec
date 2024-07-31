@@ -17,12 +17,14 @@ class Vocab():
         words = [word for word in words if self._pattern.match(word)]
         return Counter(words)
 
-    def __init__(self, corpus, num_workers, min_freq=50, limit=None):
-        if limit is None:
-            limit = len(corpus)
-        
+    def __init__(self):
         self._tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
         self._pattern = re.compile(r'^[a-z]*$')
+
+    def build(self, corpus, num_workers, min_freq, limit=None):
+        if limit is None:
+            limit = len(corpus)
+
         word_counter = Counter()
         chunk_size = num_workers * 500
         for i in tqdm(range(0, limit, chunk_size), 'Building vocab'):
@@ -50,6 +52,24 @@ class Vocab():
         total_prob = sum(self._neg_sampling_prob)
         for id in range(len(self._neg_sampling_prob)):
             self._neg_sampling_prob[id] /= total_prob
+    
+    def save(self, path):
+        data = [
+            self._id_to_word,
+            self._word_to_id,
+            self._neg_sampling_prob,
+            self._dropping_prob,
+        ]
+        with open(path, 'wb') as f:
+            pickle.dump(data, f)
+
+    def load(self, path):
+        with open(path, 'rb') as f:
+            data = pickle.load(f)
+        self._id_to_word = data[0]
+        self._word_to_id = data[1]
+        self._neg_sampling_prob = data[2]
+        self._dropping_prob = data[3]
         
     def get_id(self, word):
         word = word.lower()
@@ -74,22 +94,12 @@ class Vocab():
     def get_dropping_prob(self, id):
         return self._dropping_prob[id]
 
-    def tokenize_and_get_word_ids(self, doc):
-        words = re.sub(r"[^A-Za-z'\d\-]+", ' ', doc).lower().split()
+    def encode(self, doc):
+        words = self._tokenizer.tokenize(doc)
         ids = [self.get_id(word) for word in words]
         return [id for id in ids if id is not None and random.random() > self._dropping_prob[id]]
 
-
-if __name__ == '__main__':
-    config = Config()
-    corpus = load_dataset(config.dataset, config.subset)
-    vocab = Vocab(
-        corpus=corpus['train'],
-        num_workers=multiprocessing.cpu_count()-1,
-        min_freq=config.min_freq,
-        limit=config.limit,
-    )
-
+def print_vocab(vocab):
     ids = vocab.sample(10)
     words = [vocab.get_word(id) for id in ids]
     dropping_probs = [vocab.get_dropping_prob(id) for id in ids]
@@ -99,6 +109,23 @@ if __name__ == '__main__':
     print(f'Sample words: {words}')
     print(f'Sample dropping_probs: {dropping_probs}')
 
-    with open(f'{config.vocab_path}', 'wb') as f:
-        pickle.dump(vocab, f)
+if __name__ == '__main__':
+    config = Config()
+    corpus = load_dataset(config.dataset, config.subset)
+    vocab = Vocab()
+
+    vocab.build(
+        corpus=corpus['train'],
+        num_workers=multiprocessing.cpu_count()-1,
+        min_freq=config.min_freq,
+        limit=config.limit,
+    )
+
+    print_vocab(vocab)
+
+    vocab.save(config.vocab_path)
     print(f'Vocab saved to {config.vocab_path}')
+
+    vocab_copy = Vocab()
+    vocab_copy.load(config.vocab_path)
+    print_vocab(vocab_copy)

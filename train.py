@@ -3,6 +3,7 @@ from datasets import load_dataset
 from evals import AnalogyEval
 from model import SkipGramModel
 from vocab import Vocab
+from transformers import AutoTokenizer
 from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
@@ -24,7 +25,7 @@ class SkipGramDataHelper():
         word_pairs = []
         labels = []
         for doc in batch:
-            word_ids = self._vocab.tokenize_and_get_word_ids(doc['text'])
+            word_ids = self._vocab.encode(doc['text'])
             for i, center in enumerate(word_ids):
                 ws = random.randint(1, self._config.window_size)
                 for j in range(max(0, i-ws), min(len(word_ids), i+ws+1)):
@@ -40,8 +41,8 @@ class SkipGramDataHelper():
 
 if __name__ == '__main__':
     config = Config()
-    with open(f'{config.vocab_path}', 'rb') as f:
-        vocab = pickle.load(f)
+    vocab = Vocab()
+    vocab.load(config.vocab_path)
     helper = SkipGramDataHelper(vocab, config)
     dataset = load_dataset(config.dataset, config.subset)
     dataloader_train = DataLoader(
@@ -73,6 +74,7 @@ if __name__ == '__main__':
         optimizer=optimizer,
         gamma=config.lr_decay,
     )
+    print('before training loop')
     global_step = 0
     for epoch in range(config.num_epochs):
         for i, (word_pairs, labels) in enumerate(tqdm(dataloader_train, desc='Train batch')):

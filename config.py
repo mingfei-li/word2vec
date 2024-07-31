@@ -6,7 +6,7 @@ class Config():
         self.run_id = 7
         self.dataset = 'Salesforce/wikitext'
         self.subset = 'wikitext-103-raw-v1'
-        self.vocab = 'vocab-bert-1'
+        self.vocab = 'vocab-bert-v2'
         self.num_epochs = 3
         self.embedding_dim = 300
         self.batch_size = 10
