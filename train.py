@@ -71,13 +71,20 @@ if __name__ == '__main__':
     model = SkipGramModel(
         vocab.get_vocab_size(),
         config.embedding_dim,
-    ).to(config.device)
+    )
+    if os.path.exists(f'{config.base_dir}/{config.intial_model}'):
+        model.eval()
+        model.load_state_dict(torch.load(
+            f'{config.base_dir}/{config.intial_model}',
+            map_location=torch.device(config.device),
+        ))
+    model.to(config.device)
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
     lr_scheduler = torch.optim.lr_scheduler.LinearLR(
         optimizer=optimizer,
         start_factor=1,
         end_factor=1e-3,
-        total_iters=config.num_epochs / 10 * len(dataloader_train),
+        total_iters=config.num_epochs * len(dataloader_train),
     )
 
     global_step = 0
