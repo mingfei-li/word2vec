@@ -89,7 +89,7 @@ if __name__ == '__main__':
             labels = labels.to(config.device)
 
             probs = model(word_pairs)
-            loss = nn.BCELoss()(probs, labels)
+            loss = nn.BCEWithLogitsLoss()(probs, labels)
 
             global_step += config.batch_size
             logger.add_scalar(f'train_loss', loss.item(), global_step)
@@ -121,7 +121,7 @@ if __name__ == '__main__':
                     labels = labels.to(config.device)
                     with torch.no_grad():
                         probs = model(word_pairs)
-                    loss = nn.BCELoss()(probs, labels)
+                    loss = nn.BCEWithLogitsLoss()(probs, labels)
                     val_loss += loss.item()
                     loss_count += 1
 

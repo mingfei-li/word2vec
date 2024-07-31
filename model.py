@@ -13,7 +13,7 @@ class SkipGramModel(nn.Module):
             self.context_embedding(x[:,0]) * self.target_embedding(x[:,1]),
             dim=1,
         )
-        return torch.sigmoid(logits)
+        return logits
 
     def get_embeddings(self):
         return (self.context_embedding.weight + self.target_embedding.weight) / 2
