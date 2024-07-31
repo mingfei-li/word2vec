@@ -120,7 +120,7 @@ if __name__ == '__main__':
                 loss_count = 0
                 model.eval()
 
-                for word_pairs, labels in tqdm(dataloader_val, desc='Val batch'):
+                for word_pairs, labels, _ in tqdm(dataloader_val, desc='Val batch'):
                     if labels.nelement() == 0:
                         continue
                     
