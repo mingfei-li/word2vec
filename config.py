@@ -3,19 +3,19 @@ import torch
 
 class Config():
     def __init__(self):
-        self.run_id = 13
+        self.run_id = 14
         self.dataset = 'Salesforce/wikitext'
         self.subset = 'wikitext-103-raw-v1'
         self.vocab = 'vocab-bert-v2'
         self.num_epochs = 10
         self.embedding_dim = 300
-        self.batch_size = 10
+        self.batch_size = 100
         self.window_size = 10
         self.neg_k = 15
         self.min_freq = 50
         self.max_len = 512
-        self.eval_freq = 10_000
-        self.lr = 1e-2
+        self.eval_freq = 1000
+        self.lr = 2.5e-2
         self.limit = None
 
         self.vocab_path = f'results/{self.subset}/{self.vocab}'
