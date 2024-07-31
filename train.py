@@ -40,6 +40,7 @@ class SkipGramDataHelper():
         return torch.tensor(word_pairs), torch.tensor(labels).float()
 
 if __name__ == '__main__':
+    os.environ["TOKENIZERS_PARALLELISM"] = "false"
     config = Config()
     vocab = Vocab()
     vocab.load(config.vocab_path)
@@ -70,9 +71,11 @@ if __name__ == '__main__':
         config.embedding_dim,
     ).to(config.device)
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
-    lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
+    lr_scheduler = torch.optim.lr_scheduler.LinearLR(
         optimizer=optimizer,
-        gamma=config.lr_decay,
+        start_factor=1,
+        end_factor=0.01,
+        total_iters=config.num_epochs,
     )
 
     global_step = 0
@@ -96,7 +99,6 @@ if __name__ == '__main__':
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            lr_scheduler.step()
 
             if i > 0 and i % config.eval_freq == 0:
                 debug_logger = logging.getLogger()
@@ -133,6 +135,7 @@ if __name__ == '__main__':
                 
                 analogy_eval.evaluate(model, logger, global_step)
 
+        lr_scheduler.step()
         model.eval()
         torch.save(
             model.state_dict(),
