@@ -76,8 +76,8 @@ if __name__ == '__main__':
     lr_scheduler = torch.optim.lr_scheduler.LinearLR(
         optimizer=optimizer,
         start_factor=1,
-        end_factor=0,
-        total_iters=config.num_epochs * len(dataloader_train),
+        end_factor=1e-3,
+        total_iters=config.num_epochs / 10 * len(dataloader_train),
     )
 
     global_step = 0
