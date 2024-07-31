@@ -24,8 +24,10 @@ class SkipGramDataHelper():
     def collate(self, batch):
         word_pairs = []
         labels = []
+        word_count = 0
         for doc in batch:
             word_ids = self._vocab.encode(doc['text'][:self._config.max_len])
+            word_count += len(word_ids)
             for i, center in enumerate(word_ids):
                 ws = random.randint(1, self._config.window_size)
                 for j in range(max(0, i-ws), min(len(word_ids), i+ws+1)):
@@ -37,7 +39,7 @@ class SkipGramDataHelper():
                             word_pairs.append([center, negative])
                             labels.append(0)
 
-        return torch.tensor(word_pairs), torch.tensor(labels).float()
+        return torch.tensor(word_pairs), torch.tensor(labels).float(), word_count
 
 if __name__ == '__main__':
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -74,13 +76,15 @@ if __name__ == '__main__':
     lr_scheduler = torch.optim.lr_scheduler.LinearLR(
         optimizer=optimizer,
         start_factor=1,
-        end_factor=1e-3,
+        end_factor=0,
         total_iters=config.num_epochs * len(dataloader_train),
     )
 
     global_step = 0
+    total_samples = 0
+    total_words = 0
     for epoch in range(config.num_epochs):
-        for i, (word_pairs, labels) in enumerate(tqdm(dataloader_train, desc='Train batch')):
+        for i, (word_pairs, labels, word_count) in enumerate(tqdm(dataloader_train, desc='Train batch')):
             if labels.nelement() != 0:
                 model.train()
                 word_pairs = word_pairs.to(config.device)
@@ -90,8 +94,12 @@ if __name__ == '__main__':
                 loss = nn.BCEWithLogitsLoss()(probs, labels)
 
                 global_step += config.batch_size
+                total_samples += len(labels)
+                total_words += word_count
                 logger.add_scalar(f'train_loss', loss.item(), global_step)
                 logger.add_scalar(f'lr', lr_scheduler.get_last_lr()[0], global_step)
+                logger.add_scalar(f'train_samples', total_samples, global_step)
+                logger.add_scalar(f'train_words', total_words, global_step)
                 logger.flush()
 
                 optimizer.zero_grad()
