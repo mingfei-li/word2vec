@@ -74,7 +74,7 @@ if __name__ == '__main__':
         optimizer=optimizer,
         gamma=config.lr_decay,
     )
-    print('before training loop')
+
     global_step = 0
     for epoch in range(config.num_epochs):
         for i, (word_pairs, labels) in enumerate(tqdm(dataloader_train, desc='Train batch')):
