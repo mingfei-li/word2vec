@@ -21,7 +21,7 @@ class Vocab():
         self._tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
         self._pattern = re.compile(r'^[a-z]*$')
 
-    def build(self, corpus, num_workers, min_freq, limit=None):
+    def build(self, corpus, num_workers, vocab_cap, limit=None):
         if limit is None:
             limit = len(corpus)
 
@@ -36,7 +36,9 @@ class Vocab():
                 for counter in chunk_counters:
                     word_counter += counter
         
-        self._id_to_word = [word for word, count in word_counter.items() if count >= min_freq]
+        corpus_size = word_counter.total()
+        word_counter = Counter(dict(word_counter.most_common(vocab_cap)))
+        self._id_to_word = [word for word, count in word_counter.items()]
         self._word_to_id = {}
         for id, word in enumerate(self._id_to_word):
             self._word_to_id[word] = id
@@ -45,13 +47,14 @@ class Vocab():
         self._dropping_prob = [None] * len(self._id_to_word)
         total = word_counter.total()
         for word, count in word_counter.items():
-            if count >= min_freq:
-                id = self._word_to_id[word]
-                self._neg_sampling_prob[id] = count ** 0.75
-                self._dropping_prob[id] = max(0, 1 - math.sqrt(1e-5 * total / count))
+            id = self._word_to_id[word]
+            self._neg_sampling_prob[id] = count ** 0.75
+            self._dropping_prob[id] = max(0, 1 - math.sqrt(1e-5 * total / count))
         total_prob = sum(self._neg_sampling_prob)
         for id in range(len(self._neg_sampling_prob)):
             self._neg_sampling_prob[id] /= total_prob
+
+        return corpus_size
     
     def save(self, path):
         data = [
@@ -62,6 +65,11 @@ class Vocab():
         ]
         with open(path, 'wb') as f:
             pickle.dump(data, f)
+
+    def save_word_list(self, path):
+        with open(path, 'w') as f:
+            for id in range(len(self._id_to_word)):
+                f.write(f'{self._id_to_word[id]}, {self._neg_sampling_prob[id]}\n')
 
     def load(self, path):
         with open(path, 'rb') as f:
@@ -103,7 +111,6 @@ def print_vocab(vocab):
     ids = vocab.sample(10)
     words = [vocab.get_word(id) for id in ids]
     dropping_probs = [vocab.get_dropping_prob(id) for id in ids]
-    print(f'Vocab built.')
     print(f'Size: {vocab.get_vocab_size()}')
     print(f'Sample ids: {ids}')
     print(f'Sample words: {words}')
@@ -114,13 +121,14 @@ if __name__ == '__main__':
     corpus = load_dataset(config.dataset, config.subset)
     vocab = Vocab()
 
-    vocab.build(
+    corpus_size = vocab.build(
         corpus=corpus['train'],
         num_workers=multiprocessing.cpu_count()-1,
-        min_freq=config.min_freq,
+        vocab_cap=config.vocab_cap,
         limit=config.limit,
     )
 
+    print(f'Finished building vocab from {corpus_size} words')
     print_vocab(vocab)
 
     vocab.save(config.vocab_path)

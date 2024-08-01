@@ -46,6 +46,8 @@ if __name__ == '__main__':
     config = Config()
     vocab = Vocab()
     vocab.load(config.vocab_path)
+    vocab.save_word_list(f'{config.vocab_path}-word-list.txt')
+    exit()
     helper = SkipGramDataHelper(vocab, config)
     dataset = load_dataset(config.dataset, config.subset)
     dataloader_train = DataLoader(
@@ -80,11 +82,9 @@ if __name__ == '__main__':
         ))
     model.to(config.device)
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
-    lr_scheduler = torch.optim.lr_scheduler.LinearLR(
+    lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
         optimizer=optimizer,
-        start_factor=1,
-        end_factor=1e-3,
-        total_iters=config.num_epochs * len(dataloader_train),
+        gamma=1e-3 ** (1 / (config.num_epochs * len(dataloader_train))),
     )
 
     global_step = 0

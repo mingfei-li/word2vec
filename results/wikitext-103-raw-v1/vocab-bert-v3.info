@@ -1,0 +1,10 @@
+Finished building vocab from 83,291,285 words
+Size: 21733
+Sample ids: [1966, 16270, 4100, 243, 2430, 1161, 116, 2908, 348, 22]
+Sample words: ['ideas', 'ignorant', 'neo', 'near', 'tests', 'discovered', 'said', 'costs', 'forces', 'had']
+Sample dropping_probs: [0.6127800277223642, 0, 0.4191831111234693, 0.8419370765938001, 0.5660483825003704, 0.697262917010067, 0.879125222472158, 0.5252840761746733, 0.8177159787709842, 0.9468767944556818]
+Vocab saved to results/wikitext-103-raw-v1/vocab-bert-v3
+Size: 21733
+Sample ids: [12942, 4877, 17067, 8, 859, 32, 5405, 105, 16254, 103]
+Sample words: ['limp', 'banned', 'sampson', 'on', 'van', 'after', 'manuscript', 'united', 'molina', 'became']
+Sample dropping_probs: [0, 0.35675281587036045, 0, 0.967158046845793, 0.7325692216818985, 0.9342316808714326, 0.3144045567988736, 0.8854130106203199, 0, 0.8857672160779138]
