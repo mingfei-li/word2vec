@@ -46,20 +46,19 @@ if __name__ == '__main__':
     config = Config()
     vocab = Vocab()
     vocab.load(config.vocab_path)
-    vocab.save_word_list(f'{config.vocab_path}-word-list.txt')
-    exit()
     helper = SkipGramDataHelper(vocab, config)
-    dataset = load_dataset(config.dataset, config.subset)
+    train_dataset = load_dataset(config.train_dataset, config.train_subset)
     dataloader_train = DataLoader(
-        dataset=dataset['train'],
+        dataset=train_dataset['train'],
         batch_size=config.batch_size,
         num_workers=multiprocessing.cpu_count()-1,
         shuffle=True,
         pin_memory=True,
         collate_fn=helper.collate,
     )
+    val_dataset = load_dataset(config.val_dataset, config.val_subset)
     dataloader_val = DataLoader(
-        dataset=dataset['validation'],
+        dataset=val_dataset['validation'],
         batch_size=config.batch_size,
         num_workers=multiprocessing.cpu_count()-1,
         pin_memory=True,
@@ -84,7 +83,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
     lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
         optimizer=optimizer,
-        gamma=1e-3 ** (1 / (config.num_epochs * len(dataloader_train))),
+        gamma=1e-5 ** (1 / (config.num_epochs * len(dataloader_train))),
     )
 
     global_step = 0
