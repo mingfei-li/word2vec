@@ -42,7 +42,7 @@ class SkipGramDataHelper():
         return torch.tensor(word_pairs), torch.tensor(labels).float(), word_count
 
 if __name__ == '__main__':
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    os.environ['TOKENIZERS_PARALLELISM'] = 'false'
     config = Config()
     vocab = Vocab()
     vocab.load(config.vocab_path)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     total_samples = 0
     total_words = 0
     for epoch in range(config.num_epochs):
-        for i, (word_pairs, labels, word_count) in enumerate(tqdm(dataloader_train, desc='Train batch')):
+        for i, (word_pairs, labels, word_count) in enumerate(tqdm(dataloader_train, f'Epoch {epoch}')):
             if labels.nelement() != 0:
                 model.train()
                 word_pairs = word_pairs.to(config.device)
