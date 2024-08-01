@@ -83,7 +83,7 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(model.parameters(), lr=config.lr)
     lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
         optimizer=optimizer,
-        gamma=1e-5 ** (1 / (config.num_epochs * len(dataloader_train))),
+        gamma=1e-3 ** (1 / (config.num_epochs * len(dataloader_train))),
     )
 
     global_step = 0
