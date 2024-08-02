@@ -68,8 +68,7 @@ class Vocab():
 
     def save_word_list(self, path):
         with open(path, 'w') as f:
-            for id in range(len(self._id_to_word)):
-                f.write(f'{self._id_to_word[id]}, {self._neg_sampling_prob[id]}\n')
+            f.write(str(sorted(self._id_to_word)))
 
     def load(self, path):
         with open(path, 'rb') as f:
@@ -118,7 +117,7 @@ def print_vocab(vocab):
 
 if __name__ == '__main__':
     config = Config()
-    corpus = load_dataset(config.dataset, config.subset)
+    corpus = load_dataset(config.train_dataset, config.train_subset)
     vocab = Vocab()
 
     corpus_size = vocab.build(
@@ -133,6 +132,7 @@ if __name__ == '__main__':
 
     vocab.save(config.vocab_path)
     print(f'Vocab saved to {config.vocab_path}')
+    vocab.save_word_list(f'{config.vocab_path}-word-list.txt')
 
     vocab_copy = Vocab()
     vocab_copy.load(config.vocab_path)

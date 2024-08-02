@@ -7,19 +7,19 @@ class Config():
         # self.train_dataset = 'wikimedia/wikipedia'
         # self.train_subset = '20231101.en'
         self.train_dataset = 'Salesforce/wikitext'
-        self.train_subset = 'wikitext-103-raw-v1'
+        self.train_subset = 'wikitext-2-raw-v1'
         self.val_dataset = 'Salesforce/wikitext'
-        self.val_subset = 'wikitext-103-raw-v1'
+        self.val_subset = 'wikitext-2-raw-v1'
         self.vocab = 'vocab-bert-v3'
-        self.num_epochs = 50
+        self.num_epochs = 100
         self.embedding_dim = 300
-        self.batch_size = 100
+        self.batch_size = 1
         self.window_size = 10
         self.neg_k = 15
         self.vocab_cap = 50_000
         self.max_len = 512
         self.eval_freq = 1000
-        self.lr = 0.025
+        self.lr = 1e-3
         self.limit = None
 
         self.vocab_path = f'results/{self.train_subset}/{self.vocab}'

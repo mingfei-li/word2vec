@@ -43,6 +43,7 @@ class AnalogyEval():
             target_sim += torch.dot(emb_d, emb_target)
 
             similarities = torch.matmul(embeddings, emb_target) 
+            similarities[[a, b, c]] = -torch.inf
             sims, words = torch.topk(similarities, 10)
 
             test_count += 1

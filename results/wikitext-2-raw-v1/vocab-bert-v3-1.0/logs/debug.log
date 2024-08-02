@@ -1,0 +1,2712 @@
+DEBUG:root:Batch 475, sample 796
+DEBUG:root:word_pairs=yellow, officer
+DEBUG:root:probs=0.99990
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 71
+DEBUG:root:word_pairs=weakened, in
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 1447
+DEBUG:root:word_pairs=plagued, transaction
+DEBUG:root:probs=0.95108
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 1321
+DEBUG:root:word_pairs=locus, acquired
+DEBUG:root:probs=0.95774
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 1428
+DEBUG:root:word_pairs=plagued, turing
+DEBUG:root:probs=0.99998
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 355
+DEBUG:root:word_pairs=mongols, did
+DEBUG:root:probs=0.99996
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 1538
+DEBUG:root:word_pairs=plagued, sex
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 768
+DEBUG:root:word_pairs=yellow, shandong
+DEBUG:root:probs=0.99025
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 475, sample 1580
+DEBUG:root:word_pairs=plagued, before
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 153
+DEBUG:root:word_pairs=weakened, dion
+DEBUG:root:probs=0.00528
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 2365
+DEBUG:root:word_pairs=chancellor, il
+DEBUG:root:probs=0.99878
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 1502
+DEBUG:root:word_pairs=plagued, which
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 76
+DEBUG:root:word_pairs=weakened, grandson
+DEBUG:root:probs=0.22250
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 1409
+DEBUG:root:word_pairs=plagued, lamps
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 2211
+DEBUG:root:word_pairs=ins, organ
+DEBUG:root:probs=0.41592
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 480
+DEBUG:root:word_pairs=mongols, plagued
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 475, sample 1091
+DEBUG:root:word_pairs=swarm, provide
+DEBUG:root:probs=0.99636
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 637
+DEBUG:root:word_pairs=culminating, feel
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 852
+DEBUG:root:word_pairs=devastated, support
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 475, sample 704
+DEBUG:root:word_pairs=yellow, pressure
+DEBUG:root:probs=0.00003
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 475: evaluating analogy task: Chicago:Illinois::Miami:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05937
+DEBUG:root:Similarity rank 0: blended (0.24227)
+DEBUG:root:Similarity rank 1: coated (0.23833)
+DEBUG:root:Similarity rank 2: mcgregor (0.21700)
+DEBUG:root:Similarity rank 3: susan (0.21175)
+DEBUG:root:Similarity rank 4: aa (0.20706)
+DEBUG:root:Similarity rank 5: straightforward (0.20493)
+DEBUG:root:Similarity rank 6: authorised (0.19737)
+DEBUG:root:Similarity rank 7: moist (0.19593)
+DEBUG:root:Similarity rank 8: constructed (0.19258)
+DEBUG:root:Similarity rank 9: josh (0.19190)
+DEBUG:root:Batch 475: evaluating analogy task: apparent:apparently::unfortunate:unfortunately
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02723
+DEBUG:root:Similarity rank 0: selection (0.25861)
+DEBUG:root:Similarity rank 1: likelihood (0.23337)
+DEBUG:root:Similarity rank 2: readiness (0.23015)
+DEBUG:root:Similarity rank 3: wyatt (0.21239)
+DEBUG:root:Similarity rank 4: inhabit (0.21126)
+DEBUG:root:Similarity rank 5: saber (0.20897)
+DEBUG:root:Similarity rank 6: xx (0.20525)
+DEBUG:root:Similarity rank 7: switched (0.19321)
+DEBUG:root:Similarity rank 8: xvi (0.19306)
+DEBUG:root:Similarity rank 9: reformer (0.19227)
+DEBUG:root:Batch 475: evaluating analogy task: most:mostly::complete:completely
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08650
+DEBUG:root:Similarity rank 0: motors (0.22548)
+DEBUG:root:Similarity rank 1: armory (0.22018)
+DEBUG:root:Similarity rank 2: jumped (0.20305)
+DEBUG:root:Similarity rank 3: ck (0.19624)
+DEBUG:root:Similarity rank 4: expand (0.19402)
+DEBUG:root:Similarity rank 5: scenic (0.18822)
+DEBUG:root:Similarity rank 6: transaction (0.18771)
+DEBUG:root:Similarity rank 7: streak (0.18428)
+DEBUG:root:Similarity rank 8: ate (0.18395)
+DEBUG:root:Similarity rank 9: conversions (0.18227)
+DEBUG:root:Batch 475: evaluating analogy task: hot:hottest::great:greatest
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05553
+DEBUG:root:Similarity rank 0: toilets (0.23546)
+DEBUG:root:Similarity rank 1: triumph (0.22480)
+DEBUG:root:Similarity rank 2: arturo (0.21790)
+DEBUG:root:Similarity rank 3: garde (0.21460)
+DEBUG:root:Similarity rank 4: dex (0.21221)
+DEBUG:root:Similarity rank 5: purchase (0.20913)
+DEBUG:root:Similarity rank 6: convoys (0.20249)
+DEBUG:root:Similarity rank 7: geneva (0.20145)
+DEBUG:root:Similarity rank 8: carts (0.19490)
+DEBUG:root:Similarity rank 9: robot (0.19302)
+DEBUG:root:Batch 475: evaluating analogy task: old:oldest::bright:brightest
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01481
+DEBUG:root:Similarity rank 0: skye (0.23828)
+DEBUG:root:Similarity rank 1: laureate (0.22024)
+DEBUG:root:Similarity rank 2: answer (0.21959)
+DEBUG:root:Similarity rank 3: children (0.21262)
+DEBUG:root:Similarity rank 4: clare (0.20546)
+DEBUG:root:Similarity rank 5: interstate (0.20376)
+DEBUG:root:Similarity rank 6: agitation (0.19494)
+DEBUG:root:Similarity rank 7: parted (0.19489)
+DEBUG:root:Similarity rank 8: hundreds (0.19127)
+DEBUG:root:Similarity rank 9: advisors (0.19070)
+DEBUG:root:Batch 475: evaluating analogy task: look:looking::walk:walking
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01457
+DEBUG:root:Similarity rank 0: liga (0.20968)
+DEBUG:root:Similarity rank 1: encompasses (0.20166)
+DEBUG:root:Similarity rank 2: august (0.20101)
+DEBUG:root:Similarity rank 3: daring (0.19671)
+DEBUG:root:Similarity rank 4: cornerback (0.19564)
+DEBUG:root:Similarity rank 5: rosemary (0.19502)
+DEBUG:root:Similarity rank 6: lengthy (0.19288)
+DEBUG:root:Similarity rank 7: labs (0.19214)
+DEBUG:root:Similarity rank 8: quad (0.18792)
+DEBUG:root:Similarity rank 9: tuesday (0.18715)
+DEBUG:root:Batch 475: evaluating analogy task: Australia:Australian::France:French
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.09033
+DEBUG:root:Similarity rank 0: verified (0.22410)
+DEBUG:root:Similarity rank 1: bergman (0.20716)
+DEBUG:root:Similarity rank 2: view (0.20110)
+DEBUG:root:Similarity rank 3: fuselage (0.19835)
+DEBUG:root:Similarity rank 4: vin (0.19014)
+DEBUG:root:Similarity rank 5: nominations (0.18849)
+DEBUG:root:Similarity rank 6: trophies (0.18780)
+DEBUG:root:Similarity rank 7: darkening (0.18773)
+DEBUG:root:Similarity rank 8: kobe (0.18560)
+DEBUG:root:Similarity rank 9: boeing (0.18518)
+DEBUG:root:Batch 475: evaluating analogy task: England:English::Malta:Maltese
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.10024
+DEBUG:root:Similarity rank 0: celebrating (0.23665)
+DEBUG:root:Similarity rank 1: ankles (0.23097)
+DEBUG:root:Similarity rank 2: indochina (0.21021)
+DEBUG:root:Similarity rank 3: olson (0.20364)
+DEBUG:root:Similarity rank 4: tre (0.20302)
+DEBUG:root:Similarity rank 5: bluff (0.20235)
+DEBUG:root:Similarity rank 6: raises (0.19997)
+DEBUG:root:Similarity rank 7: nightly (0.19220)
+DEBUG:root:Similarity rank 8: ranks (0.19168)
+DEBUG:root:Similarity rank 9: dolls (0.18697)
+DEBUG:root:Batch 475: evaluating analogy task: Malta:Maltese::Portugal:Portuguese
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01626
+DEBUG:root:Similarity rank 0: subject (0.22820)
+DEBUG:root:Similarity rank 1: irritated (0.22222)
+DEBUG:root:Similarity rank 2: creatures (0.20838)
+DEBUG:root:Similarity rank 3: alyssa (0.20691)
+DEBUG:root:Similarity rank 4: evangelical (0.20451)
+DEBUG:root:Similarity rank 5: glacial (0.19965)
+DEBUG:root:Similarity rank 6: prom (0.19949)
+DEBUG:root:Similarity rank 7: czech (0.19671)
+DEBUG:root:Similarity rank 8: kan (0.19253)
+DEBUG:root:Similarity rank 9: electrified (0.19102)
+DEBUG:root:Batch 475: evaluating analogy task: Thailand:Thai::Denmark:Danish
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02675
+DEBUG:root:Similarity rank 0: melodies (0.22766)
+DEBUG:root:Similarity rank 1: mania (0.22173)
+DEBUG:root:Similarity rank 2: livery (0.20784)
+DEBUG:root:Similarity rank 3: structures (0.20659)
+DEBUG:root:Similarity rank 4: ngo (0.20521)
+DEBUG:root:Similarity rank 5: nuclei (0.20269)
+DEBUG:root:Similarity rank 6: shapiro (0.19987)
+DEBUG:root:Similarity rank 7: pietro (0.19940)
+DEBUG:root:Similarity rank 8: password (0.19663)
+DEBUG:root:Similarity rank 9: toyota (0.19233)
+DEBUG:root:Batch 475: evaluating analogy task: going:went::feeding:fed
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05975
+DEBUG:root:Similarity rank 0: ripple (0.23703)
+DEBUG:root:Similarity rank 1: dripping (0.22384)
+DEBUG:root:Similarity rank 2: formula (0.21395)
+DEBUG:root:Similarity rank 3: extending (0.21294)
+DEBUG:root:Similarity rank 4: criticised (0.21276)
+DEBUG:root:Similarity rank 5: ships (0.20961)
+DEBUG:root:Similarity rank 6: initially (0.20874)
+DEBUG:root:Similarity rank 7: vikings (0.19740)
+DEBUG:root:Similarity rank 8: shed (0.19665)
+DEBUG:root:Similarity rank 9: puget (0.19567)
+DEBUG:root:Batch 475: evaluating analogy task: slowing:slowed::hiding:hid
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01737
+DEBUG:root:Similarity rank 0: om (0.20756)
+DEBUG:root:Similarity rank 1: regulars (0.20026)
+DEBUG:root:Similarity rank 2: furious (0.20021)
+DEBUG:root:Similarity rank 3: showcased (0.19910)
+DEBUG:root:Similarity rank 4: santo (0.19696)
+DEBUG:root:Similarity rank 5: archives (0.19384)
+DEBUG:root:Similarity rank 6: pun (0.19286)
+DEBUG:root:Similarity rank 7: worthless (0.19187)
+DEBUG:root:Similarity rank 8: preservation (0.18996)
+DEBUG:root:Similarity rank 9: sykes (0.18794)
+DEBUG:root:Batch 475: evaluating analogy task: find:finds::estimate:estimates
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07689
+DEBUG:root:Similarity rank 0: wished (0.23786)
+DEBUG:root:Similarity rank 1: switzerland (0.23269)
+DEBUG:root:Similarity rank 2: merchandise (0.21941)
+DEBUG:root:Similarity rank 3: foyer (0.21464)
+DEBUG:root:Similarity rank 4: skaters (0.20462)
+DEBUG:root:Similarity rank 5: advocating (0.20164)
+DEBUG:root:Similarity rank 6: switches (0.19701)
+DEBUG:root:Similarity rank 7: conferred (0.19659)
+DEBUG:root:Similarity rank 8: gives (0.19262)
+DEBUG:root:Similarity rank 9: plague (0.19088)
+DEBUG:root:Batch 475: evaluating analogy task: walk:walks::work:works
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05760
+DEBUG:root:Similarity rank 0: duck (0.21971)
+DEBUG:root:Similarity rank 1: youtube (0.20992)
+DEBUG:root:Similarity rank 2: articulated (0.20412)
+DEBUG:root:Similarity rank 3: surgeon (0.19505)
+DEBUG:root:Similarity rank 4: returns (0.19378)
+DEBUG:root:Similarity rank 5: bono (0.18769)
+DEBUG:root:Similarity rank 6: eta (0.18509)
+DEBUG:root:Similarity rank 7: hopeful (0.18388)
+DEBUG:root:Similarity rank 8: panorama (0.18338)
+DEBUG:root:Similarity rank 9: neighbors (0.18309)
+DEBUG:root:Batch 939: evaluating analogy task: Athens:Greece::Stockholm:Sweden
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.09845
+DEBUG:root:Similarity rank 0: nak (0.21892)
+DEBUG:root:Similarity rank 1: palatinate (0.21721)
+DEBUG:root:Similarity rank 2: convinces (0.21635)
+DEBUG:root:Similarity rank 3: tchaikovsky (0.20714)
+DEBUG:root:Similarity rank 4: youths (0.20566)
+DEBUG:root:Similarity rank 5: caravan (0.19115)
+DEBUG:root:Similarity rank 6: rival (0.19045)
+DEBUG:root:Similarity rank 7: thud (0.18879)
+DEBUG:root:Similarity rank 8: looted (0.18750)
+DEBUG:root:Similarity rank 9: resist (0.18362)
+DEBUG:root:Batch 939: evaluating analogy task: Baghdad:Iraq::Oslo:Norway
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07463
+DEBUG:root:Similarity rank 0: rage (0.22522)
+DEBUG:root:Similarity rank 1: endings (0.21623)
+DEBUG:root:Similarity rank 2: baltic (0.20691)
+DEBUG:root:Similarity rank 3: jamie (0.20679)
+DEBUG:root:Similarity rank 4: coconut (0.19928)
+DEBUG:root:Similarity rank 5: migrants (0.19688)
+DEBUG:root:Similarity rank 6: storms (0.19631)
+DEBUG:root:Similarity rank 7: trusting (0.19500)
+DEBUG:root:Similarity rank 8: aa (0.19063)
+DEBUG:root:Similarity rank 9: necks (0.19062)
+DEBUG:root:Batch 939: evaluating analogy task: Caracas:Venezuela::Hanoi:Vietnam
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.16543
+DEBUG:root:Similarity rank 0: measuring (0.21375)
+DEBUG:root:Similarity rank 1: laird (0.19498)
+DEBUG:root:Similarity rank 2: accurate (0.18735)
+DEBUG:root:Similarity rank 3: singular (0.18393)
+DEBUG:root:Similarity rank 4: paw (0.18024)
+DEBUG:root:Similarity rank 5: unable (0.17975)
+DEBUG:root:Similarity rank 6: involving (0.17868)
+DEBUG:root:Similarity rank 7: infancy (0.17851)
+DEBUG:root:Similarity rank 8: hutchinson (0.17835)
+DEBUG:root:Similarity rank 9: ibm (0.17674)
+DEBUG:root:Batch 939: evaluating analogy task: Pittsburgh:Pennsylvania::Toledo:Ohio
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00737
+DEBUG:root:Similarity rank 0: pointe (0.22803)
+DEBUG:root:Similarity rank 1: kam (0.21033)
+DEBUG:root:Similarity rank 2: agreement (0.20905)
+DEBUG:root:Similarity rank 3: ren (0.19975)
+DEBUG:root:Similarity rank 4: matters (0.19854)
+DEBUG:root:Similarity rank 5: dumping (0.19752)
+DEBUG:root:Similarity rank 6: lev (0.19506)
+DEBUG:root:Similarity rank 7: slight (0.19322)
+DEBUG:root:Similarity rank 8: able (0.19319)
+DEBUG:root:Similarity rank 9: s (0.19202)
+DEBUG:root:Batch 939: evaluating analogy task: Garland:Texas::Indianapolis:Indiana
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01765
+DEBUG:root:Similarity rank 0: volkswagen (0.21392)
+DEBUG:root:Similarity rank 1: chill (0.21263)
+DEBUG:root:Similarity rank 2: relieve (0.21029)
+DEBUG:root:Similarity rank 3: attempting (0.20303)
+DEBUG:root:Similarity rank 4: filing (0.20132)
+DEBUG:root:Similarity rank 5: olivia (0.19944)
+DEBUG:root:Similarity rank 6: candy (0.19862)
+DEBUG:root:Similarity rank 7: transforming (0.19828)
+DEBUG:root:Similarity rank 8: systemic (0.19786)
+DEBUG:root:Similarity rank 9: installment (0.19524)
+DEBUG:root:Batch 939: evaluating analogy task: free:freely::rapid:rapidly
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.07779
+DEBUG:root:Similarity rank 0: calm (0.22568)
+DEBUG:root:Similarity rank 1: debate (0.22437)
+DEBUG:root:Similarity rank 2: vp (0.22390)
+DEBUG:root:Similarity rank 3: adored (0.22091)
+DEBUG:root:Similarity rank 4: foliage (0.20556)
+DEBUG:root:Similarity rank 5: dead (0.20131)
+DEBUG:root:Similarity rank 6: mustered (0.19642)
+DEBUG:root:Similarity rank 7: removes (0.19096)
+DEBUG:root:Similarity rank 8: ralph (0.18896)
+DEBUG:root:Similarity rank 9: administering (0.18888)
+DEBUG:root:Batch 939: evaluating analogy task: hard:harder::simple:simpler
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04930
+DEBUG:root:Similarity rank 0: tyre (0.21880)
+DEBUG:root:Similarity rank 1: information (0.19862)
+DEBUG:root:Similarity rank 2: penguins (0.19768)
+DEBUG:root:Similarity rank 3: skinner (0.19556)
+DEBUG:root:Similarity rank 4: adulthood (0.19391)
+DEBUG:root:Similarity rank 5: pagoda (0.18627)
+DEBUG:root:Similarity rank 6: voyages (0.18378)
+DEBUG:root:Similarity rank 7: strategies (0.18375)
+DEBUG:root:Similarity rank 8: chores (0.18364)
+DEBUG:root:Similarity rank 9: als (0.18360)
+DEBUG:root:Batch 939: evaluating analogy task: bright:brightest::large:largest
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00225
+DEBUG:root:Similarity rank 0: boeing (0.21989)
+DEBUG:root:Similarity rank 1: aromatic (0.20485)
+DEBUG:root:Similarity rank 2: witnessing (0.19674)
+DEBUG:root:Similarity rank 3: wonderland (0.19311)
+DEBUG:root:Similarity rank 4: confess (0.19265)
+DEBUG:root:Similarity rank 5: marvin (0.18951)
+DEBUG:root:Similarity rank 6: opposing (0.18498)
+DEBUG:root:Similarity rank 7: archie (0.18057)
+DEBUG:root:Similarity rank 8: ravaged (0.17990)
+DEBUG:root:Similarity rank 9: style (0.17795)
+DEBUG:root:Batch 939: evaluating analogy task: decrease:decreasing::say:saying
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.11781
+DEBUG:root:Similarity rank 0: dose (0.21471)
+DEBUG:root:Similarity rank 1: moreno (0.21376)
+DEBUG:root:Similarity rank 2: index (0.20494)
+DEBUG:root:Similarity rank 3: portrait (0.20064)
+DEBUG:root:Similarity rank 4: regaining (0.19638)
+DEBUG:root:Similarity rank 5: lounge (0.19633)
+DEBUG:root:Similarity rank 6: railroad (0.19105)
+DEBUG:root:Similarity rank 7: gemma (0.18990)
+DEBUG:root:Similarity rank 8: watson (0.18960)
+DEBUG:root:Similarity rank 9: earn (0.18923)
+DEBUG:root:Batch 939: evaluating analogy task: generate:generating::increase:increasing
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.09977
+DEBUG:root:Similarity rank 0: endowment (0.21789)
+DEBUG:root:Similarity rank 1: initials (0.21789)
+DEBUG:root:Similarity rank 2: knicks (0.21467)
+DEBUG:root:Similarity rank 3: induced (0.20427)
+DEBUG:root:Similarity rank 4: dhabi (0.19987)
+DEBUG:root:Similarity rank 5: lonely (0.19288)
+DEBUG:root:Similarity rank 6: ascension (0.19265)
+DEBUG:root:Similarity rank 7: motif (0.19216)
+DEBUG:root:Similarity rank 8: move (0.19159)
+DEBUG:root:Similarity rank 9: councillors (0.19042)
+DEBUG:root:Batch 939: evaluating analogy task: read:reading::say:saying
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.07391
+DEBUG:root:Similarity rank 0: mango (0.24465)
+DEBUG:root:Similarity rank 1: calais (0.22110)
+DEBUG:root:Similarity rank 2: wil (0.21673)
+DEBUG:root:Similarity rank 3: analyzing (0.20904)
+DEBUG:root:Similarity rank 4: lucknow (0.20379)
+DEBUG:root:Similarity rank 5: originals (0.20355)
+DEBUG:root:Similarity rank 6: preceding (0.20354)
+DEBUG:root:Similarity rank 7: mccain (0.19915)
+DEBUG:root:Similarity rank 8: platinum (0.19492)
+DEBUG:root:Similarity rank 9: alternate (0.19409)
+DEBUG:root:Batch 939: evaluating analogy task: dancing:danced::listening:listened
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03429
+DEBUG:root:Similarity rank 0: slumped (0.22784)
+DEBUG:root:Similarity rank 1: ledge (0.22516)
+DEBUG:root:Similarity rank 2: spotted (0.21627)
+DEBUG:root:Similarity rank 3: ornaments (0.21252)
+DEBUG:root:Similarity rank 4: gruff (0.21099)
+DEBUG:root:Similarity rank 5: draw (0.20770)
+DEBUG:root:Similarity rank 6: dozen (0.20439)
+DEBUG:root:Similarity rank 7: lattice (0.20227)
+DEBUG:root:Similarity rank 8: indy (0.19804)
+DEBUG:root:Similarity rank 9: methodology (0.19291)
+DEBUG:root:Batch 939: evaluating analogy task: feeding:fed::predicting:predicted
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04374
+DEBUG:root:Similarity rank 0: azores (0.22365)
+DEBUG:root:Similarity rank 1: valves (0.22296)
+DEBUG:root:Similarity rank 2: injuries (0.22099)
+DEBUG:root:Similarity rank 3: essex (0.20589)
+DEBUG:root:Similarity rank 4: phillies (0.19596)
+DEBUG:root:Similarity rank 5: displays (0.19535)
+DEBUG:root:Similarity rank 6: hiram (0.19511)
+DEBUG:root:Similarity rank 7: bahrain (0.19463)
+DEBUG:root:Similarity rank 8: gail (0.19379)
+DEBUG:root:Similarity rank 9: andreas (0.18689)
+DEBUG:root:Batch 939: evaluating analogy task: cloud:clouds::dog:dogs
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04943
+DEBUG:root:Similarity rank 0: disqualified (0.24535)
+DEBUG:root:Similarity rank 1: libya (0.24453)
+DEBUG:root:Similarity rank 2: roar (0.22248)
+DEBUG:root:Similarity rank 3: cobb (0.21407)
+DEBUG:root:Similarity rank 4: demetrius (0.20585)
+DEBUG:root:Similarity rank 5: etymology (0.20430)
+DEBUG:root:Similarity rank 6: clan (0.20154)
+DEBUG:root:Similarity rank 7: initiatives (0.20091)
+DEBUG:root:Similarity rank 8: nominee (0.19873)
+DEBUG:root:Similarity rank 9: herbs (0.18976)
+DEBUG:root:Batch 939: evaluating analogy task: dollar:dollars::mouse:mice
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00272
+DEBUG:root:Similarity rank 0: feed (0.20477)
+DEBUG:root:Similarity rank 1: vow (0.20279)
+DEBUG:root:Similarity rank 2: ware (0.19983)
+DEBUG:root:Similarity rank 3: orient (0.19669)
+DEBUG:root:Similarity rank 4: lawson (0.19522)
+DEBUG:root:Similarity rank 5: bloomington (0.19220)
+DEBUG:root:Similarity rank 6: dylan (0.18980)
+DEBUG:root:Similarity rank 7: partridge (0.18723)
+DEBUG:root:Similarity rank 8: bassist (0.18494)
+DEBUG:root:Similarity rank 9: au (0.18125)
+DEBUG:root:Batch 1415: evaluating analogy task: Helsinki:Finland::Beijing:China
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.13678
+DEBUG:root:Similarity rank 0: modern (0.25530)
+DEBUG:root:Similarity rank 1: specifically (0.24276)
+DEBUG:root:Similarity rank 2: zombie (0.21391)
+DEBUG:root:Similarity rank 3: ra (0.20515)
+DEBUG:root:Similarity rank 4: douglas (0.20384)
+DEBUG:root:Similarity rank 5: audiences (0.20227)
+DEBUG:root:Similarity rank 6: damon (0.19207)
+DEBUG:root:Similarity rank 7: acting (0.19057)
+DEBUG:root:Similarity rank 8: formal (0.18738)
+DEBUG:root:Similarity rank 9: advise (0.18520)
+DEBUG:root:Batch 1415: evaluating analogy task: Tokyo:Japan::Athens:Greece
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03706
+DEBUG:root:Similarity rank 0: dry (0.23222)
+DEBUG:root:Similarity rank 1: unemployment (0.22849)
+DEBUG:root:Similarity rank 2: nah (0.22306)
+DEBUG:root:Similarity rank 3: horses (0.21700)
+DEBUG:root:Similarity rank 4: janice (0.20996)
+DEBUG:root:Similarity rank 5: fitting (0.20654)
+DEBUG:root:Similarity rank 6: wires (0.20403)
+DEBUG:root:Similarity rank 7: avoidance (0.19577)
+DEBUG:root:Similarity rank 8: trombone (0.19376)
+DEBUG:root:Similarity rank 9: penetrating (0.19332)
+DEBUG:root:Batch 1415: evaluating analogy task: Havana:Cuba::Paris:France
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00111
+DEBUG:root:Similarity rank 0: earthly (0.20307)
+DEBUG:root:Similarity rank 1: jameson (0.20266)
+DEBUG:root:Similarity rank 2: maternity (0.19904)
+DEBUG:root:Similarity rank 3: piano (0.19553)
+DEBUG:root:Similarity rank 4: companions (0.19317)
+DEBUG:root:Similarity rank 5: commemorative (0.19117)
+DEBUG:root:Similarity rank 6: lodged (0.18974)
+DEBUG:root:Similarity rank 7: fabric (0.18966)
+DEBUG:root:Similarity rank 8: mistress (0.18956)
+DEBUG:root:Similarity rank 9: rouge (0.18864)
+DEBUG:root:Batch 1415: evaluating analogy task: Kiev:Ukraine::Lisbon:Portugal
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00807
+DEBUG:root:Similarity rank 0: flair (0.20565)
+DEBUG:root:Similarity rank 1: commentaries (0.20552)
+DEBUG:root:Similarity rank 2: insults (0.19978)
+DEBUG:root:Similarity rank 3: commissioner (0.19760)
+DEBUG:root:Similarity rank 4: message (0.19687)
+DEBUG:root:Similarity rank 5: seizures (0.18729)
+DEBUG:root:Similarity rank 6: achievement (0.18657)
+DEBUG:root:Similarity rank 7: accept (0.18449)
+DEBUG:root:Similarity rank 8: newman (0.18253)
+DEBUG:root:Similarity rank 9: decorations (0.18122)
+DEBUG:root:Batch 1415: evaluating analogy task: Vienna:Austria::Warsaw:Poland
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05161
+DEBUG:root:Similarity rank 0: insignia (0.20565)
+DEBUG:root:Similarity rank 1: paper (0.20094)
+DEBUG:root:Similarity rank 2: letterman (0.20049)
+DEBUG:root:Similarity rank 3: lithuania (0.19870)
+DEBUG:root:Similarity rank 4: factions (0.19808)
+DEBUG:root:Similarity rank 5: runway (0.19788)
+DEBUG:root:Similarity rank 6: savannah (0.19717)
+DEBUG:root:Similarity rank 7: tinged (0.19516)
+DEBUG:root:Similarity rank 8: liberation (0.19336)
+DEBUG:root:Similarity rank 9: surpassing (0.19277)
+DEBUG:root:Batch 1415: evaluating analogy task: Dallas:Texas::Cleveland:Ohio
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06633
+DEBUG:root:Similarity rank 0: nomadic (0.21873)
+DEBUG:root:Similarity rank 1: lion (0.21129)
+DEBUG:root:Similarity rank 2: lingered (0.20613)
+DEBUG:root:Similarity rank 3: reputed (0.20462)
+DEBUG:root:Similarity rank 4: freighter (0.20456)
+DEBUG:root:Similarity rank 5: decide (0.19609)
+DEBUG:root:Similarity rank 6: otto (0.19428)
+DEBUG:root:Similarity rank 7: giant (0.19066)
+DEBUG:root:Similarity rank 8: frequent (0.18903)
+DEBUG:root:Similarity rank 9: scouts (0.18827)
+DEBUG:root:Batch 1415: evaluating analogy task: Fresno:California::Glendale:Arizona
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00117
+DEBUG:root:Similarity rank 0: sited (0.23137)
+DEBUG:root:Similarity rank 1: pam (0.23021)
+DEBUG:root:Similarity rank 2: willard (0.22267)
+DEBUG:root:Similarity rank 3: variety (0.22227)
+DEBUG:root:Similarity rank 4: fiancee (0.20534)
+DEBUG:root:Similarity rank 5: fellow (0.19977)
+DEBUG:root:Similarity rank 6: anders (0.19807)
+DEBUG:root:Similarity rank 7: theologian (0.19765)
+DEBUG:root:Similarity rank 8: debated (0.19706)
+DEBUG:root:Similarity rank 9: telegraph (0.19488)
+DEBUG:root:Batch 1415: evaluating analogy task: Worcester:Massachusetts::Stockton:California
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04498
+DEBUG:root:Similarity rank 0: risks (0.21694)
+DEBUG:root:Similarity rank 1: renaissance (0.21005)
+DEBUG:root:Similarity rank 2: adventure (0.20790)
+DEBUG:root:Similarity rank 3: cheryl (0.20689)
+DEBUG:root:Similarity rank 4: magnet (0.20511)
+DEBUG:root:Similarity rank 5: zachary (0.20461)
+DEBUG:root:Similarity rank 6: bahamas (0.20405)
+DEBUG:root:Similarity rank 7: bury (0.20052)
+DEBUG:root:Similarity rank 8: disguised (0.19741)
+DEBUG:root:Similarity rank 9: laurie (0.19583)
+DEBUG:root:Batch 1415: evaluating analogy task: man:woman::dad:mom
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.13371
+DEBUG:root:Similarity rank 0: miller (0.20621)
+DEBUG:root:Similarity rank 1: algerian (0.20431)
+DEBUG:root:Similarity rank 2: evolution (0.20373)
+DEBUG:root:Similarity rank 3: poems (0.20184)
+DEBUG:root:Similarity rank 4: dhabi (0.19282)
+DEBUG:root:Similarity rank 5: pirate (0.19269)
+DEBUG:root:Similarity rank 6: tissues (0.18942)
+DEBUG:root:Similarity rank 7: amp (0.18864)
+DEBUG:root:Similarity rank 8: baker (0.18756)
+DEBUG:root:Similarity rank 9: liturgy (0.18649)
+DEBUG:root:Batch 1415: evaluating analogy task: efficient:efficiently::fortunate:fortunately
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.10987
+DEBUG:root:Similarity rank 0: annex (0.20734)
+DEBUG:root:Similarity rank 1: bryant (0.20005)
+DEBUG:root:Similarity rank 2: festival (0.19817)
+DEBUG:root:Similarity rank 3: mohammad (0.19488)
+DEBUG:root:Similarity rank 4: vessel (0.19299)
+DEBUG:root:Similarity rank 5: cornelius (0.19227)
+DEBUG:root:Similarity rank 6: cookie (0.19139)
+DEBUG:root:Similarity rank 7: loyola (0.18946)
+DEBUG:root:Similarity rank 8: ve (0.18856)
+DEBUG:root:Similarity rank 9: depot (0.18767)
+DEBUG:root:Batch 1415: evaluating analogy task: tight:tighter::cool:cooler
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04453
+DEBUG:root:Similarity rank 0: cassandra (0.23928)
+DEBUG:root:Similarity rank 1: unexpectedly (0.20875)
+DEBUG:root:Similarity rank 2: passive (0.19810)
+DEBUG:root:Similarity rank 3: prospect (0.19457)
+DEBUG:root:Similarity rank 4: partnership (0.19360)
+DEBUG:root:Similarity rank 5: frequently (0.19178)
+DEBUG:root:Similarity rank 6: evangelist (0.19027)
+DEBUG:root:Similarity rank 7: laboratories (0.18865)
+DEBUG:root:Similarity rank 8: vendors (0.18718)
+DEBUG:root:Similarity rank 9: prey (0.18552)
+DEBUG:root:Batch 1415: evaluating analogy task: Albania:Albanian::Sweden:Swedish
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04939
+DEBUG:root:Similarity rank 0: arrest (0.24114)
+DEBUG:root:Similarity rank 1: yeah (0.22287)
+DEBUG:root:Similarity rank 2: gate (0.20848)
+DEBUG:root:Similarity rank 3: refused (0.20717)
+DEBUG:root:Similarity rank 4: molecular (0.20262)
+DEBUG:root:Similarity rank 5: tariffs (0.20181)
+DEBUG:root:Similarity rank 6: mansions (0.20149)
+DEBUG:root:Similarity rank 7: pay (0.20128)
+DEBUG:root:Similarity rank 8: frogs (0.20053)
+DEBUG:root:Similarity rank 9: derby (0.19851)
+DEBUG:root:Batch 1415: evaluating analogy task: rat:rats::elephant:elephants
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00804
+DEBUG:root:Similarity rank 0: actual (0.23101)
+DEBUG:root:Similarity rank 1: lucas (0.22624)
+DEBUG:root:Similarity rank 2: micah (0.21808)
+DEBUG:root:Similarity rank 3: disputed (0.21778)
+DEBUG:root:Similarity rank 4: muslim (0.20837)
+DEBUG:root:Similarity rank 5: protector (0.20813)
+DEBUG:root:Similarity rank 6: straighten (0.20096)
+DEBUG:root:Similarity rank 7: pitches (0.19570)
+DEBUG:root:Similarity rank 8: contemporaries (0.19487)
+DEBUG:root:Similarity rank 9: honors (0.19443)
+DEBUG:root:Batch 1415: evaluating analogy task: go:goes::speak:speaks
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04232
+DEBUG:root:Similarity rank 0: hitch (0.21920)
+DEBUG:root:Similarity rank 1: haste (0.21681)
+DEBUG:root:Similarity rank 2: transmitted (0.20959)
+DEBUG:root:Similarity rank 3: ride (0.20577)
+DEBUG:root:Similarity rank 4: regrets (0.20106)
+DEBUG:root:Similarity rank 5: drumming (0.19873)
+DEBUG:root:Similarity rank 6: tchaikovsky (0.19712)
+DEBUG:root:Similarity rank 7: clemens (0.19703)
+DEBUG:root:Similarity rank 8: yorker (0.19580)
+DEBUG:root:Similarity rank 9: removal (0.19179)
+DEBUG:root:Batch 1415: evaluating analogy task: provide:provides::see:sees
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00863
+DEBUG:root:Similarity rank 0: jupiter (0.25154)
+DEBUG:root:Similarity rank 1: rupert (0.23229)
+DEBUG:root:Similarity rank 2: wealthy (0.22734)
+DEBUG:root:Similarity rank 3: regained (0.21447)
+DEBUG:root:Similarity rank 4: mob (0.21342)
+DEBUG:root:Similarity rank 5: tobin (0.20394)
+DEBUG:root:Similarity rank 6: burst (0.20164)
+DEBUG:root:Similarity rank 7: stubborn (0.20103)
+DEBUG:root:Similarity rank 8: fai (0.19887)
+DEBUG:root:Similarity rank 9: turbulence (0.19591)
+DEBUG:root:Batch 1415: evaluating analogy task: sit:sits::go:goes
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.11022
+DEBUG:root:Similarity rank 0: deterioration (0.24237)
+DEBUG:root:Similarity rank 1: nevertheless (0.22983)
+DEBUG:root:Similarity rank 2: promising (0.22614)
+DEBUG:root:Similarity rank 3: scares (0.21284)
+DEBUG:root:Similarity rank 4: smash (0.20887)
+DEBUG:root:Similarity rank 5: sparkled (0.20644)
+DEBUG:root:Similarity rank 6: sampled (0.19889)
+DEBUG:root:Similarity rank 7: bunk (0.19735)
+DEBUG:root:Similarity rank 8: friedman (0.19103)
+DEBUG:root:Similarity rank 9: veins (0.19093)
+DEBUG:root:Batch 1893, sample 49
+DEBUG:root:word_pairs=desert, are
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 926
+DEBUG:root:word_pairs=sets, inlet
+DEBUG:root:probs=0.99999
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 390
+DEBUG:root:word_pairs=took, greenish
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1178
+DEBUG:root:word_pairs=constructed, bonnie
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1534
+DEBUG:root:word_pairs=exceptions, johan
+DEBUG:root:probs=0.00357
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1569
+DEBUG:root:word_pairs=sh, peak
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1020
+DEBUG:root:word_pairs=sets, doors
+DEBUG:root:probs=0.00001
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1149
+DEBUG:root:word_pairs=constructed, transit
+DEBUG:root:probs=0.99904
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 884
+DEBUG:root:word_pairs=like, colonists
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1353
+DEBUG:root:word_pairs=episodes, covered
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 58
+DEBUG:root:word_pairs=desert, dylan
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1553
+DEBUG:root:word_pairs=exceptions, lost
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1181
+DEBUG:root:word_pairs=constructed, york
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1388
+DEBUG:root:word_pairs=episodes, replied
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1399
+DEBUG:root:word_pairs=episodes, zhejiang
+DEBUG:root:probs=0.00001
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1188
+DEBUG:root:word_pairs=constructed, macarthur
+DEBUG:root:probs=0.85116
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 507
+DEBUG:root:word_pairs=took, more
+DEBUG:root:probs=0.49975
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 1374
+DEBUG:root:word_pairs=episodes, from
+DEBUG:root:probs=0.99994
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 411
+DEBUG:root:word_pairs=took, tango
+DEBUG:root:probs=0.99997
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893, sample 772
+DEBUG:root:word_pairs=desert, expressions
+DEBUG:root:probs=0.25568
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 1893: evaluating analogy task: Copenhagen:Denmark::Helsinki:Finland
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06547
+DEBUG:root:Similarity rank 0: vivo (0.27184)
+DEBUG:root:Similarity rank 1: broom (0.25722)
+DEBUG:root:Similarity rank 2: midway (0.25263)
+DEBUG:root:Similarity rank 3: pp (0.21185)
+DEBUG:root:Similarity rank 4: safe (0.20029)
+DEBUG:root:Similarity rank 5: bourgeois (0.18866)
+DEBUG:root:Similarity rank 6: dixie (0.18797)
+DEBUG:root:Similarity rank 7: heterosexual (0.18089)
+DEBUG:root:Similarity rank 8: riders (0.18082)
+DEBUG:root:Similarity rank 9: piece (0.17968)
+DEBUG:root:Batch 1893: evaluating analogy task: Kiev:Ukraine::Kingston:Jamaica
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00158
+DEBUG:root:Similarity rank 0: agony (0.21267)
+DEBUG:root:Similarity rank 1: survived (0.21247)
+DEBUG:root:Similarity rank 2: tilted (0.20041)
+DEBUG:root:Similarity rank 3: facilitating (0.19284)
+DEBUG:root:Similarity rank 4: swearing (0.18977)
+DEBUG:root:Similarity rank 5: differ (0.18888)
+DEBUG:root:Similarity rank 6: pleasing (0.18883)
+DEBUG:root:Similarity rank 7: hesitated (0.18876)
+DEBUG:root:Similarity rank 8: declared (0.18871)
+DEBUG:root:Similarity rank 9: dusty (0.18674)
+DEBUG:root:Batch 1893: evaluating analogy task: Jacksonville:Florida::Detroit:Michigan
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04260
+DEBUG:root:Similarity rank 0: wilson (0.21493)
+DEBUG:root:Similarity rank 1: intervening (0.21262)
+DEBUG:root:Similarity rank 2: syracuse (0.20612)
+DEBUG:root:Similarity rank 3: nostalgia (0.20024)
+DEBUG:root:Similarity rank 4: forge (0.20003)
+DEBUG:root:Similarity rank 5: terrorist (0.19799)
+DEBUG:root:Similarity rank 6: opaque (0.19552)
+DEBUG:root:Similarity rank 7: chromosomes (0.19376)
+DEBUG:root:Similarity rank 8: professorship (0.19026)
+DEBUG:root:Similarity rank 9: crashing (0.18670)
+DEBUG:root:Batch 1893: evaluating analogy task: uncle:aunt::son:daughter
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01605
+DEBUG:root:Similarity rank 0: valleys (0.25662)
+DEBUG:root:Similarity rank 1: poorly (0.22544)
+DEBUG:root:Similarity rank 2: lights (0.21636)
+DEBUG:root:Similarity rank 3: stony (0.21394)
+DEBUG:root:Similarity rank 4: swallowed (0.21104)
+DEBUG:root:Similarity rank 5: concentrating (0.20817)
+DEBUG:root:Similarity rank 6: scars (0.20650)
+DEBUG:root:Similarity rank 7: beaufort (0.19924)
+DEBUG:root:Similarity rank 8: velvet (0.19388)
+DEBUG:root:Similarity rank 9: civilian (0.19022)
+DEBUG:root:Batch 1893: evaluating analogy task: reluctant:reluctantly::serious:seriously
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01882
+DEBUG:root:Similarity rank 0: how (0.21392)
+DEBUG:root:Similarity rank 1: carl (0.20962)
+DEBUG:root:Similarity rank 2: mutiny (0.20397)
+DEBUG:root:Similarity rank 3: clara (0.19748)
+DEBUG:root:Similarity rank 4: versatile (0.19556)
+DEBUG:root:Similarity rank 5: monk (0.19550)
+DEBUG:root:Similarity rank 6: luz (0.19547)
+DEBUG:root:Similarity rank 7: manitoba (0.19508)
+DEBUG:root:Similarity rank 8: controlling (0.19405)
+DEBUG:root:Similarity rank 9: stillness (0.19219)
+DEBUG:root:Batch 1893: evaluating analogy task: large:larger::great:greater
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04321
+DEBUG:root:Similarity rank 0: triumph (0.23398)
+DEBUG:root:Similarity rank 1: clipped (0.22529)
+DEBUG:root:Similarity rank 2: happier (0.20611)
+DEBUG:root:Similarity rank 3: rodents (0.19629)
+DEBUG:root:Similarity rank 4: dissertation (0.19467)
+DEBUG:root:Similarity rank 5: landfill (0.19446)
+DEBUG:root:Similarity rank 6: tempered (0.19174)
+DEBUG:root:Similarity rank 7: psychotic (0.19062)
+DEBUG:root:Similarity rank 8: commodities (0.19038)
+DEBUG:root:Similarity rank 9: hushed (0.18671)
+DEBUG:root:Batch 1893: evaluating analogy task: old:oldest::simple:simplest
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04403
+DEBUG:root:Similarity rank 0: keep (0.22361)
+DEBUG:root:Similarity rank 1: postwar (0.21989)
+DEBUG:root:Similarity rank 2: cells (0.21082)
+DEBUG:root:Similarity rank 3: nas (0.20650)
+DEBUG:root:Similarity rank 4: vera (0.20008)
+DEBUG:root:Similarity rank 5: topical (0.19984)
+DEBUG:root:Similarity rank 6: cartwright (0.19920)
+DEBUG:root:Similarity rank 7: marc (0.19491)
+DEBUG:root:Similarity rank 8: bony (0.19104)
+DEBUG:root:Similarity rank 9: skyline (0.19095)
+DEBUG:root:Batch 1893: evaluating analogy task: shuffle:shuffling::think:thinking
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02303
+DEBUG:root:Similarity rank 0: diablo (0.24033)
+DEBUG:root:Similarity rank 1: trio (0.23300)
+DEBUG:root:Similarity rank 2: crow (0.21875)
+DEBUG:root:Similarity rank 3: predator (0.21626)
+DEBUG:root:Similarity rank 4: submarines (0.20706)
+DEBUG:root:Similarity rank 5: belt (0.20090)
+DEBUG:root:Similarity rank 6: shutter (0.19697)
+DEBUG:root:Similarity rank 7: pollution (0.19244)
+DEBUG:root:Similarity rank 8: tory (0.19230)
+DEBUG:root:Similarity rank 9: asserted (0.19105)
+DEBUG:root:Batch 1893: evaluating analogy task: sit:sitting::increase:increasing
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05624
+DEBUG:root:Similarity rank 0: bean (0.24266)
+DEBUG:root:Similarity rank 1: sore (0.22636)
+DEBUG:root:Similarity rank 2: personalities (0.21436)
+DEBUG:root:Similarity rank 3: tbilisi (0.20242)
+DEBUG:root:Similarity rank 4: decrease (0.20088)
+DEBUG:root:Similarity rank 5: nano (0.19696)
+DEBUG:root:Similarity rank 6: homer (0.19635)
+DEBUG:root:Similarity rank 7: denied (0.19474)
+DEBUG:root:Similarity rank 8: clicked (0.19407)
+DEBUG:root:Similarity rank 9: dupont (0.19393)
+DEBUG:root:Batch 1893: evaluating analogy task: dream:dreams::monkey:monkeys
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04584
+DEBUG:root:Similarity rank 0: highlands (0.21481)
+DEBUG:root:Similarity rank 1: formed (0.21044)
+DEBUG:root:Similarity rank 2: strung (0.20972)
+DEBUG:root:Similarity rank 3: tommy (0.20197)
+DEBUG:root:Similarity rank 4: wink (0.20124)
+DEBUG:root:Similarity rank 5: basalt (0.19740)
+DEBUG:root:Similarity rank 6: jihad (0.19682)
+DEBUG:root:Similarity rank 7: row (0.19610)
+DEBUG:root:Similarity rank 8: liked (0.19266)
+DEBUG:root:Similarity rank 9: disgusting (0.19174)
+DEBUG:root:Batch 2386: evaluating analogy task: Baghdad:Iraq::Berlin:Germany
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.06856
+DEBUG:root:Similarity rank 0: printed (0.23979)
+DEBUG:root:Similarity rank 1: opt (0.21933)
+DEBUG:root:Similarity rank 2: baltic (0.21826)
+DEBUG:root:Similarity rank 3: version (0.21258)
+DEBUG:root:Similarity rank 4: declares (0.20479)
+DEBUG:root:Similarity rank 5: surprising (0.20073)
+DEBUG:root:Similarity rank 6: campus (0.19984)
+DEBUG:root:Similarity rank 7: storms (0.19319)
+DEBUG:root:Similarity rank 8: meets (0.19020)
+DEBUG:root:Similarity rank 9: become (0.18959)
+DEBUG:root:Batch 2386: evaluating analogy task: Ankara:Turkey::Budapest:Hungary
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06578
+DEBUG:root:Similarity rank 0: comics (0.22185)
+DEBUG:root:Similarity rank 1: styx (0.22029)
+DEBUG:root:Similarity rank 2: hr (0.21306)
+DEBUG:root:Similarity rank 3: georgia (0.20638)
+DEBUG:root:Similarity rank 4: comb (0.20481)
+DEBUG:root:Similarity rank 5: gap (0.20369)
+DEBUG:root:Similarity rank 6: robot (0.20198)
+DEBUG:root:Similarity rank 7: bowman (0.19784)
+DEBUG:root:Similarity rank 8: merely (0.19720)
+DEBUG:root:Similarity rank 9: affiliation (0.19367)
+DEBUG:root:Batch 2386: evaluating analogy task: Athens:Greece::Copenhagen:Denmark
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02454
+DEBUG:root:Similarity rank 0: maze (0.23306)
+DEBUG:root:Similarity rank 1: decreed (0.21214)
+DEBUG:root:Similarity rank 2: huron (0.20664)
+DEBUG:root:Similarity rank 3: persuade (0.20554)
+DEBUG:root:Similarity rank 4: molecular (0.20132)
+DEBUG:root:Similarity rank 5: whispering (0.20045)
+DEBUG:root:Similarity rank 6: caravan (0.20010)
+DEBUG:root:Similarity rank 7: conveyed (0.19740)
+DEBUG:root:Similarity rank 8: connection (0.19621)
+DEBUG:root:Similarity rank 9: fukuoka (0.19197)
+DEBUG:root:Batch 2386: evaluating analogy task: Tunis:Tunisia::Vilnius:Lithuania
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.09356
+DEBUG:root:Similarity rank 0: contractor (0.22759)
+DEBUG:root:Similarity rank 1: convenience (0.20677)
+DEBUG:root:Similarity rank 2: compassion (0.19626)
+DEBUG:root:Similarity rank 3: acclaim (0.19338)
+DEBUG:root:Similarity rank 4: advances (0.18923)
+DEBUG:root:Similarity rank 5: recognized (0.18576)
+DEBUG:root:Similarity rank 6: diamonds (0.18521)
+DEBUG:root:Similarity rank 7: elijah (0.18474)
+DEBUG:root:Similarity rank 8: ks (0.18225)
+DEBUG:root:Similarity rank 9: xi (0.18217)
+DEBUG:root:Batch 2386: evaluating analogy task: Houston:Texas::Detroit:Michigan
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05291
+DEBUG:root:Similarity rank 0: charts (0.22542)
+DEBUG:root:Similarity rank 1: stalin (0.22121)
+DEBUG:root:Similarity rank 2: festivals (0.20574)
+DEBUG:root:Similarity rank 3: straightforward (0.20295)
+DEBUG:root:Similarity rank 4: aged (0.19997)
+DEBUG:root:Similarity rank 5: influences (0.19839)
+DEBUG:root:Similarity rank 6: pertaining (0.19704)
+DEBUG:root:Similarity rank 7: amounts (0.19369)
+DEBUG:root:Similarity rank 8: silently (0.19343)
+DEBUG:root:Similarity rank 9: glare (0.18685)
+DEBUG:root:Batch 2386: evaluating analogy task: Louisville:Kentucky::Toledo:Ohio
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01929
+DEBUG:root:Similarity rank 0: harmed (0.26787)
+DEBUG:root:Similarity rank 1: enforcement (0.23504)
+DEBUG:root:Similarity rank 2: herring (0.22545)
+DEBUG:root:Similarity rank 3: abdomen (0.21216)
+DEBUG:root:Similarity rank 4: yamaha (0.20703)
+DEBUG:root:Similarity rank 5: misconduct (0.20623)
+DEBUG:root:Similarity rank 6: danish (0.20263)
+DEBUG:root:Similarity rank 7: islam (0.20209)
+DEBUG:root:Similarity rank 8: shoot (0.19759)
+DEBUG:root:Similarity rank 9: ticket (0.19144)
+DEBUG:root:Batch 2386: evaluating analogy task: Irving:Texas::Baltimore:Maryland
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.10326
+DEBUG:root:Similarity rank 0: oversees (0.25231)
+DEBUG:root:Similarity rank 1: prevents (0.21933)
+DEBUG:root:Similarity rank 2: extends (0.20035)
+DEBUG:root:Similarity rank 3: operator (0.19754)
+DEBUG:root:Similarity rank 4: elites (0.19601)
+DEBUG:root:Similarity rank 5: loyalist (0.19335)
+DEBUG:root:Similarity rank 6: abraham (0.19288)
+DEBUG:root:Similarity rank 7: celebration (0.19012)
+DEBUG:root:Similarity rank 8: suited (0.18937)
+DEBUG:root:Similarity rank 9: inclusion (0.18446)
+DEBUG:root:Batch 2386: evaluating analogy task: precise:precisely::unfortunate:unfortunately
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03790
+DEBUG:root:Similarity rank 0: mechanized (0.21974)
+DEBUG:root:Similarity rank 1: authors (0.20581)
+DEBUG:root:Similarity rank 2: rise (0.20063)
+DEBUG:root:Similarity rank 3: jerusalem (0.19748)
+DEBUG:root:Similarity rank 4: bishopric (0.19719)
+DEBUG:root:Similarity rank 5: dutch (0.19468)
+DEBUG:root:Similarity rank 6: penguins (0.19348)
+DEBUG:root:Similarity rank 7: wikipedia (0.19273)
+DEBUG:root:Similarity rank 8: controls (0.18966)
+DEBUG:root:Similarity rank 9: selection (0.18666)
+DEBUG:root:Batch 2386: evaluating analogy task: hard:harder::large:larger
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00121
+DEBUG:root:Similarity rank 0: aromatic (0.23539)
+DEBUG:root:Similarity rank 1: jensen (0.23499)
+DEBUG:root:Similarity rank 2: kristina (0.22863)
+DEBUG:root:Similarity rank 3: invasion (0.21883)
+DEBUG:root:Similarity rank 4: carrot (0.21005)
+DEBUG:root:Similarity rank 5: internship (0.20935)
+DEBUG:root:Similarity rank 6: murray (0.19826)
+DEBUG:root:Similarity rank 7: stale (0.19549)
+DEBUG:root:Similarity rank 8: lowry (0.19459)
+DEBUG:root:Similarity rank 9: preparatory (0.18698)
+DEBUG:root:Batch 2386: evaluating analogy task: old:older::quick:quicker
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00168
+DEBUG:root:Similarity rank 0: mills (0.23088)
+DEBUG:root:Similarity rank 1: paternal (0.22183)
+DEBUG:root:Similarity rank 2: diaz (0.22025)
+DEBUG:root:Similarity rank 3: vivo (0.21317)
+DEBUG:root:Similarity rank 4: lyndon (0.21152)
+DEBUG:root:Similarity rank 5: overthrow (0.20450)
+DEBUG:root:Similarity rank 6: engraver (0.20419)
+DEBUG:root:Similarity rank 7: bank (0.20021)
+DEBUG:root:Similarity rank 8: enfield (0.19716)
+DEBUG:root:Similarity rank 9: foreword (0.19333)
+DEBUG:root:Batch 2386: evaluating analogy task: dark:darkest::bad:worst
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04956
+DEBUG:root:Similarity rank 0: romans (0.21217)
+DEBUG:root:Similarity rank 1: climbed (0.20685)
+DEBUG:root:Similarity rank 2: files (0.20026)
+DEBUG:root:Similarity rank 3: morgan (0.19331)
+DEBUG:root:Similarity rank 4: swindon (0.19001)
+DEBUG:root:Similarity rank 5: alloys (0.18985)
+DEBUG:root:Similarity rank 6: geography (0.18672)
+DEBUG:root:Similarity rank 7: madness (0.18630)
+DEBUG:root:Similarity rank 8: passage (0.18400)
+DEBUG:root:Similarity rank 9: kilometres (0.18199)
+DEBUG:root:Batch 2386: evaluating analogy task: increase:increasing::sit:sitting
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02954
+DEBUG:root:Similarity rank 0: nicolas (0.22707)
+DEBUG:root:Similarity rank 1: meng (0.20665)
+DEBUG:root:Similarity rank 2: townsend (0.20102)
+DEBUG:root:Similarity rank 3: dotted (0.20053)
+DEBUG:root:Similarity rank 4: moors (0.20049)
+DEBUG:root:Similarity rank 5: poznan (0.19866)
+DEBUG:root:Similarity rank 6: proceeded (0.19838)
+DEBUG:root:Similarity rank 7: tuberculosis (0.19721)
+DEBUG:root:Similarity rank 8: condo (0.19234)
+DEBUG:root:Similarity rank 9: liberia (0.19219)
+DEBUG:root:Batch 2386: evaluating analogy task: Cambodia:Cambodian::Malta:Maltese
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03341
+DEBUG:root:Similarity rank 0: claiming (0.24582)
+DEBUG:root:Similarity rank 1: olivier (0.21416)
+DEBUG:root:Similarity rank 2: percy (0.20520)
+DEBUG:root:Similarity rank 3: shielding (0.20160)
+DEBUG:root:Similarity rank 4: specialist (0.19787)
+DEBUG:root:Similarity rank 5: unlock (0.19741)
+DEBUG:root:Similarity rank 6: bolt (0.19350)
+DEBUG:root:Similarity rank 7: unveiled (0.19280)
+DEBUG:root:Similarity rank 8: wessex (0.19145)
+DEBUG:root:Similarity rank 9: smith (0.19070)
+DEBUG:root:Batch 2386: evaluating analogy task: Norway:Norwegian::Mexico:Mexican
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03094
+DEBUG:root:Similarity rank 0: freud (0.22089)
+DEBUG:root:Similarity rank 1: apparatus (0.21721)
+DEBUG:root:Similarity rank 2: downtown (0.21023)
+DEBUG:root:Similarity rank 3: mandated (0.20049)
+DEBUG:root:Similarity rank 4: case (0.19800)
+DEBUG:root:Similarity rank 5: market (0.19455)
+DEBUG:root:Similarity rank 6: emails (0.19332)
+DEBUG:root:Similarity rank 7: wales (0.19114)
+DEBUG:root:Similarity rank 8: official (0.19084)
+DEBUG:root:Similarity rank 9: wilderness (0.18709)
+DEBUG:root:Batch 2386: evaluating analogy task: playing:played::taking:took
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01100
+DEBUG:root:Similarity rank 0: hostage (0.22252)
+DEBUG:root:Similarity rank 1: tarzan (0.22224)
+DEBUG:root:Similarity rank 2: louie (0.22126)
+DEBUG:root:Similarity rank 3: deportation (0.21402)
+DEBUG:root:Similarity rank 4: lana (0.21200)
+DEBUG:root:Similarity rank 5: jamal (0.20827)
+DEBUG:root:Similarity rank 6: preparatory (0.20410)
+DEBUG:root:Similarity rank 7: grunt (0.20281)
+DEBUG:root:Similarity rank 8: beak (0.20187)
+DEBUG:root:Similarity rank 9: terminology (0.20090)
+DEBUG:root:Batch 2386: evaluating analogy task: bird:birds::pig:pigs
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01073
+DEBUG:root:Similarity rank 0: ball (0.21743)
+DEBUG:root:Similarity rank 1: august (0.20189)
+DEBUG:root:Similarity rank 2: shudder (0.19746)
+DEBUG:root:Similarity rank 3: alice (0.19346)
+DEBUG:root:Similarity rank 4: using (0.19268)
+DEBUG:root:Similarity rank 5: frenzy (0.19263)
+DEBUG:root:Similarity rank 6: medicinal (0.19004)
+DEBUG:root:Similarity rank 7: rae (0.18982)
+DEBUG:root:Similarity rank 8: contacted (0.18739)
+DEBUG:root:Similarity rank 9: jewels (0.18643)
+DEBUG:root:Batch 2386: evaluating analogy task: eye:eyes::hand:hands
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.07032
+DEBUG:root:Similarity rank 0: maneuver (0.21981)
+DEBUG:root:Similarity rank 1: implemented (0.21769)
+DEBUG:root:Similarity rank 2: deity (0.21572)
+DEBUG:root:Similarity rank 3: mono (0.20567)
+DEBUG:root:Similarity rank 4: rhapsody (0.20385)
+DEBUG:root:Similarity rank 5: creed (0.20323)
+DEBUG:root:Similarity rank 6: activism (0.19962)
+DEBUG:root:Similarity rank 7: gasp (0.19632)
+DEBUG:root:Similarity rank 8: marin (0.19452)
+DEBUG:root:Similarity rank 9: teenagers (0.19271)
+DEBUG:root:Batch 2867: evaluating analogy task: Warsaw:Poland::Beijing:China
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02377
+DEBUG:root:Similarity rank 0: cater (0.22144)
+DEBUG:root:Similarity rank 1: dockyard (0.22067)
+DEBUG:root:Similarity rank 2: risks (0.19634)
+DEBUG:root:Similarity rank 3: pitt (0.18975)
+DEBUG:root:Similarity rank 4: ricardo (0.18665)
+DEBUG:root:Similarity rank 5: anton (0.18594)
+DEBUG:root:Similarity rank 6: domestic (0.18483)
+DEBUG:root:Similarity rank 7: verdict (0.18143)
+DEBUG:root:Similarity rank 8: utopia (0.17702)
+DEBUG:root:Similarity rank 9: auditioned (0.17406)
+DEBUG:root:Batch 2867: evaluating analogy task: Oakland:California::Orlando:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05460
+DEBUG:root:Similarity rank 0: inquired (0.21165)
+DEBUG:root:Similarity rank 1: cable (0.20456)
+DEBUG:root:Similarity rank 2: institutional (0.20380)
+DEBUG:root:Similarity rank 3: reservoir (0.20259)
+DEBUG:root:Similarity rank 4: laughing (0.20211)
+DEBUG:root:Similarity rank 5: ram (0.19889)
+DEBUG:root:Similarity rank 6: mammal (0.19659)
+DEBUG:root:Similarity rank 7: karen (0.19337)
+DEBUG:root:Similarity rank 8: thought (0.19289)
+DEBUG:root:Similarity rank 9: cid (0.19156)
+DEBUG:root:Batch 2867: evaluating analogy task: hot:hotter::cool:cooler
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01298
+DEBUG:root:Similarity rank 0: tablet (0.23905)
+DEBUG:root:Similarity rank 1: hq (0.23248)
+DEBUG:root:Similarity rank 2: hardware (0.21299)
+DEBUG:root:Similarity rank 3: trip (0.21294)
+DEBUG:root:Similarity rank 4: orchards (0.20850)
+DEBUG:root:Similarity rank 5: divert (0.20233)
+DEBUG:root:Similarity rank 6: tagged (0.20079)
+DEBUG:root:Similarity rank 7: encore (0.19275)
+DEBUG:root:Similarity rank 8: selection (0.19249)
+DEBUG:root:Similarity rank 9: candy (0.18653)
+DEBUG:root:Batch 2867: evaluating analogy task: enhance:enhancing::discover:discovering
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.09753
+DEBUG:root:Similarity rank 0: proponents (0.22087)
+DEBUG:root:Similarity rank 1: adrian (0.20407)
+DEBUG:root:Similarity rank 2: accomplishments (0.20212)
+DEBUG:root:Similarity rank 3: piece (0.19843)
+DEBUG:root:Similarity rank 4: consider (0.19512)
+DEBUG:root:Similarity rank 5: quiet (0.18965)
+DEBUG:root:Similarity rank 6: encountered (0.18820)
+DEBUG:root:Similarity rank 7: keith (0.18784)
+DEBUG:root:Similarity rank 8: urged (0.18735)
+DEBUG:root:Similarity rank 9: one (0.18505)
+DEBUG:root:Batch 2867: evaluating analogy task: swim:swimming::move:moving
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01502
+DEBUG:root:Similarity rank 0: forthcoming (0.21137)
+DEBUG:root:Similarity rank 1: investment (0.21016)
+DEBUG:root:Similarity rank 2: enjoys (0.20936)
+DEBUG:root:Similarity rank 3: exposition (0.20241)
+DEBUG:root:Similarity rank 4: miriam (0.20138)
+DEBUG:root:Similarity rank 5: anzac (0.20091)
+DEBUG:root:Similarity rank 6: conversations (0.19977)
+DEBUG:root:Similarity rank 7: fleet (0.19903)
+DEBUG:root:Similarity rank 8: internationale (0.19580)
+DEBUG:root:Similarity rank 9: tow (0.19279)
+DEBUG:root:Batch 2867: evaluating analogy task: feeding:fed::enhancing:enhanced
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08624
+DEBUG:root:Similarity rank 0: missions (0.22836)
+DEBUG:root:Similarity rank 1: cable (0.22263)
+DEBUG:root:Similarity rank 2: accredited (0.20125)
+DEBUG:root:Similarity rank 3: valves (0.19935)
+DEBUG:root:Similarity rank 4: hip (0.19862)
+DEBUG:root:Similarity rank 5: roundabout (0.19410)
+DEBUG:root:Similarity rank 6: aus (0.19401)
+DEBUG:root:Similarity rank 7: bahrain (0.19244)
+DEBUG:root:Similarity rank 8: kennedy (0.19131)
+DEBUG:root:Similarity rank 9: decree (0.19115)
+DEBUG:root:Batch 2867: evaluating analogy task: building:buildings::banana:bananas
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01239
+DEBUG:root:Similarity rank 0: fifteen (0.24006)
+DEBUG:root:Similarity rank 1: bag (0.23473)
+DEBUG:root:Similarity rank 2: platoon (0.22914)
+DEBUG:root:Similarity rank 3: emphasizes (0.21264)
+DEBUG:root:Similarity rank 4: grasping (0.21007)
+DEBUG:root:Similarity rank 5: desires (0.19661)
+DEBUG:root:Similarity rank 6: strung (0.19624)
+DEBUG:root:Similarity rank 7: summary (0.19176)
+DEBUG:root:Similarity rank 8: prelate (0.19093)
+DEBUG:root:Similarity rank 9: noticed (0.18910)
+DEBUG:root:Batch 3330, sample 8
+DEBUG:root:word_pairs=pac, shang
+DEBUG:root:probs=0.23893
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 3
+DEBUG:root:word_pairs=pac, released
+DEBUG:root:probs=0.00001
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 20
+DEBUG:root:word_pairs=alaska, attempts
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 1
+DEBUG:root:word_pairs=pac, the
+DEBUG:root:probs=0.99985
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 2
+DEBUG:root:word_pairs=pac, miles
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 17
+DEBUG:root:word_pairs=alaska, member
+DEBUG:root:probs=0.99984
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 6
+DEBUG:root:word_pairs=pac, lone
+DEBUG:root:probs=0.99971
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 0
+DEBUG:root:word_pairs=pac, alaska
+DEBUG:root:probs=0.54620
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 3330, sample 13
+DEBUG:root:word_pairs=pac, jurisdictions
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 27
+DEBUG:root:word_pairs=alaska, first
+DEBUG:root:probs=0.00897
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 14
+DEBUG:root:word_pairs=pac, of
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 19
+DEBUG:root:word_pairs=alaska, weakening
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 21
+DEBUG:root:word_pairs=alaska, friday
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 12
+DEBUG:root:word_pairs=pac, pressures
+DEBUG:root:probs=0.94086
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 7
+DEBUG:root:word_pairs=pac, shirley
+DEBUG:root:probs=0.00011
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 24
+DEBUG:root:word_pairs=alaska, hounds
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 22
+DEBUG:root:word_pairs=alaska, leads
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 29
+DEBUG:root:word_pairs=alaska, interest
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 23
+DEBUG:root:word_pairs=alaska, capturing
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330, sample 11
+DEBUG:root:word_pairs=pac, influence
+DEBUG:root:probs=0.00678
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 3330: evaluating analogy task: Tripoli:Libya::Baghdad:Iraq
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01260
+DEBUG:root:Similarity rank 0: luzon (0.25656)
+DEBUG:root:Similarity rank 1: manor (0.23368)
+DEBUG:root:Similarity rank 2: commitments (0.20967)
+DEBUG:root:Similarity rank 3: seats (0.20551)
+DEBUG:root:Similarity rank 4: majors (0.20551)
+DEBUG:root:Similarity rank 5: able (0.19958)
+DEBUG:root:Similarity rank 6: arid (0.19551)
+DEBUG:root:Similarity rank 7: standing (0.19106)
+DEBUG:root:Similarity rank 8: virginity (0.19006)
+DEBUG:root:Similarity rank 9: tc (0.18924)
+DEBUG:root:Batch 3330: evaluating analogy task: Warsaw:Poland::Berlin:Germany
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.06327
+DEBUG:root:Similarity rank 0: approx (0.22727)
+DEBUG:root:Similarity rank 1: teamed (0.21496)
+DEBUG:root:Similarity rank 2: diverted (0.20650)
+DEBUG:root:Similarity rank 3: luther (0.20587)
+DEBUG:root:Similarity rank 4: sloan (0.19563)
+DEBUG:root:Similarity rank 5: plug (0.19555)
+DEBUG:root:Similarity rank 6: valerie (0.19173)
+DEBUG:root:Similarity rank 7: sued (0.19081)
+DEBUG:root:Similarity rank 8: cater (0.19029)
+DEBUG:root:Similarity rank 9: cao (0.18956)
+DEBUG:root:Batch 3330: evaluating analogy task: Nashville:Tennessee::Tampa:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.10119
+DEBUG:root:Similarity rank 0: reefs (0.27059)
+DEBUG:root:Similarity rank 1: discover (0.21673)
+DEBUG:root:Similarity rank 2: joao (0.21393)
+DEBUG:root:Similarity rank 3: turbulent (0.19149)
+DEBUG:root:Similarity rank 4: earnings (0.19038)
+DEBUG:root:Similarity rank 5: compliment (0.19015)
+DEBUG:root:Similarity rank 6: noted (0.19004)
+DEBUG:root:Similarity rank 7: bidding (0.18951)
+DEBUG:root:Similarity rank 8: somber (0.18684)
+DEBUG:root:Similarity rank 9: downtown (0.18624)
+DEBUG:root:Batch 3330: evaluating analogy task: slow:slowly::most:mostly
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.08281
+DEBUG:root:Similarity rank 0: defamation (0.25498)
+DEBUG:root:Similarity rank 1: potentially (0.23362)
+DEBUG:root:Similarity rank 2: europa (0.21114)
+DEBUG:root:Similarity rank 3: snail (0.20826)
+DEBUG:root:Similarity rank 4: plum (0.20751)
+DEBUG:root:Similarity rank 5: church (0.20326)
+DEBUG:root:Similarity rank 6: indefinite (0.20081)
+DEBUG:root:Similarity rank 7: ethics (0.20050)
+DEBUG:root:Similarity rank 8: owe (0.19859)
+DEBUG:root:Similarity rank 9: furnace (0.19614)
+DEBUG:root:Batch 3330: evaluating analogy task: think:thinking::say:saying
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05887
+DEBUG:root:Similarity rank 0: dennis (0.22326)
+DEBUG:root:Similarity rank 1: eastman (0.21846)
+DEBUG:root:Similarity rank 2: libraries (0.20942)
+DEBUG:root:Similarity rank 3: distinguished (0.20567)
+DEBUG:root:Similarity rank 4: cain (0.20353)
+DEBUG:root:Similarity rank 5: echo (0.19850)
+DEBUG:root:Similarity rank 6: lecture (0.19532)
+DEBUG:root:Similarity rank 7: penetrate (0.19512)
+DEBUG:root:Similarity rank 8: natalia (0.19263)
+DEBUG:root:Similarity rank 9: upset (0.18798)
+DEBUG:root:Batch 3330: evaluating analogy task: Japan:Japanese::Thailand:Thai
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06289
+DEBUG:root:Similarity rank 0: unearthed (0.22869)
+DEBUG:root:Similarity rank 1: shannon (0.21012)
+DEBUG:root:Similarity rank 2: cycles (0.20808)
+DEBUG:root:Similarity rank 3: elk (0.20806)
+DEBUG:root:Similarity rank 4: supported (0.20602)
+DEBUG:root:Similarity rank 5: giorgio (0.20384)
+DEBUG:root:Similarity rank 6: volumes (0.20261)
+DEBUG:root:Similarity rank 7: weigh (0.20207)
+DEBUG:root:Similarity rank 8: pbs (0.20026)
+DEBUG:root:Similarity rank 9: disdain (0.19968)
+DEBUG:root:Batch 3330: evaluating analogy task: Netherlands:Dutch::Switzerland:Swiss
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00572
+DEBUG:root:Similarity rank 0: councillor (0.23542)
+DEBUG:root:Similarity rank 1: traverse (0.19805)
+DEBUG:root:Similarity rank 2: poke (0.19294)
+DEBUG:root:Similarity rank 3: shocks (0.19262)
+DEBUG:root:Similarity rank 4: pathways (0.18943)
+DEBUG:root:Similarity rank 5: detecting (0.18907)
+DEBUG:root:Similarity rank 6: olympus (0.18855)
+DEBUG:root:Similarity rank 7: etat (0.18755)
+DEBUG:root:Similarity rank 8: regression (0.18701)
+DEBUG:root:Similarity rank 9: fools (0.18597)
+DEBUG:root:Batch 3330: evaluating analogy task: Switzerland:Swiss::Chile:Chilean
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.14742
+DEBUG:root:Similarity rank 0: dudley (0.21680)
+DEBUG:root:Similarity rank 1: mature (0.21492)
+DEBUG:root:Similarity rank 2: tie (0.20045)
+DEBUG:root:Similarity rank 3: z (0.19912)
+DEBUG:root:Similarity rank 4: club (0.19829)
+DEBUG:root:Similarity rank 5: spice (0.19775)
+DEBUG:root:Similarity rank 6: resurrection (0.19493)
+DEBUG:root:Similarity rank 7: phil (0.19489)
+DEBUG:root:Similarity rank 8: forks (0.18870)
+DEBUG:root:Similarity rank 9: shadow (0.18800)
+DEBUG:root:Batch 3330: evaluating analogy task: enhancing:enhanced::swimming:swam
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04412
+DEBUG:root:Similarity rank 0: flowed (0.22552)
+DEBUG:root:Similarity rank 1: mariners (0.21746)
+DEBUG:root:Similarity rank 2: resigning (0.20615)
+DEBUG:root:Similarity rank 3: chan (0.20054)
+DEBUG:root:Similarity rank 4: motionless (0.19935)
+DEBUG:root:Similarity rank 5: democrat (0.19928)
+DEBUG:root:Similarity rank 6: bride (0.19847)
+DEBUG:root:Similarity rank 7: inwardly (0.19734)
+DEBUG:root:Similarity rank 8: andrea (0.19441)
+DEBUG:root:Similarity rank 9: amar (0.19271)
+DEBUG:root:Batch 3330: evaluating analogy task: cloud:clouds::banana:bananas
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.10901
+DEBUG:root:Similarity rank 0: adherents (0.24886)
+DEBUG:root:Similarity rank 1: draft (0.22245)
+DEBUG:root:Similarity rank 2: astonished (0.21848)
+DEBUG:root:Similarity rank 3: literary (0.21401)
+DEBUG:root:Similarity rank 4: roar (0.21227)
+DEBUG:root:Similarity rank 5: littered (0.20731)
+DEBUG:root:Similarity rank 6: initiatives (0.20425)
+DEBUG:root:Similarity rank 7: optimistic (0.19655)
+DEBUG:root:Similarity rank 8: aye (0.19262)
+DEBUG:root:Similarity rank 9: projects (0.18867)
+DEBUG:root:Batch 3330: evaluating analogy task: sing:sings::walk:walks
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03142
+DEBUG:root:Similarity rank 0: mackenzie (0.24510)
+DEBUG:root:Similarity rank 1: deep (0.21776)
+DEBUG:root:Similarity rank 2: johann (0.21010)
+DEBUG:root:Similarity rank 3: toad (0.20755)
+DEBUG:root:Similarity rank 4: kisses (0.20287)
+DEBUG:root:Similarity rank 5: upgrade (0.20000)
+DEBUG:root:Similarity rank 6: leash (0.19599)
+DEBUG:root:Similarity rank 7: darlington (0.19095)
+DEBUG:root:Similarity rank 8: special (0.19014)
+DEBUG:root:Similarity rank 9: playground (0.18835)
+DEBUG:root:Batch 3795: evaluating analogy task: Georgetown:Guyana::Lima:Peru
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08696
+DEBUG:root:Similarity rank 0: describes (0.21046)
+DEBUG:root:Similarity rank 1: sharing (0.20303)
+DEBUG:root:Similarity rank 2: opinion (0.19880)
+DEBUG:root:Similarity rank 3: stereo (0.19414)
+DEBUG:root:Similarity rank 4: hitch (0.19389)
+DEBUG:root:Similarity rank 5: reginald (0.19221)
+DEBUG:root:Similarity rank 6: geometric (0.19061)
+DEBUG:root:Similarity rank 7: wolverine (0.18836)
+DEBUG:root:Similarity rank 8: swear (0.18782)
+DEBUG:root:Similarity rank 9: shapiro (0.18777)
+DEBUG:root:Batch 3795: evaluating analogy task: acceptable:unacceptable::fortunate:unfortunate
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02291
+DEBUG:root:Similarity rank 0: flames (0.22571)
+DEBUG:root:Similarity rank 1: extra (0.22342)
+DEBUG:root:Similarity rank 2: captained (0.21750)
+DEBUG:root:Similarity rank 3: composed (0.21495)
+DEBUG:root:Similarity rank 4: dillon (0.19807)
+DEBUG:root:Similarity rank 5: demetrius (0.19714)
+DEBUG:root:Similarity rank 6: barbecue (0.18968)
+DEBUG:root:Similarity rank 7: modelled (0.18770)
+DEBUG:root:Similarity rank 8: decision (0.18732)
+DEBUG:root:Similarity rank 9: modernization (0.18258)
+DEBUG:root:Batch 3795: evaluating analogy task: bad:worse::young:younger
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05210
+DEBUG:root:Similarity rank 0: bum (0.23337)
+DEBUG:root:Similarity rank 1: gilmore (0.20728)
+DEBUG:root:Similarity rank 2: kelley (0.20483)
+DEBUG:root:Similarity rank 3: combines (0.20206)
+DEBUG:root:Similarity rank 4: lightning (0.20116)
+DEBUG:root:Similarity rank 5: likened (0.19708)
+DEBUG:root:Similarity rank 6: stalk (0.19541)
+DEBUG:root:Similarity rank 7: hughes (0.19325)
+DEBUG:root:Similarity rank 8: album (0.18825)
+DEBUG:root:Similarity rank 9: aryan (0.18757)
+DEBUG:root:Batch 3795: evaluating analogy task: strong:stronger::cheap:cheaper
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02926
+DEBUG:root:Similarity rank 0: metals (0.27055)
+DEBUG:root:Similarity rank 1: denying (0.22224)
+DEBUG:root:Similarity rank 2: mathematical (0.21200)
+DEBUG:root:Similarity rank 3: comparable (0.20906)
+DEBUG:root:Similarity rank 4: ling (0.20541)
+DEBUG:root:Similarity rank 5: todd (0.19524)
+DEBUG:root:Similarity rank 6: flirt (0.19471)
+DEBUG:root:Similarity rank 7: shafts (0.18805)
+DEBUG:root:Similarity rank 8: distraught (0.18521)
+DEBUG:root:Similarity rank 9: kenny (0.18499)
+DEBUG:root:Batch 3795: evaluating analogy task: simple:simplest::long:longest
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01064
+DEBUG:root:Similarity rank 0: andhra (0.24788)
+DEBUG:root:Similarity rank 1: buckingham (0.22771)
+DEBUG:root:Similarity rank 2: witness (0.22310)
+DEBUG:root:Similarity rank 3: russian (0.20673)
+DEBUG:root:Similarity rank 4: evaluated (0.20665)
+DEBUG:root:Similarity rank 5: alexandre (0.20351)
+DEBUG:root:Similarity rank 6: alleged (0.19947)
+DEBUG:root:Similarity rank 7: praises (0.19818)
+DEBUG:root:Similarity rank 8: regency (0.19601)
+DEBUG:root:Similarity rank 9: bundles (0.19191)
+DEBUG:root:Batch 3795: evaluating analogy task: code:coding::run:running
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06475
+DEBUG:root:Similarity rank 0: assigns (0.20036)
+DEBUG:root:Similarity rank 1: recorded (0.19899)
+DEBUG:root:Similarity rank 2: macro (0.19538)
+DEBUG:root:Similarity rank 3: freddy (0.19533)
+DEBUG:root:Similarity rank 4: retracted (0.19157)
+DEBUG:root:Similarity rank 5: alterations (0.18778)
+DEBUG:root:Similarity rank 6: feed (0.18701)
+DEBUG:root:Similarity rank 7: frankly (0.18402)
+DEBUG:root:Similarity rank 8: excluded (0.18357)
+DEBUG:root:Similarity rank 9: glory (0.18251)
+DEBUG:root:Batch 3795: evaluating analogy task: discover:discovering::sit:sitting
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00483
+DEBUG:root:Similarity rank 0: modulation (0.23786)
+DEBUG:root:Similarity rank 1: vincent (0.23463)
+DEBUG:root:Similarity rank 2: nix (0.22093)
+DEBUG:root:Similarity rank 3: limited (0.21504)
+DEBUG:root:Similarity rank 4: extracts (0.20366)
+DEBUG:root:Similarity rank 5: preceded (0.19984)
+DEBUG:root:Similarity rank 6: deputy (0.19732)
+DEBUG:root:Similarity rank 7: notebook (0.19322)
+DEBUG:root:Similarity rank 8: miss (0.19268)
+DEBUG:root:Similarity rank 9: demi (0.19102)
+DEBUG:root:Batch 3795: evaluating analogy task: Australia:Australian::France:French
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.09057
+DEBUG:root:Similarity rank 0: verified (0.22475)
+DEBUG:root:Similarity rank 1: bergman (0.20953)
+DEBUG:root:Similarity rank 2: view (0.20174)
+DEBUG:root:Similarity rank 3: fuselage (0.19743)
+DEBUG:root:Similarity rank 4: nominations (0.19136)
+DEBUG:root:Similarity rank 5: trophies (0.19059)
+DEBUG:root:Similarity rank 6: darkening (0.18944)
+DEBUG:root:Similarity rank 7: arden (0.18778)
+DEBUG:root:Similarity rank 8: kobe (0.18727)
+DEBUG:root:Similarity rank 9: vin (0.18562)
+DEBUG:root:Batch 3795: evaluating analogy task: Australia:Australian::Italy:Italian
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00460
+DEBUG:root:Similarity rank 0: invitation (0.21948)
+DEBUG:root:Similarity rank 1: circles (0.19956)
+DEBUG:root:Similarity rank 2: tiles (0.19935)
+DEBUG:root:Similarity rank 3: reveals (0.19689)
+DEBUG:root:Similarity rank 4: ages (0.19663)
+DEBUG:root:Similarity rank 5: firms (0.19093)
+DEBUG:root:Similarity rank 6: variously (0.18907)
+DEBUG:root:Similarity rank 7: stormed (0.18684)
+DEBUG:root:Similarity rank 8: substitute (0.17928)
+DEBUG:root:Similarity rank 9: spotting (0.17847)
+DEBUG:root:Batch 3795: evaluating analogy task: Croatia:Croatian::Switzerland:Swiss
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03443
+DEBUG:root:Similarity rank 0: charlemagne (0.21565)
+DEBUG:root:Similarity rank 1: product (0.21153)
+DEBUG:root:Similarity rank 2: television (0.20517)
+DEBUG:root:Similarity rank 3: sylvester (0.19993)
+DEBUG:root:Similarity rank 4: marx (0.19555)
+DEBUG:root:Similarity rank 5: bulldog (0.19310)
+DEBUG:root:Similarity rank 6: constitute (0.18633)
+DEBUG:root:Similarity rank 7: jealous (0.18632)
+DEBUG:root:Similarity rank 8: plc (0.18611)
+DEBUG:root:Similarity rank 9: carriages (0.18610)
+DEBUG:root:Batch 3795: evaluating analogy task: Netherlands:Dutch::France:French
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.15671
+DEBUG:root:Similarity rank 0: alpha (0.22282)
+DEBUG:root:Similarity rank 1: occurrences (0.20411)
+DEBUG:root:Similarity rank 2: coded (0.19628)
+DEBUG:root:Similarity rank 3: ibn (0.19504)
+DEBUG:root:Similarity rank 4: regression (0.19257)
+DEBUG:root:Similarity rank 5: tin (0.19194)
+DEBUG:root:Similarity rank 6: hai (0.19192)
+DEBUG:root:Similarity rank 7: ranks (0.19183)
+DEBUG:root:Similarity rank 8: showtime (0.18910)
+DEBUG:root:Similarity rank 9: bonnie (0.18653)
+DEBUG:root:Batch 3795: evaluating analogy task: knowing:knew::selling:sold
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00677
+DEBUG:root:Similarity rank 0: warp (0.21209)
+DEBUG:root:Similarity rank 1: crime (0.20952)
+DEBUG:root:Similarity rank 2: introduce (0.20639)
+DEBUG:root:Similarity rank 3: woodward (0.20185)
+DEBUG:root:Similarity rank 4: plastered (0.20158)
+DEBUG:root:Similarity rank 5: watts (0.19699)
+DEBUG:root:Similarity rank 6: late (0.19606)
+DEBUG:root:Similarity rank 7: tully (0.19526)
+DEBUG:root:Similarity rank 8: claus (0.19226)
+DEBUG:root:Similarity rank 9: disgust (0.18942)
+DEBUG:root:Batch 3795: evaluating analogy task: find:finds::scream:screams
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02722
+DEBUG:root:Similarity rank 0: nutritional (0.22977)
+DEBUG:root:Similarity rank 1: got (0.22721)
+DEBUG:root:Similarity rank 2: widening (0.21669)
+DEBUG:root:Similarity rank 3: sanders (0.21626)
+DEBUG:root:Similarity rank 4: receivers (0.20079)
+DEBUG:root:Similarity rank 5: sk (0.19656)
+DEBUG:root:Similarity rank 6: urbana (0.19600)
+DEBUG:root:Similarity rank 7: pilasters (0.19300)
+DEBUG:root:Similarity rank 8: marched (0.19254)
+DEBUG:root:Similarity rank 9: drugs (0.19174)
+DEBUG:root:Batch 3795: evaluating analogy task: generate:generates::find:finds
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.09114
+DEBUG:root:Similarity rank 0: exams (0.24607)
+DEBUG:root:Similarity rank 1: flicked (0.21815)
+DEBUG:root:Similarity rank 2: apply (0.21057)
+DEBUG:root:Similarity rank 3: osman (0.20931)
+DEBUG:root:Similarity rank 4: pulitzer (0.19809)
+DEBUG:root:Similarity rank 5: millennia (0.19807)
+DEBUG:root:Similarity rank 6: erotic (0.19757)
+DEBUG:root:Similarity rank 7: ricardo (0.19669)
+DEBUG:root:Similarity rank 8: trust (0.19448)
+DEBUG:root:Similarity rank 9: marvin (0.19264)
+DEBUG:root:Batch 4275, sample 907
+DEBUG:root:word_pairs=journal, degrees
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 1367
+DEBUG:root:word_pairs=medical, easily
+DEBUG:root:probs=0.00698
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 2998
+DEBUG:root:word_pairs=american, around
+DEBUG:root:probs=0.02042
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 3409
+DEBUG:root:word_pairs=fatalities, part
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 98
+DEBUG:root:word_pairs=calculated, wry
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 2533
+DEBUG:root:word_pairs=deadly, raged
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 1040
+DEBUG:root:word_pairs=journal, medical
+DEBUG:root:probs=0.96151
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 4275, sample 175
+DEBUG:root:word_pairs=calculated, by
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 187
+DEBUG:root:word_pairs=calculated, in
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 496
+DEBUG:root:word_pairs=fungus, caps
+DEBUG:root:probs=0.82954
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 4275, sample 530
+DEBUG:root:word_pairs=fungus, established
+DEBUG:root:probs=0.00042
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 2570
+DEBUG:root:word_pairs=deadly, expressed
+DEBUG:root:probs=0.99980
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 744
+DEBUG:root:word_pairs=reported, ronald
+DEBUG:root:probs=0.05792
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 1840
+DEBUG:root:word_pairs=fatal, toxic
+DEBUG:root:probs=0.99995
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 4275, sample 1583
+DEBUG:root:word_pairs=medical, did
+DEBUG:root:probs=0.00036
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 646
+DEBUG:root:word_pairs=fungus, neighbourhoods
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 2815
+DEBUG:root:word_pairs=implies, as
+DEBUG:root:probs=0.00009
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 782
+DEBUG:root:word_pairs=reported, capsule
+DEBUG:root:probs=0.99974
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 515
+DEBUG:root:word_pairs=fungus, passed
+DEBUG:root:probs=0.16753
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275, sample 1903
+DEBUG:root:word_pairs=poisoning, strategy
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 4275: evaluating analogy task: Bucharest:Romania::Madrid:Spain
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04654
+DEBUG:root:Similarity rank 0: entertainer (0.22438)
+DEBUG:root:Similarity rank 1: cultural (0.20808)
+DEBUG:root:Similarity rank 2: gary (0.20375)
+DEBUG:root:Similarity rank 3: delays (0.20288)
+DEBUG:root:Similarity rank 4: naval (0.19961)
+DEBUG:root:Similarity rank 5: dioxide (0.19560)
+DEBUG:root:Similarity rank 6: tower (0.19288)
+DEBUG:root:Similarity rank 7: blackberry (0.18926)
+DEBUG:root:Similarity rank 8: suppression (0.18827)
+DEBUG:root:Similarity rank 9: pea (0.18719)
+DEBUG:root:Batch 4275: evaluating analogy task: Budapest:Hungary::Canberra:Australia
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00698
+DEBUG:root:Similarity rank 0: nigerian (0.22571)
+DEBUG:root:Similarity rank 1: ladder (0.20684)
+DEBUG:root:Similarity rank 2: transylvania (0.20386)
+DEBUG:root:Similarity rank 3: phosphate (0.20197)
+DEBUG:root:Similarity rank 4: hughes (0.19792)
+DEBUG:root:Similarity rank 5: reporting (0.19709)
+DEBUG:root:Similarity rank 6: brethren (0.18857)
+DEBUG:root:Similarity rank 7: spends (0.18822)
+DEBUG:root:Similarity rank 8: donnelly (0.18710)
+DEBUG:root:Similarity rank 9: retiring (0.18310)
+DEBUG:root:Batch 4275: evaluating analogy task: Glendale:California::Denver:Colorado
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00710
+DEBUG:root:Similarity rank 0: volunteered (0.23580)
+DEBUG:root:Similarity rank 1: lok (0.20153)
+DEBUG:root:Similarity rank 2: kara (0.19972)
+DEBUG:root:Similarity rank 3: recover (0.19950)
+DEBUG:root:Similarity rank 4: collaborator (0.19913)
+DEBUG:root:Similarity rank 5: rebirth (0.19572)
+DEBUG:root:Similarity rank 6: denial (0.19221)
+DEBUG:root:Similarity rank 7: phrases (0.19110)
+DEBUG:root:Similarity rank 8: keystone (0.19075)
+DEBUG:root:Similarity rank 9: sociologist (0.18942)
+DEBUG:root:Batch 4275: evaluating analogy task: apparent:apparently::possible:possibly
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05952
+DEBUG:root:Similarity rank 0: fifa (0.23957)
+DEBUG:root:Similarity rank 1: amid (0.21549)
+DEBUG:root:Similarity rank 2: selection (0.21157)
+DEBUG:root:Similarity rank 3: kendrick (0.20972)
+DEBUG:root:Similarity rank 4: anton (0.20961)
+DEBUG:root:Similarity rank 5: each (0.20461)
+DEBUG:root:Similarity rank 6: participated (0.20385)
+DEBUG:root:Similarity rank 7: bolsheviks (0.20330)
+DEBUG:root:Similarity rank 8: immigration (0.20160)
+DEBUG:root:Similarity rank 9: riot (0.20020)
+DEBUG:root:Batch 4275: evaluating analogy task: large:larger::slow:slower
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03502
+DEBUG:root:Similarity rank 0: partially (0.25098)
+DEBUG:root:Similarity rank 1: i (0.20303)
+DEBUG:root:Similarity rank 2: feelings (0.20202)
+DEBUG:root:Similarity rank 3: landfill (0.19855)
+DEBUG:root:Similarity rank 4: tingling (0.19735)
+DEBUG:root:Similarity rank 5: designers (0.19662)
+DEBUG:root:Similarity rank 6: reginald (0.19404)
+DEBUG:root:Similarity rank 7: starr (0.19323)
+DEBUG:root:Similarity rank 8: gunner (0.19310)
+DEBUG:root:Similarity rank 9: turbulent (0.19284)
+DEBUG:root:Batch 4275: evaluating analogy task: tight:tighter::hot:hotter
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07254
+DEBUG:root:Similarity rank 0: prey (0.21606)
+DEBUG:root:Similarity rank 1: frozen (0.21167)
+DEBUG:root:Similarity rank 2: flushing (0.20801)
+DEBUG:root:Similarity rank 3: franco (0.20750)
+DEBUG:root:Similarity rank 4: senegal (0.20385)
+DEBUG:root:Similarity rank 5: slight (0.20344)
+DEBUG:root:Similarity rank 6: origins (0.20100)
+DEBUG:root:Similarity rank 7: attack (0.19978)
+DEBUG:root:Similarity rank 8: doorstep (0.19970)
+DEBUG:root:Similarity rank 9: pinto (0.19617)
+DEBUG:root:Batch 4275: evaluating analogy task: shuffle:shuffling::look:looking
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01934
+DEBUG:root:Similarity rank 0: belt (0.21117)
+DEBUG:root:Similarity rank 1: wound (0.20861)
+DEBUG:root:Similarity rank 2: epoch (0.20858)
+DEBUG:root:Similarity rank 3: architectural (0.20141)
+DEBUG:root:Similarity rank 4: wexford (0.19505)
+DEBUG:root:Similarity rank 5: ltd (0.19494)
+DEBUG:root:Similarity rank 6: viewers (0.19066)
+DEBUG:root:Similarity rank 7: asserted (0.19057)
+DEBUG:root:Similarity rank 8: quartermaster (0.19052)
+DEBUG:root:Similarity rank 9: essentially (0.18927)
+DEBUG:root:Batch 4275: evaluating analogy task: Albania:Albanian::Australia:Australian
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07276
+DEBUG:root:Similarity rank 0: musicians (0.21468)
+DEBUG:root:Similarity rank 1: arrest (0.20853)
+DEBUG:root:Similarity rank 2: valentine (0.19930)
+DEBUG:root:Similarity rank 3: angie (0.19597)
+DEBUG:root:Similarity rank 4: burying (0.19593)
+DEBUG:root:Similarity rank 5: efficiency (0.19285)
+DEBUG:root:Similarity rank 6: urging (0.19124)
+DEBUG:root:Similarity rank 7: wesley (0.18975)
+DEBUG:root:Similarity rank 8: cranes (0.18718)
+DEBUG:root:Similarity rank 9: ping (0.18667)
+DEBUG:root:Batch 4275: evaluating analogy task: Cambodia:Cambodian::Brazil:Brazilian
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04138
+DEBUG:root:Similarity rank 0: corporal (0.24139)
+DEBUG:root:Similarity rank 1: terri (0.21002)
+DEBUG:root:Similarity rank 2: barn (0.20924)
+DEBUG:root:Similarity rank 3: shielding (0.19992)
+DEBUG:root:Similarity rank 4: concern (0.19884)
+DEBUG:root:Similarity rank 5: convenient (0.19645)
+DEBUG:root:Similarity rank 6: bureaucracy (0.19465)
+DEBUG:root:Similarity rank 7: spines (0.19439)
+DEBUG:root:Similarity rank 8: gearbox (0.19400)
+DEBUG:root:Similarity rank 9: muslim (0.19367)
+DEBUG:root:Batch 4275: evaluating analogy task: England:English::Macedonia:Macedonian
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08779
+DEBUG:root:Similarity rank 0: interact (0.24651)
+DEBUG:root:Similarity rank 1: ankles (0.22857)
+DEBUG:root:Similarity rank 2: bluff (0.22631)
+DEBUG:root:Similarity rank 3: ecole (0.22552)
+DEBUG:root:Similarity rank 4: deprivation (0.22203)
+DEBUG:root:Similarity rank 5: pol (0.21158)
+DEBUG:root:Similarity rank 6: celebrating (0.20735)
+DEBUG:root:Similarity rank 7: canons (0.19822)
+DEBUG:root:Similarity rank 8: plato (0.19661)
+DEBUG:root:Similarity rank 9: backing (0.18635)
+DEBUG:root:Batch 4275: evaluating analogy task: feeding:fed::playing:played
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00915
+DEBUG:root:Similarity rank 0: missions (0.25404)
+DEBUG:root:Similarity rank 1: optimism (0.23322)
+DEBUG:root:Similarity rank 2: willingly (0.22225)
+DEBUG:root:Similarity rank 3: arterial (0.21204)
+DEBUG:root:Similarity rank 4: alexa (0.20905)
+DEBUG:root:Similarity rank 5: memorable (0.20361)
+DEBUG:root:Similarity rank 6: indigo (0.20078)
+DEBUG:root:Similarity rank 7: folder (0.19924)
+DEBUG:root:Similarity rank 8: standards (0.19903)
+DEBUG:root:Similarity rank 9: yun (0.19371)
+DEBUG:root:Batch 4275: evaluating analogy task: increasing:increased::walking:walked
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05269
+DEBUG:root:Similarity rank 0: sarajevo (0.24276)
+DEBUG:root:Similarity rank 1: pendleton (0.23762)
+DEBUG:root:Similarity rank 2: mao (0.22041)
+DEBUG:root:Similarity rank 3: delle (0.21738)
+DEBUG:root:Similarity rank 4: eden (0.21453)
+DEBUG:root:Similarity rank 5: deploy (0.20641)
+DEBUG:root:Similarity rank 6: islamic (0.20513)
+DEBUG:root:Similarity rank 7: seater (0.20011)
+DEBUG:root:Similarity rank 8: accent (0.19965)
+DEBUG:root:Similarity rank 9: santos (0.19617)
+DEBUG:root:Batch 4275: evaluating analogy task: computer:computers::dollar:dollars
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01312
+DEBUG:root:Similarity rank 0: cr (0.19834)
+DEBUG:root:Similarity rank 1: argue (0.19727)
+DEBUG:root:Similarity rank 2: alarm (0.18982)
+DEBUG:root:Similarity rank 3: colton (0.18842)
+DEBUG:root:Similarity rank 4: dodgers (0.18809)
+DEBUG:root:Similarity rank 5: opposing (0.18782)
+DEBUG:root:Similarity rank 6: selective (0.18664)
+DEBUG:root:Similarity rank 7: correlated (0.18535)
+DEBUG:root:Similarity rank 8: opt (0.18416)
+DEBUG:root:Similarity rank 9: daddy (0.18408)
+DEBUG:root:Batch 4275: evaluating analogy task: goat:goats::snake:snakes
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03286
+DEBUG:root:Similarity rank 0: geoffrey (0.23161)
+DEBUG:root:Similarity rank 1: commentator (0.21407)
+DEBUG:root:Similarity rank 2: pointing (0.20801)
+DEBUG:root:Similarity rank 3: admiring (0.20533)
+DEBUG:root:Similarity rank 4: serious (0.20403)
+DEBUG:root:Similarity rank 5: tailored (0.20147)
+DEBUG:root:Similarity rank 6: brewing (0.19849)
+DEBUG:root:Similarity rank 7: puebla (0.19363)
+DEBUG:root:Similarity rank 8: runway (0.18446)
+DEBUG:root:Similarity rank 9: birds (0.18347)
+DEBUG:root:Batch 4765: evaluating analogy task: Bucharest:Romania::Doha:Qatar
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01276
+DEBUG:root:Similarity rank 0: visuals (0.21558)
+DEBUG:root:Similarity rank 1: challenges (0.20452)
+DEBUG:root:Similarity rank 2: sexes (0.19961)
+DEBUG:root:Similarity rank 3: relaxing (0.19898)
+DEBUG:root:Similarity rank 4: analyze (0.19492)
+DEBUG:root:Similarity rank 5: moniker (0.19087)
+DEBUG:root:Similarity rank 6: dictatorship (0.18892)
+DEBUG:root:Similarity rank 7: predominantly (0.18808)
+DEBUG:root:Similarity rank 8: entries (0.18803)
+DEBUG:root:Similarity rank 9: fork (0.18578)
+DEBUG:root:Batch 4765: evaluating analogy task: swift:swiftly::rare:rarely
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02626
+DEBUG:root:Similarity rank 0: alloy (0.21113)
+DEBUG:root:Similarity rank 1: once (0.20383)
+DEBUG:root:Similarity rank 2: within (0.20284)
+DEBUG:root:Similarity rank 3: forefront (0.19626)
+DEBUG:root:Similarity rank 4: zombies (0.19574)
+DEBUG:root:Similarity rank 5: fourteenth (0.19471)
+DEBUG:root:Similarity rank 6: label (0.19000)
+DEBUG:root:Similarity rank 7: slip (0.18870)
+DEBUG:root:Similarity rank 8: awake (0.18858)
+DEBUG:root:Similarity rank 9: cassette (0.18687)
+DEBUG:root:Batch 4765: evaluating analogy task: simple:simpler::high:higher
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07747
+DEBUG:root:Similarity rank 0: peninsula (0.25345)
+DEBUG:root:Similarity rank 1: wrists (0.25248)
+DEBUG:root:Similarity rank 2: hinted (0.20784)
+DEBUG:root:Similarity rank 3: pads (0.20571)
+DEBUG:root:Similarity rank 4: kant (0.20551)
+DEBUG:root:Similarity rank 5: mysteriously (0.20453)
+DEBUG:root:Similarity rank 6: pianos (0.20284)
+DEBUG:root:Similarity rank 7: boiled (0.19647)
+DEBUG:root:Similarity rank 8: burgess (0.19402)
+DEBUG:root:Similarity rank 9: t (0.19380)
+DEBUG:root:Batch 4765: evaluating analogy task: young:younger::short:shorter
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.03835
+DEBUG:root:Similarity rank 0: kaufman (0.22293)
+DEBUG:root:Similarity rank 1: blur (0.20843)
+DEBUG:root:Similarity rank 2: adept (0.20202)
+DEBUG:root:Similarity rank 3: sahara (0.20200)
+DEBUG:root:Similarity rank 4: vaudeville (0.20151)
+DEBUG:root:Similarity rank 5: americas (0.19907)
+DEBUG:root:Similarity rank 6: arch (0.19905)
+DEBUG:root:Similarity rank 7: pair (0.19846)
+DEBUG:root:Similarity rank 8: seizing (0.19831)
+DEBUG:root:Similarity rank 9: chargers (0.19711)
+DEBUG:root:Batch 4765: evaluating analogy task: Albania:Albanian::Netherlands:Dutch
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04191
+DEBUG:root:Similarity rank 0: arrest (0.21440)
+DEBUG:root:Similarity rank 1: montana (0.21424)
+DEBUG:root:Similarity rank 2: dealt (0.21048)
+DEBUG:root:Similarity rank 3: mobilized (0.20701)
+DEBUG:root:Similarity rank 4: mil (0.20525)
+DEBUG:root:Similarity rank 5: valentine (0.19991)
+DEBUG:root:Similarity rank 6: ras (0.19738)
+DEBUG:root:Similarity rank 7: cranes (0.19661)
+DEBUG:root:Similarity rank 8: crowe (0.19610)
+DEBUG:root:Similarity rank 9: extraction (0.19535)
+DEBUG:root:Batch 4765: evaluating analogy task: Malta:Maltese::Denmark:Danish
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00533
+DEBUG:root:Similarity rank 0: profile (0.22207)
+DEBUG:root:Similarity rank 1: zombie (0.21064)
+DEBUG:root:Similarity rank 2: geometry (0.20118)
+DEBUG:root:Similarity rank 3: confessed (0.20107)
+DEBUG:root:Similarity rank 4: tavern (0.19865)
+DEBUG:root:Similarity rank 5: landscaping (0.19268)
+DEBUG:root:Similarity rank 6: laboratory (0.19068)
+DEBUG:root:Similarity rank 7: tops (0.18906)
+DEBUG:root:Similarity rank 8: middlesex (0.18612)
+DEBUG:root:Similarity rank 9: renowned (0.18477)
+DEBUG:root:Batch 4765: evaluating analogy task: increasing:increased::singing:sang
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08627
+DEBUG:root:Similarity rank 0: allowed (0.22553)
+DEBUG:root:Similarity rank 1: pendleton (0.21893)
+DEBUG:root:Similarity rank 2: hurricane (0.21798)
+DEBUG:root:Similarity rank 3: burton (0.21440)
+DEBUG:root:Similarity rank 4: heroism (0.20111)
+DEBUG:root:Similarity rank 5: broker (0.19487)
+DEBUG:root:Similarity rank 6: muller (0.19445)
+DEBUG:root:Similarity rank 7: accent (0.19182)
+DEBUG:root:Similarity rank 8: sienna (0.19096)
+DEBUG:root:Similarity rank 9: mirrored (0.18912)
+DEBUG:root:Batch 4765: evaluating analogy task: elephant:elephants::dog:dogs
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.03954
+DEBUG:root:Similarity rank 0: reigned (0.23088)
+DEBUG:root:Similarity rank 1: hopes (0.21734)
+DEBUG:root:Similarity rank 2: rotary (0.20507)
+DEBUG:root:Similarity rank 3: horde (0.19944)
+DEBUG:root:Similarity rank 4: employee (0.19778)
+DEBUG:root:Similarity rank 5: cannot (0.19096)
+DEBUG:root:Similarity rank 6: seating (0.19093)
+DEBUG:root:Similarity rank 7: acceleration (0.19059)
+DEBUG:root:Similarity rank 8: sb (0.19028)
+DEBUG:root:Similarity rank 9: scared (0.18994)
+DEBUG:root:Batch 4765: evaluating analogy task: mouse:mice::child:children
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.03448
+DEBUG:root:Similarity rank 0: daylight (0.25005)
+DEBUG:root:Similarity rank 1: whip (0.21776)
+DEBUG:root:Similarity rank 2: examination (0.21563)
+DEBUG:root:Similarity rank 3: brightness (0.20873)
+DEBUG:root:Similarity rank 4: joachim (0.20512)
+DEBUG:root:Similarity rank 5: shanghai (0.20289)
+DEBUG:root:Similarity rank 6: theorem (0.19712)
+DEBUG:root:Similarity rank 7: stimulate (0.19669)
+DEBUG:root:Similarity rank 8: maxwell (0.19501)
+DEBUG:root:Similarity rank 9: airplanes (0.19404)
+DEBUG:root:Batch 4765: evaluating analogy task: find:finds::say:says
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04201
+DEBUG:root:Similarity rank 0: enormous (0.22367)
+DEBUG:root:Similarity rank 1: wil (0.21582)
+DEBUG:root:Similarity rank 2: railroad (0.21148)
+DEBUG:root:Similarity rank 3: seahawks (0.20604)
+DEBUG:root:Similarity rank 4: foyer (0.20516)
+DEBUG:root:Similarity rank 5: urbana (0.20384)
+DEBUG:root:Similarity rank 6: got (0.18946)
+DEBUG:root:Similarity rank 7: plume (0.18882)
+DEBUG:root:Similarity rank 8: favor (0.18838)
+DEBUG:root:Similarity rank 9: darmstadt (0.18627)
+DEBUG:root:Batch 4765: evaluating analogy task: provide:provides::think:thinks
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.06046
+DEBUG:root:Similarity rank 0: wealthy (0.25333)
+DEBUG:root:Similarity rank 1: chants (0.22759)
+DEBUG:root:Similarity rank 2: piss (0.22065)
+DEBUG:root:Similarity rank 3: thirty (0.21116)
+DEBUG:root:Similarity rank 4: disagreements (0.20620)
+DEBUG:root:Similarity rank 5: truce (0.19936)
+DEBUG:root:Similarity rank 6: paired (0.19868)
+DEBUG:root:Similarity rank 7: aftermath (0.19453)
+DEBUG:root:Similarity rank 8: tumor (0.19432)
+DEBUG:root:Similarity rank 9: again (0.19408)
+DEBUG:root:Batch 5240, sample 793
+DEBUG:root:word_pairs=louisiana, tributaries
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 217
+DEBUG:root:word_pairs=entity, planes
+DEBUG:root:probs=0.78328
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 424
+DEBUG:root:word_pairs=lands, came
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 456
+DEBUG:root:word_pairs=lands, g
+DEBUG:root:probs=0.00421
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 846
+DEBUG:root:word_pairs=louisiana, for
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 970
+DEBUG:root:word_pairs=purchase, office
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 218
+DEBUG:root:word_pairs=entity, bonus
+DEBUG:root:probs=0.00001
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 513
+DEBUG:root:word_pairs=lands, command
+DEBUG:root:probs=0.22008
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 826
+DEBUG:root:word_pairs=louisiana, harbour
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 893
+DEBUG:root:word_pairs=purchase, copies
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 547
+DEBUG:root:word_pairs=lands, knife
+DEBUG:root:probs=0.99999
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 102
+DEBUG:root:word_pairs=was, a
+DEBUG:root:probs=0.07294
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 668
+DEBUG:root:word_pairs=even, a
+DEBUG:root:probs=0.05696
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 157
+DEBUG:root:word_pairs=entity, audition
+DEBUG:root:probs=0.00013
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 355
+DEBUG:root:word_pairs=mississippi, ineligible
+DEBUG:root:probs=0.06490
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 639
+DEBUG:root:word_pairs=even, ec
+DEBUG:root:probs=0.00293
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 1150
+DEBUG:root:word_pairs=territories, in
+DEBUG:root:probs=0.00022
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 216
+DEBUG:root:word_pairs=entity, invade
+DEBUG:root:probs=0.99402
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 518
+DEBUG:root:word_pairs=lands, publishing
+DEBUG:root:probs=0.99880
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240, sample 81
+DEBUG:root:word_pairs=was, florida
+DEBUG:root:probs=0.99999
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 5240: evaluating analogy task: Damascus:Syria::Kingston:Jamaica
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.10229
+DEBUG:root:Similarity rank 0: vectors (0.25672)
+DEBUG:root:Similarity rank 1: nova (0.25004)
+DEBUG:root:Similarity rank 2: khz (0.21275)
+DEBUG:root:Similarity rank 3: extended (0.20874)
+DEBUG:root:Similarity rank 4: situated (0.20690)
+DEBUG:root:Similarity rank 5: determined (0.20285)
+DEBUG:root:Similarity rank 6: late (0.20246)
+DEBUG:root:Similarity rank 7: deity (0.19820)
+DEBUG:root:Similarity rank 8: pudding (0.18656)
+DEBUG:root:Similarity rank 9: swearing (0.18485)
+DEBUG:root:Batch 5240: evaluating analogy task: Oakland:California::Garland:Texas
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04082
+DEBUG:root:Similarity rank 0: laughing (0.24418)
+DEBUG:root:Similarity rank 1: routinely (0.22256)
+DEBUG:root:Similarity rank 2: push (0.21635)
+DEBUG:root:Similarity rank 3: chichester (0.21069)
+DEBUG:root:Similarity rank 4: federer (0.20773)
+DEBUG:root:Similarity rank 5: rainy (0.20219)
+DEBUG:root:Similarity rank 6: hostilities (0.20045)
+DEBUG:root:Similarity rank 7: whitman (0.20009)
+DEBUG:root:Similarity rank 8: domesday (0.19791)
+DEBUG:root:Similarity rank 9: numbers (0.19627)
+DEBUG:root:Batch 5240: evaluating analogy task: hard:harder::great:greater
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02300
+DEBUG:root:Similarity rank 0: jensen (0.26428)
+DEBUG:root:Similarity rank 1: armored (0.22235)
+DEBUG:root:Similarity rank 2: murray (0.21707)
+DEBUG:root:Similarity rank 3: months (0.21156)
+DEBUG:root:Similarity rank 4: psychotic (0.20418)
+DEBUG:root:Similarity rank 5: zane (0.19762)
+DEBUG:root:Similarity rank 6: ruler (0.19067)
+DEBUG:root:Similarity rank 7: praises (0.19029)
+DEBUG:root:Similarity rank 8: commonly (0.18966)
+DEBUG:root:Similarity rank 9: evacuated (0.18763)
+DEBUG:root:Batch 5240: evaluating analogy task: slow:slower::tall:taller
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02390
+DEBUG:root:Similarity rank 0: irving (0.25827)
+DEBUG:root:Similarity rank 1: scholastic (0.25762)
+DEBUG:root:Similarity rank 2: begs (0.24296)
+DEBUG:root:Similarity rank 3: persecuted (0.22483)
+DEBUG:root:Similarity rank 4: portage (0.22279)
+DEBUG:root:Similarity rank 5: patrolling (0.21518)
+DEBUG:root:Similarity rank 6: scattering (0.19917)
+DEBUG:root:Similarity rank 7: munster (0.19194)
+DEBUG:root:Similarity rank 8: karl (0.18984)
+DEBUG:root:Similarity rank 9: congregations (0.18873)
+DEBUG:root:Batch 5240: evaluating analogy task: Iceland:Icelandic::Korea:Korean
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05663
+DEBUG:root:Similarity rank 0: accommodations (0.20731)
+DEBUG:root:Similarity rank 1: nowadays (0.20270)
+DEBUG:root:Similarity rank 2: harbour (0.19600)
+DEBUG:root:Similarity rank 3: commissioners (0.19420)
+DEBUG:root:Similarity rank 4: steep (0.19200)
+DEBUG:root:Similarity rank 5: flag (0.19180)
+DEBUG:root:Similarity rank 6: gone (0.19109)
+DEBUG:root:Similarity rank 7: debt (0.19090)
+DEBUG:root:Similarity rank 8: propeller (0.18979)
+DEBUG:root:Similarity rank 9: bold (0.18908)
+DEBUG:root:Batch 5240: evaluating analogy task: Peru:Peruvian::Mexico:Mexican
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04070
+DEBUG:root:Similarity rank 0: choi (0.21933)
+DEBUG:root:Similarity rank 1: certificate (0.20695)
+DEBUG:root:Similarity rank 2: navigable (0.20657)
+DEBUG:root:Similarity rank 3: utilization (0.20295)
+DEBUG:root:Similarity rank 4: false (0.20180)
+DEBUG:root:Similarity rank 5: richards (0.20167)
+DEBUG:root:Similarity rank 6: jump (0.20037)
+DEBUG:root:Similarity rank 7: novo (0.19948)
+DEBUG:root:Similarity rank 8: intelligent (0.19839)
+DEBUG:root:Similarity rank 9: heroic (0.19829)
+DEBUG:root:Batch 5240: evaluating analogy task: Thailand:Thai::Egypt:Egyptian
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04628
+DEBUG:root:Similarity rank 0: rule (0.24013)
+DEBUG:root:Similarity rank 1: mania (0.23524)
+DEBUG:root:Similarity rank 2: ordered (0.23040)
+DEBUG:root:Similarity rank 3: structures (0.22603)
+DEBUG:root:Similarity rank 4: sinatra (0.20659)
+DEBUG:root:Similarity rank 5: realize (0.20140)
+DEBUG:root:Similarity rank 6: sarcastically (0.19770)
+DEBUG:root:Similarity rank 7: signed (0.19206)
+DEBUG:root:Similarity rank 8: ravaged (0.19092)
+DEBUG:root:Similarity rank 9: johann (0.18313)
+DEBUG:root:Batch 5240: evaluating analogy task: eye:eyes::dog:dogs
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01015
+DEBUG:root:Similarity rank 0: employee (0.21795)
+DEBUG:root:Similarity rank 1: tapping (0.21748)
+DEBUG:root:Similarity rank 2: fair (0.21716)
+DEBUG:root:Similarity rank 3: treats (0.21152)
+DEBUG:root:Similarity rank 4: mit (0.20968)
+DEBUG:root:Similarity rank 5: bays (0.20942)
+DEBUG:root:Similarity rank 6: jun (0.20850)
+DEBUG:root:Similarity rank 7: claw (0.19235)
+DEBUG:root:Similarity rank 8: stumble (0.19226)
+DEBUG:root:Similarity rank 9: purchase (0.18776)
+DEBUG:root:Batch 5240: evaluating analogy task: mouse:mice::horse:horses
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01547
+DEBUG:root:Similarity rank 0: occupies (0.25179)
+DEBUG:root:Similarity rank 1: examination (0.22858)
+DEBUG:root:Similarity rank 2: page (0.22342)
+DEBUG:root:Similarity rank 3: talents (0.21358)
+DEBUG:root:Similarity rank 4: publications (0.20842)
+DEBUG:root:Similarity rank 5: accreditation (0.20641)
+DEBUG:root:Similarity rank 6: step (0.20484)
+DEBUG:root:Similarity rank 7: theorem (0.20406)
+DEBUG:root:Similarity rank 8: shanghai (0.19725)
+DEBUG:root:Similarity rank 9: years (0.19287)
+DEBUG:root:Batch 5240: evaluating analogy task: write:writes::sit:sits
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01810
+DEBUG:root:Similarity rank 0: spaces (0.24605)
+DEBUG:root:Similarity rank 1: reading (0.23595)
+DEBUG:root:Similarity rank 2: nicolas (0.20581)
+DEBUG:root:Similarity rank 3: estate (0.20411)
+DEBUG:root:Similarity rank 4: wedge (0.20389)
+DEBUG:root:Similarity rank 5: expenses (0.20387)
+DEBUG:root:Similarity rank 6: frank (0.20291)
+DEBUG:root:Similarity rank 7: nfc (0.19261)
+DEBUG:root:Similarity rank 8: phd (0.18703)
+DEBUG:root:Similarity rank 9: admitted (0.18699)
+DEBUG:root:Batch 5686: evaluating analogy task: Athens:Greece::Brussels:Belgium
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01337
+DEBUG:root:Similarity rank 0: zac (0.22075)
+DEBUG:root:Similarity rank 1: forbade (0.21535)
+DEBUG:root:Similarity rank 2: nak (0.19715)
+DEBUG:root:Similarity rank 3: castes (0.19693)
+DEBUG:root:Similarity rank 4: recall (0.19551)
+DEBUG:root:Similarity rank 5: brains (0.19474)
+DEBUG:root:Similarity rank 6: molecular (0.18763)
+DEBUG:root:Similarity rank 7: arbitration (0.18648)
+DEBUG:root:Similarity rank 8: restart (0.18344)
+DEBUG:root:Similarity rank 9: comb (0.18328)
+DEBUG:root:Batch 5686: evaluating analogy task: Nashville:Tennessee::Arlington:Texas
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07245
+DEBUG:root:Similarity rank 0: domination (0.26986)
+DEBUG:root:Similarity rank 1: discover (0.20746)
+DEBUG:root:Similarity rank 2: foraging (0.19979)
+DEBUG:root:Similarity rank 3: journalist (0.19498)
+DEBUG:root:Similarity rank 4: afraid (0.19487)
+DEBUG:root:Similarity rank 5: raging (0.19414)
+DEBUG:root:Similarity rank 6: reproduced (0.19243)
+DEBUG:root:Similarity rank 7: alfredo (0.19213)
+DEBUG:root:Similarity rank 8: vp (0.19208)
+DEBUG:root:Similarity rank 9: bidding (0.19183)
+DEBUG:root:Batch 5686: evaluating analogy task: Oakland:California::Tampa:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.06203
+DEBUG:root:Similarity rank 0: dayton (0.24329)
+DEBUG:root:Similarity rank 1: laughing (0.21376)
+DEBUG:root:Similarity rank 2: stressed (0.21188)
+DEBUG:root:Similarity rank 3: highways (0.21036)
+DEBUG:root:Similarity rank 4: potent (0.20843)
+DEBUG:root:Similarity rank 5: uv (0.20761)
+DEBUG:root:Similarity rank 6: cruz (0.20657)
+DEBUG:root:Similarity rank 7: slack (0.20006)
+DEBUG:root:Similarity rank 8: quote (0.19892)
+DEBUG:root:Similarity rank 9: thoroughly (0.19805)
+DEBUG:root:Batch 5686: evaluating analogy task: Thailand:Thai::Spain:Spanish
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.14142
+DEBUG:root:Similarity rank 0: inflation (0.22192)
+DEBUG:root:Similarity rank 1: grayson (0.21339)
+DEBUG:root:Similarity rank 2: nuclei (0.20891)
+DEBUG:root:Similarity rank 3: sinatra (0.20078)
+DEBUG:root:Similarity rank 4: kicks (0.19723)
+DEBUG:root:Similarity rank 5: traffic (0.18834)
+DEBUG:root:Similarity rank 6: detectives (0.18825)
+DEBUG:root:Similarity rank 7: southport (0.18454)
+DEBUG:root:Similarity rank 8: amphibious (0.18445)
+DEBUG:root:Similarity rank 9: intake (0.18440)
+DEBUG:root:Batch 5686: evaluating analogy task: enhancing:enhanced::implementing:implemented
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02311
+DEBUG:root:Similarity rank 0: keenan (0.22030)
+DEBUG:root:Similarity rank 1: cameo (0.21753)
+DEBUG:root:Similarity rank 2: ethnicity (0.21667)
+DEBUG:root:Similarity rank 3: resigning (0.20614)
+DEBUG:root:Similarity rank 4: globe (0.20582)
+DEBUG:root:Similarity rank 5: secret (0.20282)
+DEBUG:root:Similarity rank 6: off (0.20018)
+DEBUG:root:Similarity rank 7: andrea (0.19815)
+DEBUG:root:Similarity rank 8: pool (0.19554)
+DEBUG:root:Similarity rank 9: interlude (0.18916)
+DEBUG:root:Batch 5686: evaluating analogy task: moving:moved::writing:wrote
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02121
+DEBUG:root:Similarity rank 0: polynomial (0.25215)
+DEBUG:root:Similarity rank 1: terminals (0.22703)
+DEBUG:root:Similarity rank 2: cruises (0.22504)
+DEBUG:root:Similarity rank 3: fridays (0.21816)
+DEBUG:root:Similarity rank 4: tee (0.20631)
+DEBUG:root:Similarity rank 5: litres (0.20290)
+DEBUG:root:Similarity rank 6: assisting (0.20052)
+DEBUG:root:Similarity rank 7: grassroots (0.19518)
+DEBUG:root:Similarity rank 8: lakers (0.19295)
+DEBUG:root:Similarity rank 9: outpost (0.19286)
+DEBUG:root:Batch 5686: evaluating analogy task: sleeping:slept::jumping:jumped
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.09969
+DEBUG:root:Similarity rank 0: tuning (0.22976)
+DEBUG:root:Similarity rank 1: plurality (0.22131)
+DEBUG:root:Similarity rank 2: insulting (0.21912)
+DEBUG:root:Similarity rank 3: boutique (0.21314)
+DEBUG:root:Similarity rank 4: dev (0.20842)
+DEBUG:root:Similarity rank 5: flanked (0.20112)
+DEBUG:root:Similarity rank 6: exclusion (0.19854)
+DEBUG:root:Similarity rank 7: impossible (0.19779)
+DEBUG:root:Similarity rank 8: weeks (0.19653)
+DEBUG:root:Similarity rank 9: growls (0.19286)
+DEBUG:root:Batch 5686: evaluating analogy task: walking:walked::paying:paid
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.03556
+DEBUG:root:Similarity rank 0: reyes (0.19638)
+DEBUG:root:Similarity rank 1: ioc (0.19529)
+DEBUG:root:Similarity rank 2: avoided (0.19399)
+DEBUG:root:Similarity rank 3: sachs (0.19070)
+DEBUG:root:Similarity rank 4: devoted (0.19016)
+DEBUG:root:Similarity rank 5: cassandra (0.18857)
+DEBUG:root:Similarity rank 6: algebra (0.18616)
+DEBUG:root:Similarity rank 7: department (0.18306)
+DEBUG:root:Similarity rank 8: college (0.18282)
+DEBUG:root:Similarity rank 9: droplets (0.18251)
+DEBUG:root:Batch 5686: evaluating analogy task: bottle:bottles::finger:fingers
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.06863
+DEBUG:root:Similarity rank 0: skepticism (0.23227)
+DEBUG:root:Similarity rank 1: wagons (0.22812)
+DEBUG:root:Similarity rank 2: images (0.20571)
+DEBUG:root:Similarity rank 3: octagonal (0.20174)
+DEBUG:root:Similarity rank 4: strangers (0.20119)
+DEBUG:root:Similarity rank 5: technician (0.19895)
+DEBUG:root:Similarity rank 6: governor (0.19451)
+DEBUG:root:Similarity rank 7: patience (0.19442)
+DEBUG:root:Similarity rank 8: doyle (0.19346)
+DEBUG:root:Similarity rank 9: onto (0.19203)
+DEBUG:root:Batch 5686: evaluating analogy task: road:roads::car:cars
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04451
+DEBUG:root:Similarity rank 0: pub (0.21092)
+DEBUG:root:Similarity rank 1: overtook (0.20054)
+DEBUG:root:Similarity rank 2: charity (0.19942)
+DEBUG:root:Similarity rank 3: recited (0.19569)
+DEBUG:root:Similarity rank 4: nuclear (0.19545)
+DEBUG:root:Similarity rank 5: racial (0.19444)
+DEBUG:root:Similarity rank 6: amplifiers (0.19143)
+DEBUG:root:Similarity rank 7: ambition (0.19114)
+DEBUG:root:Similarity rank 8: borrow (0.19047)
+DEBUG:root:Similarity rank 9: stale (0.18990)
+DEBUG:root:Batch 6139, sample 1173
+DEBUG:root:word_pairs=act, shields
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 403
+DEBUG:root:word_pairs=as, this
+DEBUG:root:probs=0.00042
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1953
+DEBUG:root:word_pairs=allows, shovel
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1874
+DEBUG:root:word_pairs=for, accumulated
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1052
+DEBUG:root:word_pairs=boulder, entity
+DEBUG:root:probs=0.97381
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 956
+DEBUG:root:word_pairs=shifted, although
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1723
+DEBUG:root:word_pairs=mentioned, investment
+DEBUG:root:probs=0.00037
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 265
+DEBUG:root:word_pairs=author, replace
+DEBUG:root:probs=0.99999
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1021
+DEBUG:root:word_pairs=boulder, known
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 973
+DEBUG:root:word_pairs=shifted, directed
+DEBUG:root:probs=0.42458
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 339
+DEBUG:root:word_pairs=as, was
+DEBUG:root:probs=0.08535
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1828
+DEBUG:root:word_pairs=for, s
+DEBUG:root:probs=0.01290
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1684
+DEBUG:root:word_pairs=mentioned, charlotte
+DEBUG:root:probs=0.92212
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1300
+DEBUG:root:word_pairs=act, ur
+DEBUG:root:probs=0.00005
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 512
+DEBUG:root:word_pairs=boulder, even
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 6139, sample 1176
+DEBUG:root:word_pairs=act, went
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 1977
+DEBUG:root:word_pairs=allows, the
+DEBUG:root:probs=1.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 24
+DEBUG:root:word_pairs=lobbying, zombies
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139, sample 576
+DEBUG:root:word_pairs=boulder, bc
+DEBUG:root:probs=0.00000
+DEBUG:root:labels=1.00000
+DEBUG:root:Batch 6139, sample 21
+DEBUG:root:word_pairs=lobbying, slip
+DEBUG:root:probs=0.98916
+DEBUG:root:labels=0.00000
+DEBUG:root:Batch 6139: evaluating analogy task: weak:weaker::long:longer
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05262
+DEBUG:root:Similarity rank 0: langley (0.22676)
+DEBUG:root:Similarity rank 1: oslo (0.21511)
+DEBUG:root:Similarity rank 2: sinatra (0.21289)
+DEBUG:root:Similarity rank 3: bangladesh (0.21076)
+DEBUG:root:Similarity rank 4: nile (0.20625)
+DEBUG:root:Similarity rank 5: kelsey (0.19601)
+DEBUG:root:Similarity rank 6: headquarters (0.19557)
+DEBUG:root:Similarity rank 7: sixties (0.19124)
+DEBUG:root:Similarity rank 8: potassium (0.19090)
+DEBUG:root:Similarity rank 9: nitrogen (0.18754)
+DEBUG:root:Batch 6139: evaluating analogy task: big:biggest::bright:brightest
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08385
+DEBUG:root:Similarity rank 0: evening (0.21255)
+DEBUG:root:Similarity rank 1: seconds (0.20439)
+DEBUG:root:Similarity rank 2: equivalent (0.20243)
+DEBUG:root:Similarity rank 3: logical (0.20071)
+DEBUG:root:Similarity rank 4: soils (0.19823)
+DEBUG:root:Similarity rank 5: aggravated (0.19026)
+DEBUG:root:Similarity rank 6: walsh (0.18828)
+DEBUG:root:Similarity rank 7: endangered (0.18741)
+DEBUG:root:Similarity rank 8: slip (0.18739)
+DEBUG:root:Similarity rank 9: charlotte (0.18391)
+DEBUG:root:Batch 6139: evaluating analogy task: long:longest::young:youngest
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05482
+DEBUG:root:Similarity rank 0: milan (0.21135)
+DEBUG:root:Similarity rank 1: eager (0.20664)
+DEBUG:root:Similarity rank 2: schwartz (0.20520)
+DEBUG:root:Similarity rank 3: mal (0.20472)
+DEBUG:root:Similarity rank 4: taking (0.20045)
+DEBUG:root:Similarity rank 5: responds (0.19980)
+DEBUG:root:Similarity rank 6: shipping (0.19971)
+DEBUG:root:Similarity rank 7: scattered (0.19811)
+DEBUG:root:Similarity rank 8: soviet (0.19577)
+DEBUG:root:Similarity rank 9: hazardous (0.19333)
+DEBUG:root:Batch 6139: evaluating analogy task: Japan:Japanese::Israel:Israeli
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01222
+DEBUG:root:Similarity rank 0: pitches (0.25193)
+DEBUG:root:Similarity rank 1: stack (0.21477)
+DEBUG:root:Similarity rank 2: pure (0.21121)
+DEBUG:root:Similarity rank 3: suggesting (0.21015)
+DEBUG:root:Similarity rank 4: rough (0.20080)
+DEBUG:root:Similarity rank 5: jimmie (0.20041)
+DEBUG:root:Similarity rank 6: ra (0.19844)
+DEBUG:root:Similarity rank 7: bells (0.19745)
+DEBUG:root:Similarity rank 8: zoological (0.19725)
+DEBUG:root:Similarity rank 9: apt (0.19235)
+DEBUG:root:Batch 6139: evaluating analogy task: running:ran::feeding:fed
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.18643
+DEBUG:root:Similarity rank 0: gotta (0.22188)
+DEBUG:root:Similarity rank 1: bells (0.21096)
+DEBUG:root:Similarity rank 2: dog (0.20431)
+DEBUG:root:Similarity rank 3: toss (0.20192)
+DEBUG:root:Similarity rank 4: nero (0.19800)
+DEBUG:root:Similarity rank 5: labyrinth (0.19545)
+DEBUG:root:Similarity rank 6: both (0.19313)
+DEBUG:root:Similarity rank 7: whale (0.19152)
+DEBUG:root:Similarity rank 8: rode (0.19086)
+DEBUG:root:Similarity rank 9: ca (0.19022)
+DEBUG:root:Batch 6139: evaluating analogy task: dog:dogs::building:buildings
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05930
+DEBUG:root:Similarity rank 0: customers (0.22994)
+DEBUG:root:Similarity rank 1: repairs (0.22922)
+DEBUG:root:Similarity rank 2: annex (0.20909)
+DEBUG:root:Similarity rank 3: congenital (0.20363)
+DEBUG:root:Similarity rank 4: fine (0.20002)
+DEBUG:root:Similarity rank 5: merrill (0.19906)
+DEBUG:root:Similarity rank 6: ferrari (0.19768)
+DEBUG:root:Similarity rank 7: circumstance (0.19199)
+DEBUG:root:Similarity rank 8: reigning (0.19160)
+DEBUG:root:Similarity rank 9: vapor (0.19086)
+DEBUG:root:Batch 6139: evaluating analogy task: finger:fingers::banana:bananas
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.07374
+DEBUG:root:Similarity rank 0: responsibilities (0.27801)
+DEBUG:root:Similarity rank 1: intensive (0.22321)
+DEBUG:root:Similarity rank 2: bathed (0.21853)
+DEBUG:root:Similarity rank 3: munich (0.21288)
+DEBUG:root:Similarity rank 4: footprints (0.20865)
+DEBUG:root:Similarity rank 5: kb (0.20514)
+DEBUG:root:Similarity rank 6: salute (0.20413)
+DEBUG:root:Similarity rank 7: hygiene (0.19932)
+DEBUG:root:Similarity rank 8: nucleus (0.19315)
+DEBUG:root:Similarity rank 9: educated (0.19084)
+DEBUG:root:Batch 6647: evaluating analogy task: Havana:Cuba::Paris:France
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00574
+DEBUG:root:Similarity rank 0: earthly (0.20658)
+DEBUG:root:Similarity rank 1: jameson (0.20399)
+DEBUG:root:Similarity rank 2: commemorative (0.19988)
+DEBUG:root:Similarity rank 3: piano (0.19378)
+DEBUG:root:Similarity rank 4: lodged (0.19281)
+DEBUG:root:Similarity rank 5: maternity (0.19147)
+DEBUG:root:Similarity rank 6: messed (0.19105)
+DEBUG:root:Similarity rank 7: fabric (0.19019)
+DEBUG:root:Similarity rank 8: niagara (0.18881)
+DEBUG:root:Similarity rank 9: belgium (0.18861)
+DEBUG:root:Batch 6647: evaluating analogy task: Riga:Latvia::Stockholm:Sweden
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05934
+DEBUG:root:Similarity rank 0: christians (0.21756)
+DEBUG:root:Similarity rank 1: spaceship (0.20654)
+DEBUG:root:Similarity rank 2: handkerchief (0.20614)
+DEBUG:root:Similarity rank 3: fusiliers (0.19918)
+DEBUG:root:Similarity rank 4: poole (0.19342)
+DEBUG:root:Similarity rank 5: protective (0.19299)
+DEBUG:root:Similarity rank 6: electrification (0.19287)
+DEBUG:root:Similarity rank 7: ballots (0.19181)
+DEBUG:root:Similarity rank 8: respectively (0.18351)
+DEBUG:root:Similarity rank 9: sox (0.18323)
+DEBUG:root:Batch 6647: evaluating analogy task: Lexington:Kentucky::Jacksonville:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06648
+DEBUG:root:Similarity rank 0: sync (0.22295)
+DEBUG:root:Similarity rank 1: packed (0.21081)
+DEBUG:root:Similarity rank 2: jubilee (0.20907)
+DEBUG:root:Similarity rank 3: dried (0.20718)
+DEBUG:root:Similarity rank 4: computing (0.20518)
+DEBUG:root:Similarity rank 5: leah (0.20229)
+DEBUG:root:Similarity rank 6: vampires (0.20182)
+DEBUG:root:Similarity rank 7: ripped (0.19154)
+DEBUG:root:Similarity rank 8: championship (0.18911)
+DEBUG:root:Similarity rank 9: transcribed (0.18681)
+DEBUG:root:Batch 6647: evaluating analogy task: Henderson:Nevada::Orlando:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.11765
+DEBUG:root:Similarity rank 0: oceans (0.19125)
+DEBUG:root:Similarity rank 1: puts (0.19106)
+DEBUG:root:Similarity rank 2: flights (0.18645)
+DEBUG:root:Similarity rank 3: offered (0.18635)
+DEBUG:root:Similarity rank 4: stabilize (0.18567)
+DEBUG:root:Similarity rank 5: erratic (0.18411)
+DEBUG:root:Similarity rank 6: respectable (0.18388)
+DEBUG:root:Similarity rank 7: broken (0.18117)
+DEBUG:root:Similarity rank 8: awareness (0.18056)
+DEBUG:root:Similarity rank 9: sympathetic (0.17946)
+DEBUG:root:Batch 6647: evaluating analogy task: Vietnam:dong::Europe:euro
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02102
+DEBUG:root:Similarity rank 0: trumpets (0.21884)
+DEBUG:root:Similarity rank 1: defeats (0.21170)
+DEBUG:root:Similarity rank 2: cyrillic (0.21061)
+DEBUG:root:Similarity rank 3: cayman (0.19654)
+DEBUG:root:Similarity rank 4: young (0.19233)
+DEBUG:root:Similarity rank 5: ballads (0.19199)
+DEBUG:root:Similarity rank 6: allegedly (0.19123)
+DEBUG:root:Similarity rank 7: lavender (0.19109)
+DEBUG:root:Similarity rank 8: cosmetics (0.18319)
+DEBUG:root:Similarity rank 9: routinely (0.18225)
+DEBUG:root:Batch 6647: evaluating analogy task: immediate:immediately::quick:quickly
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05629
+DEBUG:root:Similarity rank 0: accountable (0.23275)
+DEBUG:root:Similarity rank 1: dynamite (0.22643)
+DEBUG:root:Similarity rank 2: flinched (0.20624)
+DEBUG:root:Similarity rank 3: marries (0.19781)
+DEBUG:root:Similarity rank 4: surveillance (0.19754)
+DEBUG:root:Similarity rank 5: profound (0.19606)
+DEBUG:root:Similarity rank 6: arranged (0.19249)
+DEBUG:root:Similarity rank 7: robbins (0.19189)
+DEBUG:root:Similarity rank 8: turtle (0.19176)
+DEBUG:root:Similarity rank 9: honey (0.19000)
+DEBUG:root:Batch 6647: evaluating analogy task: big:biggest::tall:tallest
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.00593
+DEBUG:root:Similarity rank 0: uniform (0.20417)
+DEBUG:root:Similarity rank 1: constant (0.20023)
+DEBUG:root:Similarity rank 2: mind (0.19821)
+DEBUG:root:Similarity rank 3: comprising (0.19779)
+DEBUG:root:Similarity rank 4: hebrew (0.19602)
+DEBUG:root:Similarity rank 5: crimea (0.19372)
+DEBUG:root:Similarity rank 6: servicemen (0.19367)
+DEBUG:root:Similarity rank 7: throwing (0.19157)
+DEBUG:root:Similarity rank 8: prosecutor (0.19008)
+DEBUG:root:Similarity rank 9: kam (0.18951)
+DEBUG:root:Batch 6647: evaluating analogy task: move:moving::describe:describing
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.03721
+DEBUG:root:Similarity rank 0: tank (0.22771)
+DEBUG:root:Similarity rank 1: quicker (0.21017)
+DEBUG:root:Similarity rank 2: reunification (0.20665)
+DEBUG:root:Similarity rank 3: stressed (0.20606)
+DEBUG:root:Similarity rank 4: demonstrating (0.19827)
+DEBUG:root:Similarity rank 5: mono (0.19623)
+DEBUG:root:Similarity rank 6: centres (0.19568)
+DEBUG:root:Similarity rank 7: emails (0.19156)
+DEBUG:root:Similarity rank 8: wasted (0.19153)
+DEBUG:root:Similarity rank 9: posse (0.18954)
+DEBUG:root:Batch 6647: evaluating analogy task: Denmark:Danish::Ireland:Irish
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02534
+DEBUG:root:Similarity rank 0: aquarium (0.22753)
+DEBUG:root:Similarity rank 1: soared (0.20308)
+DEBUG:root:Similarity rank 2: complicated (0.20299)
+DEBUG:root:Similarity rank 3: accountant (0.19661)
+DEBUG:root:Similarity rank 4: wheeling (0.19560)
+DEBUG:root:Similarity rank 5: edge (0.19295)
+DEBUG:root:Similarity rank 6: aragon (0.19213)
+DEBUG:root:Similarity rank 7: modes (0.19077)
+DEBUG:root:Similarity rank 8: composite (0.18925)
+DEBUG:root:Similarity rank 9: torture (0.18890)
+DEBUG:root:Batch 6647: evaluating analogy task: Poland:Polish::Germany:German
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02413
+DEBUG:root:Similarity rank 0: nikita (0.21400)
+DEBUG:root:Similarity rank 1: inputs (0.21315)
+DEBUG:root:Similarity rank 2: mortar (0.20628)
+DEBUG:root:Similarity rank 3: aquarium (0.20289)
+DEBUG:root:Similarity rank 4: visuals (0.19560)
+DEBUG:root:Similarity rank 5: elaborate (0.19482)
+DEBUG:root:Similarity rank 6: edouard (0.19250)
+DEBUG:root:Similarity rank 7: stands (0.19076)
+DEBUG:root:Similarity rank 8: wander (0.18928)
+DEBUG:root:Similarity rank 9: fashionable (0.18824)
+DEBUG:root:Batch 6647: evaluating analogy task: Portugal:Portuguese::Egypt:Egyptian
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.01797
+DEBUG:root:Similarity rank 0: gaga (0.24884)
+DEBUG:root:Similarity rank 1: warfare (0.21309)
+DEBUG:root:Similarity rank 2: everett (0.20873)
+DEBUG:root:Similarity rank 3: screening (0.20661)
+DEBUG:root:Similarity rank 4: expo (0.19835)
+DEBUG:root:Similarity rank 5: seller (0.19622)
+DEBUG:root:Similarity rank 6: egyptians (0.18982)
+DEBUG:root:Similarity rank 7: charity (0.18926)
+DEBUG:root:Similarity rank 8: thumping (0.18281)
+DEBUG:root:Similarity rank 9: lime (0.18224)
+DEBUG:root:Batch 6647: evaluating analogy task: hitting:hit::playing:played
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.08952
+DEBUG:root:Similarity rank 0: receipts (0.22364)
+DEBUG:root:Similarity rank 1: hyundai (0.21556)
+DEBUG:root:Similarity rank 2: simulator (0.21051)
+DEBUG:root:Similarity rank 3: lebanese (0.20924)
+DEBUG:root:Similarity rank 4: herring (0.20828)
+DEBUG:root:Similarity rank 5: loyal (0.20196)
+DEBUG:root:Similarity rank 6: connolly (0.19909)
+DEBUG:root:Similarity rank 7: acceptance (0.19361)
+DEBUG:root:Similarity rank 8: miniature (0.19059)
+DEBUG:root:Similarity rank 9: devils (0.18982)
+DEBUG:root:Batch 6647: evaluating analogy task: listening:listened::walking:walked
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.03776
+DEBUG:root:Similarity rank 0: concessions (0.26246)
+DEBUG:root:Similarity rank 1: protects (0.23062)
+DEBUG:root:Similarity rank 2: ev (0.22816)
+DEBUG:root:Similarity rank 3: dickson (0.22504)
+DEBUG:root:Similarity rank 4: thousand (0.22260)
+DEBUG:root:Similarity rank 5: population (0.20123)
+DEBUG:root:Similarity rank 6: barton (0.19782)
+DEBUG:root:Similarity rank 7: caucasus (0.19379)
+DEBUG:root:Similarity rank 8: node (0.19255)
+DEBUG:root:Similarity rank 9: allen (0.19080)
+DEBUG:root:Batch 6647: evaluating analogy task: goat:goats::cat:cats
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01372
+DEBUG:root:Similarity rank 0: attend (0.21821)
+DEBUG:root:Similarity rank 1: adventurer (0.21395)
+DEBUG:root:Similarity rank 2: arenas (0.20951)
+DEBUG:root:Similarity rank 3: litre (0.20044)
+DEBUG:root:Similarity rank 4: sergeant (0.19924)
+DEBUG:root:Similarity rank 5: brazilian (0.19818)
+DEBUG:root:Similarity rank 6: dismantled (0.19503)
+DEBUG:root:Similarity rank 7: analyze (0.19149)
+DEBUG:root:Similarity rank 8: chad (0.18901)
+DEBUG:root:Similarity rank 9: always (0.18521)
+DEBUG:root:Batch 7117: evaluating analogy task: Tehran:Iran::Canberra:Australia
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.06626
+DEBUG:root:Similarity rank 0: inflicted (0.21099)
+DEBUG:root:Similarity rank 1: colton (0.20859)
+DEBUG:root:Similarity rank 2: slavic (0.20845)
+DEBUG:root:Similarity rank 3: ugly (0.19738)
+DEBUG:root:Similarity rank 4: easy (0.19572)
+DEBUG:root:Similarity rank 5: potent (0.19437)
+DEBUG:root:Similarity rank 6: researchers (0.18999)
+DEBUG:root:Similarity rank 7: were (0.18933)
+DEBUG:root:Similarity rank 8: bun (0.18872)
+DEBUG:root:Similarity rank 9: tech (0.18627)
+DEBUG:root:Batch 7117: evaluating analogy task: Dallas:Texas::Orlando:Florida
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.04396
+DEBUG:root:Similarity rank 0: freighter (0.24493)
+DEBUG:root:Similarity rank 1: magnum (0.23223)
+DEBUG:root:Similarity rank 2: jew (0.22429)
+DEBUG:root:Similarity rank 3: hypothesis (0.21760)
+DEBUG:root:Similarity rank 4: reputed (0.20485)
+DEBUG:root:Similarity rank 5: downloadable (0.20132)
+DEBUG:root:Similarity rank 6: youths (0.19581)
+DEBUG:root:Similarity rank 7: instrument (0.19448)
+DEBUG:root:Similarity rank 8: mukherjee (0.19410)
+DEBUG:root:Similarity rank 9: lad (0.19246)
+DEBUG:root:Batch 7117: evaluating analogy task: son:daughter::husband:wife
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05057
+DEBUG:root:Similarity rank 0: genealogy (0.22831)
+DEBUG:root:Similarity rank 1: samson (0.22693)
+DEBUG:root:Similarity rank 2: suffer (0.21740)
+DEBUG:root:Similarity rank 3: observations (0.20843)
+DEBUG:root:Similarity rank 4: ska (0.20526)
+DEBUG:root:Similarity rank 5: lamp (0.20380)
+DEBUG:root:Similarity rank 6: amir (0.20142)
+DEBUG:root:Similarity rank 7: demonstrated (0.19724)
+DEBUG:root:Similarity rank 8: barges (0.19486)
+DEBUG:root:Similarity rank 9: ltd (0.19465)
+DEBUG:root:Batch 7117: evaluating analogy task: lucky:luckily::rare:rarely
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05611
+DEBUG:root:Similarity rank 0: viral (0.21642)
+DEBUG:root:Similarity rank 1: clocks (0.21367)
+DEBUG:root:Similarity rank 2: diamonds (0.20029)
+DEBUG:root:Similarity rank 3: conrad (0.20027)
+DEBUG:root:Similarity rank 4: mildly (0.19908)
+DEBUG:root:Similarity rank 5: rhapsody (0.19780)
+DEBUG:root:Similarity rank 6: curls (0.19484)
+DEBUG:root:Similarity rank 7: compatible (0.19339)
+DEBUG:root:Similarity rank 8: sinking (0.18806)
+DEBUG:root:Similarity rank 9: fitz (0.18771)
+DEBUG:root:Batch 7117: evaluating analogy task: low:lower::tight:tighter
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02191
+DEBUG:root:Similarity rank 0: rabbit (0.26082)
+DEBUG:root:Similarity rank 1: agra (0.21228)
+DEBUG:root:Similarity rank 2: pasadena (0.20474)
+DEBUG:root:Similarity rank 3: delaware (0.19621)
+DEBUG:root:Similarity rank 4: doug (0.18905)
+DEBUG:root:Similarity rank 5: performers (0.18878)
+DEBUG:root:Similarity rank 6: tariffs (0.18489)
+DEBUG:root:Similarity rank 7: rallies (0.18488)
+DEBUG:root:Similarity rank 8: vines (0.18345)
+DEBUG:root:Similarity rank 9: scoop (0.18216)
+DEBUG:root:Batch 7117: evaluating analogy task: quick:quicker::cold:colder
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.04540
+DEBUG:root:Similarity rank 0: hudson (0.20879)
+DEBUG:root:Similarity rank 1: fx (0.20441)
+DEBUG:root:Similarity rank 2: connects (0.20410)
+DEBUG:root:Similarity rank 3: crystal (0.20352)
+DEBUG:root:Similarity rank 4: sucks (0.20100)
+DEBUG:root:Similarity rank 5: fades (0.19770)
+DEBUG:root:Similarity rank 6: shutter (0.19575)
+DEBUG:root:Similarity rank 7: helplessly (0.19551)
+DEBUG:root:Similarity rank 8: morals (0.19445)
+DEBUG:root:Similarity rank 9: bb (0.19434)
+DEBUG:root:Batch 7117: evaluating analogy task: easy:easiest::strong:strongest
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02964
+DEBUG:root:Similarity rank 0: convince (0.22568)
+DEBUG:root:Similarity rank 1: expand (0.22567)
+DEBUG:root:Similarity rank 2: sami (0.21212)
+DEBUG:root:Similarity rank 3: content (0.21108)
+DEBUG:root:Similarity rank 4: pack (0.20840)
+DEBUG:root:Similarity rank 5: introduced (0.20609)
+DEBUG:root:Similarity rank 6: comfortable (0.20400)
+DEBUG:root:Similarity rank 7: cordoba (0.19816)
+DEBUG:root:Similarity rank 8: winners (0.19761)
+DEBUG:root:Similarity rank 9: shape (0.19259)
+DEBUG:root:Batch 7117: evaluating analogy task: Australia:Australian::Greece:Greek
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.02493
+DEBUG:root:Similarity rank 0: squeezed (0.22957)
+DEBUG:root:Similarity rank 1: spotting (0.20915)
+DEBUG:root:Similarity rank 2: learned (0.20545)
+DEBUG:root:Similarity rank 3: firms (0.20341)
+DEBUG:root:Similarity rank 4: experts (0.20303)
+DEBUG:root:Similarity rank 5: myriad (0.19986)
+DEBUG:root:Similarity rank 6: proven (0.19208)
+DEBUG:root:Similarity rank 7: molecular (0.19168)
+DEBUG:root:Similarity rank 8: attention (0.19142)
+DEBUG:root:Similarity rank 9: drinking (0.19140)
+DEBUG:root:Batch 7117: evaluating analogy task: Korea:Korean::Greece:Greek
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.05697
+DEBUG:root:Similarity rank 0: ix (0.25472)
+DEBUG:root:Similarity rank 1: townsville (0.21634)
+DEBUG:root:Similarity rank 2: toss (0.21326)
+DEBUG:root:Similarity rank 3: sexually (0.21092)
+DEBUG:root:Similarity rank 4: henrik (0.20406)
+DEBUG:root:Similarity rank 5: textures (0.19446)
+DEBUG:root:Similarity rank 6: items (0.19188)
+DEBUG:root:Similarity rank 7: patrols (0.18948)
+DEBUG:root:Similarity rank 8: barak (0.18657)
+DEBUG:root:Similarity rank 9: exposing (0.18527)
+DEBUG:root:Batch 7117: evaluating analogy task: saying:said::increasing:increased
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.05205
+DEBUG:root:Similarity rank 0: greene (0.23637)
+DEBUG:root:Similarity rank 1: cry (0.23036)
+DEBUG:root:Similarity rank 2: persistent (0.22553)
+DEBUG:root:Similarity rank 3: hartman (0.22546)
+DEBUG:root:Similarity rank 4: lump (0.22341)
+DEBUG:root:Similarity rank 5: cork (0.21444)
+DEBUG:root:Similarity rank 6: spy (0.21406)
+DEBUG:root:Similarity rank 7: latvian (0.21308)
+DEBUG:root:Similarity rank 8: morton (0.21233)
+DEBUG:root:Similarity rank 9: freelance (0.20523)
+DEBUG:root:Batch 7117: evaluating analogy task: sleeping:slept::running:ran
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.17511
+DEBUG:root:Similarity rank 0: pearson (0.23710)
+DEBUG:root:Similarity rank 1: growls (0.21252)
+DEBUG:root:Similarity rank 2: marquette (0.20999)
+DEBUG:root:Similarity rank 3: blank (0.20545)
+DEBUG:root:Similarity rank 4: closer (0.20303)
+DEBUG:root:Similarity rank 5: beit (0.19712)
+DEBUG:root:Similarity rank 6: boredom (0.19486)
+DEBUG:root:Similarity rank 7: roam (0.19193)
+DEBUG:root:Similarity rank 8: dev (0.19177)
+DEBUG:root:Similarity rank 9: exempt (0.19149)
+DEBUG:root:Batch 7117: evaluating analogy task: thinking:thought::hitting:hit
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.07807
+DEBUG:root:Similarity rank 0: records (0.26202)
+DEBUG:root:Similarity rank 1: grange (0.20022)
+DEBUG:root:Similarity rank 2: franchises (0.19944)
+DEBUG:root:Similarity rank 3: lea (0.19810)
+DEBUG:root:Similarity rank 4: surgical (0.19456)
+DEBUG:root:Similarity rank 5: settle (0.18988)
+DEBUG:root:Similarity rank 6: diablo (0.18861)
+DEBUG:root:Similarity rank 7: engaging (0.18720)
+DEBUG:root:Similarity rank 8: autopsy (0.18716)
+DEBUG:root:Similarity rank 9: domain (0.18714)
+DEBUG:root:Batch 7117: evaluating analogy task: hand:hands::snake:snakes
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.02882
+DEBUG:root:Similarity rank 0: awaited (0.22447)
+DEBUG:root:Similarity rank 1: advertised (0.21325)
+DEBUG:root:Similarity rank 2: eruptions (0.19663)
+DEBUG:root:Similarity rank 3: exhausted (0.19467)
+DEBUG:root:Similarity rank 4: menon (0.19422)
+DEBUG:root:Similarity rank 5: health (0.19153)
+DEBUG:root:Similarity rank 6: testimony (0.19137)
+DEBUG:root:Similarity rank 7: observe (0.19045)
+DEBUG:root:Similarity rank 8: britain (0.18902)
+DEBUG:root:Similarity rank 9: announcer (0.18890)
+DEBUG:root:Batch 7590: evaluating analogy task: Tehran:Iran::Ottawa:Canada
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.01230
+DEBUG:root:Similarity rank 0: geographic (0.23531)
+DEBUG:root:Similarity rank 1: onwards (0.22029)
+DEBUG:root:Similarity rank 2: ugly (0.21312)
+DEBUG:root:Similarity rank 3: purchased (0.20305)
+DEBUG:root:Similarity rank 4: motives (0.19786)
+DEBUG:root:Similarity rank 5: reformation (0.19253)
+DEBUG:root:Similarity rank 6: challenges (0.19157)
+DEBUG:root:Similarity rank 7: terrace (0.19063)
+DEBUG:root:Similarity rank 8: packaging (0.18755)
+DEBUG:root:Similarity rank 9: mechanisms (0.18638)
+DEBUG:root:Batch 7590: evaluating analogy task: Budapest:Hungary::London:England
+DEBUG:root:torch.dot(emb_d, emb_target) = 0.06910
+DEBUG:root:Similarity rank 0: eroded (0.22834)
+DEBUG:root:Similarity rank 1: julien (0.21818)
+DEBUG:root:Similarity rank 2: hughes (0.21277)
+DEBUG:root:Similarity rank 3: alma (0.20559)
+DEBUG:root:Similarity rank 4: exposition (0.20370)
+DEBUG:root:Similarity rank 5: cannon (0.20079)
+DEBUG:root:Similarity rank 6: mori (0.19690)
+DEBUG:root:Similarity rank 7: acceptance (0.19633)
+DEBUG:root:Similarity rank 8: nigerian (0.19542)
+DEBUG:root:Similarity rank 9: receive (0.19247)
+DEBUG:root:Batch 7590: evaluating analogy task: Cincinnati:Ohio::Henderson:Nevada
+DEBUG:root:torch.dot(emb_d, emb_target) = -0.00341
+DEBUG:root:Similarity rank 0: encouraged (0.23907)
+DEBUG:root:Similarity rank 1: preface (0.22468)
+DEBUG:root:Similarity rank 2: sighted (0.22254)
+DEBUG:root:Similarity rank 3: margaret (0.21629)
+DEBUG:root:Similarity rank 4: mahogany (0.21306)
+DEBUG:root:Similarity rank 5: pleasures (0.21071)
+DEBUG:root:Similarity rank 6: honestly (0.20326)
+DEBUG:root:Similarity rank 7: consulting (0.19915)
+DEBUG:root:Similarity rank 8: organizes (0.19761)
+DEBUG:root:Similarity rank 9: saxophone (0.19749)
