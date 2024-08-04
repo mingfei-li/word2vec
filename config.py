@@ -16,7 +16,7 @@ class Config():
         self.neg_k = 5
         self.vocab_cap = 50_000
         self.max_len = 512
-        self.eval_freq = 10_000
+        self.eval_freq = 100_000
         self.lr = 0.025
         self.limit = None
 
