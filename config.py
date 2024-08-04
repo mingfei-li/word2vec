@@ -10,13 +10,13 @@ class Config():
         self.val_subset = 'wikitext-103-raw-v1'
         self.vocab = 'vocab'
         self.num_epochs = 10
-        self.embedding_dim = 100
+        self.embedding_dim = 300
         self.batch_size = 100
-        self.window_size = 5
-        self.neg_k = 5
+        self.window_size = 10
+        self.neg_k = 15
         self.vocab_cap = 50_000
         self.max_len = 512
-        self.eval_freq = 100_000
+        self.eval_freq = 300_000
         self.lr = 0.025
         self.limit = None
 
