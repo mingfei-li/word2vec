@@ -201,11 +201,9 @@ def train():
         model.parameters(),
         lr=config.lr,
     )
-    lr_scheduler = torch.optim.lr_scheduler.LinearLR(
+    lr_scheduler = torch.optim.lr_scheduler.ExponentialLR(
         optimizer=optimizer,
-        start_factor=1,
-        end_factor=1e-3,
-        total_iters=config.num_epochs*len(dataloader_train),
+        gamma=1e-3 ** (1 / (config.num_epochs * len(dataloader_train))),
     )
 
     global_step = 0
